@@ -1,0 +1,27 @@
+{
+  "name": "modulr",
+  "description": "Fast and easy modular approach to building powerful web and mobile interfaces.",
+  "main": "modulr.js",
+  "ignore": [
+    "bower.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "frontend",
+    "ui",
+    "css3",
+    "html5",
+    "front-end",
+    "framework"
+  ],
+  "authors": [
+    "Alan Muselitch"
+  ],
+  "license": "MIT",
+  "homepage": "http://decorator.io/modulr"
+}
