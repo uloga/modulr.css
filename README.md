@@ -1,6 +1,6 @@
 # Modulr.css soon here :) 
 
-You can find v1 docs and examples here [Modulr.css Beta Docs](https://decorator.io/modulr/) 
+You can find v1 docs and examples @ [Modulr.css Beta Docs](https://decorator.io/modulr/) 
 ---
 Work in progress:
 ---
