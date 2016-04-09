@@ -4,12 +4,12 @@ You can find v1 docs and examples here [Modulr.css Beta Docs](https://decorator.
 ---
 Work in progress:
 ---
-1 node cli
-⋅⋅* module (package) manager
-⋅⋅* layout/element/template generator
-⋅⋅* watcher
-⋅⋅* compiler
+1. node cli
+  module (package) manager
+  layout/element/template generator
+  watcher
+  compiler
 
-2 a module listing website section
-3 angular.js support
-4 some awesome web and app layout examples
+2. a module listing website section
+3. angular.js support
+4. some awesome web and app layout examples
