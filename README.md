@@ -5,10 +5,10 @@ You can find v1 docs and examples here [Modulr.css Beta Docs](https://decorator.
 Work in progress:
 ---
 1. node cli
-  * module (package) manager
-  * layout/element/template generator
-  * watcher
-  * compiler
+ * module (package) manager
+ * layout/element/template generator
+ * watcher
+ * compiler
 
 2. a module listing website section
 3. angular.js support
