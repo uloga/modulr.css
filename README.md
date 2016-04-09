@@ -8,6 +8,6 @@ Work in progress:
  * module (package) manager
  * layout/element/template generator
  * html/css precompiler
-2. A Module Listing Website Section
+2. Modules Listing Website Section
 3. Angular.js Support
 4. Web And App Examples
