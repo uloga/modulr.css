@@ -11,7 +11,7 @@ Just add the following ```<link>``` element into your page's ```<head>``` before
 <link rel="stylesheet" href="https://raw.githubusercontent.com/uloga/modulr/master/modulr.min.css">
 ```
 
-modulr.css is using font awesome icon lib, so make sure to include font awesome right above the modulr.css
+modulr.css is using font awesome icon lib, so make sure to include font awesome right above modulr.min.css file.
 Work in progress:
 ---
 1. NODE.JS CLI
