@@ -12,6 +12,17 @@ add the following ```<link>``` element into your page's ```<head>``` before your
 ```
 
 modulr.css is using font awesome icon lib, so make sure to include font awesome right above modulr.min.css file.
+
+```
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+```
+
+Also make sure to include google fonts after font awesome css.
+
+```
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800">
+```
+
 Work in progress:
 ---
 1. NODE.JS CLI
