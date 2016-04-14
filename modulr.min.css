@@ -20,11 +20,13 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   [class^="col-"]{
     width: 100%;
   }
-  .row > [class*="push-"],
-  [class*="push-"],
-  .row > [class*="pull-"],
-  [class*="pull-"],
-  [class*="offset-"]{
+  .row > [class^="col-"][class*="push-"],
+  [class^="col-"][class*="push-"],
+  .row > [class^="col-"][class*="pull-"],
+  [class^="col-"][class*="pull-"],
+  [class^="col-"][class*="offset-"],
+  .row > [class^="col-"][class*="gutter-"],
+  [class^="col-"][class*="gutter-"]{
     margin: 0;
     padding: 0;
   }
@@ -112,7 +114,7 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -260px;
     overflow-x: hidden;
     overflow-y: auto;
     width: 250px !important;
@@ -294,7 +296,7 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   .tablet-margin-right{
     margin-right: 10px;
   }
-  .tablet-margin-botton{
+  .tablet-margin-bottom{
     margin-bottom: 10px;
   }
   .tablet-margin-left{
@@ -316,7 +318,7 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   .tablet-padding-right{
     padding-right: 10px;
   }
-  .tablet-padding-botton{
+  .tablet-padding-bottom{
     padding-bottom: 10px;
   }
   .tablet-padding-left{
@@ -451,13 +453,15 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   
   /*__ sizes __*/
 
-  .tablet-full-width{
+  .tablet-full-width,
+  .tablet-width-100{
     width: 100%;
   }
   .tablet-auto-width{
     width: auto;
   }
-  .tablet-full-height{
+  .tablet-full-height,
+  .tablet-height-100{
     height: 100%;
   }
   .tablet-auto-height{
@@ -648,7 +652,7 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   .mobile-margin-right{
     margin-right: 10px;
   }
-  .mobile-margin-botton{
+  .mobile-margin-bottom{
     margin-bottom: 10px;
   }
   .mobile-margin-left{
@@ -670,7 +674,7 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
   .mobile-padding-right{
     padding-right: 10px;
   }
-  .mobile-padding-botton{
+  .mobile-padding-bottom{
     padding-bottom: 10px;
   }
   .mobile-padding-left{
@@ -798,13 +802,15 @@ a,ins,mark{text-decoration:none}.grid,.quote,blockquote,p{width:100%;float:left}
 
   /*__ sizes __*/
 
-  .mobile-full-width{
+  .mobile-full-width,
+  .mobile-width-100{
     width: 100%;
   }
   .mobile-auto-width{
     width: auto;
   }
-  .mobile-full-height{
+  .mobile-full-height,
+  .mobile-height-100{
     height: 100%;
   }
   .mobile-auto-height{
