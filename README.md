@@ -5,10 +5,10 @@ You can find v1 docs and examples at: [Modulr.css](https://decorator.io/modulr/)
 ### Modulr.css soon here :) 
 
 I've included minified css version for those who'd like to test modulr.css before official release.
-
-Just add the following ```<link>``` element into your page's ```<head>``` before your project's stylesheets. </br>
+Download or copy raw file of modulr.min.css, place it into your project folder and then
+add the following ```<link>``` element into your page's ```<head>``` before your project's stylesheets. </br>
 ```
-<link rel="stylesheet" href="https://raw.githubusercontent.com/uloga/modulr/master/modulr.min.css">
+<link rel="stylesheet" href="modulr.min.css">
 ```
 
 modulr.css is using font awesome icon lib, so make sure to include font awesome right above modulr.min.css file.
