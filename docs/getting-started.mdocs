@@ -120,7 +120,6 @@ Click the minus - icon next to the folder you want to collapse.
 ```
 
 ### Extending modulr.css with modules
-
 You can extend modulr.css with your own or third party modules. If you decide to create your own module 
 here are few tips and best practices when creating modules for modulr.css.
 
@@ -147,7 +146,6 @@ Here below you can see a module file structure
 ---
 
 ### Let's create a simple tooltip module
-
 First, let's create our files. We'll keep in mind that the naming convention is important, therefor we will name 
 our module folder tooltip. We will create two files: main.css for our main style and modifier.css which we'll 
 use to extend/modify our module, we will place both of those files into our tooltip module folder. 
@@ -255,8 +253,6 @@ css: modifier.css
   border-color: #009688 transparent transparent transparent;
 }
 ```
----
-
 Now that we've finished our simple tooltip, I hope that you can see the benefit of separating the main.css 
 and modifier.css styles when creating modules in modulr.css, which is that we as the others who chose to 
 extend the module can extend/modify it without breaking the main.css code of the module.
