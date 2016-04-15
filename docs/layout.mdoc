@@ -296,11 +296,13 @@ As you can see in example code above, we have a tablet .tablet-col-3 modifier cl
 .row parent element which will display three columns when viewed on a tablet device, and a mobile 
 modifier class .mobile-col-1 which will display one column when viewed on a mobile device.
 
-> In some cases you may want your column to persist the current width when viewed on a tablet or 
-> a mobile devices. In that case you can use .col-persist
+>  In some cases you may want your column to persist the current width when viewed on tablet or mobile devices.
+>  In that case you can use <code>.tablet-col-persist</code> or <code>.mobile-col-persist</code> direct on <code>.col-*</code> 
+>  element or you can use it on the <code>.row</code> or any other parent element that contains <code>.col-*</code> elements.
+>  If you want your column width to persist when viewed on a tablet device but you want to remove the persistence when viewed on a mobile device,
+>  you can do that by adding <code>.mobile-remove-persist</code> on parent element that contains <code>.col-*</code> elements,
+>  or you can use it directly on an <code>.col-*</code> element.
 
-> Let's say you want your column width to persist when viewed on a tablet device but then you want 
-> to remove the persistence when viewed on a mobile device, you can do that with .mobile-remove-persist
 
 ##### Grid - Column Gutter
 
