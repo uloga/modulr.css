@@ -44,8 +44,8 @@ to @import responsive.css core module into your main.css project file.
 
 ### Starter Template
 
-html
-----
+##### html
+----------
 
 ```
 <!DOCTYPE html>
@@ -77,8 +77,8 @@ html
 </html>
 ```
 
-css: modulr.css
----
+##### css: modulr.css
+---------------------
 
 ```
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
@@ -93,8 +93,8 @@ before any @import. See the file structure for more info about core modules
 @import url("modulr/core/responsive.css");
 ```
 
-css: theme.css
----
+##### css: theme.css
+--------------------
 
 ```
 /*
@@ -111,8 +111,7 @@ With Modulr.css you can use core modules separately without including the whole 
 You can also create your own or use community created modules without effecting (breaking) 
 the core modules. That way you have a lighter, cleaner and better maintainable stylesheet in your project.
 
-Here below you can see Modulr.css file structure.
----
+##### Here below you can see Modulr.css file structure.
 
 ```
 Click the plus + icon next to the folder you want to expand. 
@@ -129,21 +128,20 @@ here are few tips and best practices when creating modules for modulr.css.
 *Your module folder should always contain two files main.css and modifier.css
 *You should put all of the main styles into main.css fileYou should put all modifiers into modifier.css file
 
-Main Module: main.css
----
+##### Main Module: main.css
+
 Main module (main.css) cloud but don't have to be dependent on one or more core or third party modules. 
 Main module is the main style for your module, once it's created, it should never be modified. 
 Therefor we have a modifier.css included in our module folder.
 
-Modifier: modifier.css
----
+##### Modifier: modifier.css
+
 Modifier (modifier.css) extends or changes the behavior of your main module. 
 There should always be a modifier.css file included in the module folder, even if it's empty, 
 for reasons that anyone who would want to extend the module in the future, can do so without 
 messing with and possibly breaking the main style of the module.
 
-Here below you can see a module file structure
----
+##### Here below you can see a module file structure
 
 ### Let's create a simple tooltip module
 First, let's create our files. We'll keep in mind that the naming convention is important, therefor we will name 
@@ -151,11 +149,11 @@ our module folder tooltip. We will create two files: main.css for our main style
 use to extend/modify our module, we will place both of those files into our tooltip module folder. 
 See the file structure below.
 
-Now that we've created our files, let's first see an example of what we're about to create
-----
+##### Now that we've created our files, let's first see an example of what we're about to create
 
-html
----
+##### html
+----------
+
 ```
 <a href="#" class="btn purple hover-tooltip">
   <span class="tooltip top">Tooltip Top</span>
@@ -164,8 +162,8 @@ html
 ```
 Let's see how our main module main.css file looks like.
 
-css: main.css
----
+##### css: main.css
+-------------------
 
 ```
 /*
@@ -253,6 +251,7 @@ css: modifier.css
   border-color: #009688 transparent transparent transparent;
 }
 ```
+
 Now that we've finished our simple tooltip, I hope that you can see the benefit of separating the main.css 
 and modifier.css styles when creating modules in modulr.css, which is that we as the others who chose to 
 extend the module can extend/modify it without breaking the main.css code of the module.
