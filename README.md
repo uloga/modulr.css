@@ -1,5 +1,5 @@
 
-### Modulr.css A fast and easy modular approach to building powerful web and mobile interfaces.
+### Modulr.css - A fast and easy modular approach to building powerful web and mobile interfaces.
 You can find v1 docs and examples at: [Modulr.css](https://decorator.io/modulr/) 
 ---
 ### Modulr.css soon here :) 
