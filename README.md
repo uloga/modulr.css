@@ -2,9 +2,9 @@
 ### Modulr.css : A fast and modular approach to building powerful web and mobile interfaces.
 You can find v1 docs and examples at: [Modulr.css](https://decorator.io/modulr/) 
 ---
-### Modulr.css soon here :)  Working on CLI and module (package) manager. 
-### English is not my first language, it would be great if someone could help with the documentation (grammar, typost).
-> There is an "Improve this Doc" button on the top of each page.
+
+##### English is not my first language, it would be great if someone could help with the documentation (grammar, typost).
+##### [There is an "Improve this Doc" button on the top of each page](https://decorator.io/modulr/docs/color)  
 
 I've included minified css version for those who'd like to test modulr.css before official release.</br>
 Download or copy raw file of modulr.min.css, place it into your project folder and then
