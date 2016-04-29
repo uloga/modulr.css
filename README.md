@@ -3,7 +3,7 @@
 You can find v1 docs at: [Modulr.css](https://decorator.io/modulr/) 
 ---
 
-You can find some examples at: [Modulr.css](https://decorator.io/modulr/templates) 
+You can find some examples at: [Modulr.css Examples](https://decorator.io/modulr/templates) 
 ---
 
 I've included minified css version for those who'd like to test modulr.css before official release.</br>
