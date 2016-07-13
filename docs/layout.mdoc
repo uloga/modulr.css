@@ -1,0 +1,744 @@
+### Wrappers
+
+There are 3 default wrapper sizes in modulr.css .wrapper748 has a width of 748px and is great for small one column websites. 
+.wrapper960 is a 960 grid size wrapper and has a width of 960px. .wrapper1280 has a width of 1280px and is great for multi 
+column websites. These wrappers will act as a responsive website without adding .fluid class to them. Here below you can 
+see an example of good practice when creating your own wrappers in modulr.css
+
+##### html
+----------
+
+```
+<div class="wrapper">
+  <div class="col-3">
+    sidebar .col-3
+  </div>
+  <div class="col-9">
+    content .col-9
+  </div>
+</div>
+```
+
+In example above you can see we have created our own custom wrapper .wrapper. Now we can use that wrapper 
+class to specify the width of our website. Let's say we want to create a website that is 1360px wide, 
+but we want the website to act as a responsive website when viewed on smaller screens than 1360px. 
+In example below you can see how we can accomplish that with just few lines of css code which we can add in our theme.css file.
+
+##### css
+---------
+
+```
+.wrapper{
+  width: 1360px;
+}
+@media (max-width: 1360px){
+  .wrapper{
+    width: 100%;
+  }
+}
+```
+
+Great thing about this approach is when you decide to change the width of your website, you can easily do that 
+by just modifying your .wrapper width and @media (max-width: 1360px) max-width properties.
+
+
+### The Grid - Column Grid
+
+With the default 12 column modulr.css grid core module you can create powerful multi device layouts quickly and easily. 
+It is best practice to contain grid columns inside a .row wrapper, this will create a horizontal block which will 
+contain vertical columns .col-* elements. See code example below.
+
+##### html
+----------
+
+```
+<div class="row">
+  <div class="col-6">
+    .col-6
+  </div>
+  <div class="col-6">
+    .col-6
+  </div>
+</div>
+```
+
+##### Column based grid system: stacked to horizontal.
+
+```
+<div class="inner">    
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+  </div>
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-3">
+      <div class="inner">.col-3</div>
+    </div>
+    <div class="col-3">
+      <div class="inner">.col-3</div>
+    </div>
+     <div class="col-3">
+      <div class="inner">.col-3</div>
+    </div>
+     <div class="col-3">
+      <div class="inner">.col-3</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-4">
+      <div class="inner">.col-4</div>
+    </div>
+    <div class="col-4">
+      <div class="inner">.col-4</div>
+    </div>
+    <div class="col-4">
+      <div class="inner">.col-4</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-5">
+      <div class="inner">.col-5</div>
+    </div>
+    <div class="col-7">
+      <div class="inner">.col-7</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-6">
+      <div class="inner">.col-6</div>
+    </div>
+    <div class="col-6">
+      <div class="inner">.col-6</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-7">
+      <div class="inner">.col-7</div>
+    </div>
+    <div class="col-5">
+      <div class="inner">.col-5</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-8">
+      <div class="inner">.col-8</div>
+    </div>
+    <div class="col-4">
+      <div class="inner">.col-4</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-9">
+      <div class="inner">.col-9</div>
+    </div>
+    <div class="col-3">
+      <div class="inner">.col-3</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-10">
+      <div class="inner">.col-10</div>
+    </div>
+    <div class="col-2">
+      <div class="inner">.col-2</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-11">
+      <div class="inner">.col-11</div>
+    </div>
+    <div class="col-1">
+      <div class="inner">.col-1</div>
+    </div>
+  </div>
+
+  <div class="row grid-padding gutter-col-5">
+    <div class="col-12">
+      <div class="inner  -margin-bottom">.col-12</div>
+    </div>
+  </div>    
+</div>
+```
+
+##### Offsetting columns.
+
+You can move columns to left and right using offset classes .offset-left-*columnsize and .offset-right-*columnsize. 
+eg: .offset-left-3 will move the column to the right over 3 columns.
+
+##### html
+----------
+
+```
+<!-- First Example Row Start -->
+<div class="row">
+  <div class="col-4">
+    <div class="inner">
+      .col-4
+    </div>
+  </div>
+  <div class="col-4 offset-left-4">
+    <div class="inner">
+      .col-4 .offset-left-4
+    </div>
+  </div>
+</div>
+<!-- First Example Row End -->
+
+<!-- Second Example Row Start -->
+<div class="row">
+  <div class="col-3 offset-left-3">
+    .col-3 .offset-left-3
+  </div>
+  <div class="col-3 offset-left-3">
+    .col-3 .offset-left-3
+  </div>
+</div>
+<!-- Second Example Row End -->
+```
+
+You can achieve the same thing of offsetting the columns using .pull-left-col-*columnsize or 
+.pull-right-col-*columnsize both types of column offsets are using margin property.
+
+You can also push columns using .push-col-right-*columnsize and .push-col-left-*columnsize these 
+are using padding property and will add padding of *columnsize to any element this class is applied to.
+
+##### Mobile / Tablet
+
+You can specify how many columns you want to display when viewed on a tablet or a mobile devices. 
+Default is one full width column. .col-12
+
+If you want to display 2 or more up to 4 columns when viewed on a tablet or a mobile device, all you
+have to do is add .tablet-col-*columncount (for when viewed on a tablet device) or .mobile-col-*columncount 
+(for when viewed on a mobile devices) to your wrapper, <body> tag or your .row container or any other 
+parent element that contains .col-* children elements. See example below.
+
+##### html
+----------
+
+```
+<div class="row tablet-col-3 mobile-col-1">
+  <div class="col-4">
+    .col-4
+  </div>
+  <div class="col-4">
+    .col-4
+  </div>
+  <div class="col-4">
+    .col-4
+  </div>
+</div>
+```
+
+As you can see in example code above, we have a tablet .tablet-col-3 modifier class applied to our 
+.row parent element which will display three columns when viewed on a tablet device, and a mobile 
+modifier class .mobile-col-1 which will display one column when viewed on a mobile device.
+
+>  In some cases you may want your column to persist the current width when viewed on tablet or mobile devices.
+>  In that case you can use <code>.tablet-col-persist</code> or <code>.mobile-col-persist</code> direct on <code>.col-*</code> 
+>  element or you can use it on the <code>.row</code> or any other parent element that contains <code>.col-*</code> elements.
+>  If you want your column width to persist when viewed on a tablet device but you want to remove the persistence when viewed on a mobile device,
+>  you can do that by adding <code>.mobile-remove-persist</code> on parent element that contains <code>.col-*</code> elements,
+>  or you can use it directly on an <code>.col-*</code> element.
+
+
+##### Grid - Column Gutter
+
+The CSS padding properties are used to generate gutter between content. Gutter modifiers are used mainly 
+for creating gutter when using column based grid module.
+
+In example below, you can see how we use .gutter-right-20 modifier class to create a gutter of 20px between 
+sidebar and content. Because gutter modifier uses padding property, it's good to have a .inner div element 
+inside your .col-* element. You can also create your own gutter modifier module using margin, but we recommend 
+using padding gutters with an extra inner div element for better cross device suppor
+
+
+##### html
+----------
+
+```
+<!-- Row Start -->
+<div class="row">
+  <!-- Sidebar Start -->
+  <div class="col-3 offset-right-20">
+    <div class="inner purple">
+      Sidebar
+    </div>
+  </div>
+  <!-- Sidebar End -->
+  <!-- Content Start -->
+  <div class="col-9">
+    <div class="inner pink">
+      Content
+    </div>
+  </div>
+  <!-- Content End -->
+</div>
+<!-- Row End -->
+```
+
+In example above you can see how we use .gutter-*property-*value direct on a .col-* element. Let's now 
+see a example on how we can use .gutter-col-*value on a parent element and so create gutter between our 
+child elements. Most of the time when using .col-* grid elements, we wrap these inside a .row wrapper. 
+We can add .gutter-col-*value to our .row element and so create gutter between our .col-* elements. 
+See example below.
+
+
+##### html
+----------
+
+```
+<!-- Row Start -->
+<div class="row gutter-col-20">
+  <!-- .col-4 start -->
+  <div class="col-4">
+    <div class="pink">
+      .col-4
+    </div>
+  </div>
+  <!-- .col-4 end -->
+  <!-- .col-4 start -->
+  <div class="col-4">
+    <div class="pink">
+      .col-4
+    </div>
+  </div>
+  <!-- .col-4 end -->
+  <!-- .col-4 start -->
+  <div class="col-4">
+    <div class="pink">
+      .col-4
+    </div>
+  </div>
+  <!-- .col-4 end -->
+</div>
+<!-- Row End -->
+```
+
+##### Parent - Child .col-* Gutters
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-5</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 5px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-10</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 10px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-15</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 15px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-20</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 20px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-25</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 25px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-30</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 30px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-35</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 35px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-col-40</td>
+      <td>any</td>
+      <td>When used on parent eg: .row element, it will create gutter of 40px between .col-* child elements.</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Element Gutters
+
+Using .gutter-*property-*value gutter modifiers we can add gutter to an element.
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-*value</td>
+      <td>any</td>
+      <td>Adds gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-h-*value</td>
+      <td>any</td>
+      <td>Adds horizontal gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-v-*value</td>
+      <td>any</td>
+      <td>Adds vertical gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-top-*value</td>
+      <td>any</td>
+      <td>Adds top gutter to element. Replace *value with a value from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-right-*value</td>
+      <td>any</td>
+      <td>Adds right gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-bottom-*value</td>
+      <td>any</td>
+      <td>Adds bottom gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+     <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.gutter-left-*value</td>
+      <td>any</td>
+      <td>Adds left gutter to element. Replace *value with a number from 5 increased by 5 up to 40</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Negative Gutter Modifiers
+
+With negative gutter modifiers you can remove gutter (padding) from an element.
+
+<table class="bordered border-red">
+
+  <thead class="text-13 fill-red text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter</td>
+      <td>any</td>
+      <td>Removes gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-h</td>
+      <td>any</td>
+      <td>Removes horizontal gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-v</td>
+      <td>any</td>
+      <td>Removes vertical gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-top</td>
+      <td>any</td>
+      <td>Removes top gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-right</td>
+      <td>any</td>
+      <td>Removes right gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-bottom</td>
+      <td>any</td>
+      <td>Removes bottom gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Padding</td>
+      <td class="text-red">.-gutter-left</td>
+      <td>any</td>
+      <td>Removes left gutter from element.</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+### Media Grid
+
+Media grid is great for displaying content in a grid with larger thumbnails. Depending on your needs, 
+media grid in modulr.css can be used with <li> or <div> elements. Media grid supports 2 column 
+grid up to 6 columns. You can create a grid by adding .grid .grid-*count to any parent element that contains
+<li> or <div> child elements. See example below.
+
+> You can also specify the media grid gutter, default media grid gutter is 2%, you can set the grid 
+> gutter to 1% by adding .gutter-1 class to your .grid element.
+
+##### html
+----------
+
+```
+<!-- Grid Start -->
+<div class="grid grid-3">
+  <!-- One Grid Item Start -->
+  <div>
+    <!-- Thumbnail Start -->
+    <a href="#" class="thumbnail"><img src="media/1.jpg"></a>
+    <!-- Thumbnail End -->
+    <!-- Title Start -->
+    <div class="title padding -padding-bottom">
+      <a href="#" class="text700">Post Title...</a>
+      <p class="text-small -margin-top">Posted: 2 Hours ago</p>
+    </div>
+    <!-- Title End -->
+    <!-- Meta Start -->
+    <div class="meta padding -padding-top">
+      <div class="col-2 col-persist">
+        <a href="#" class="thumbnail fluid"><img src="media/thumbnail.jpeg"></a>
+      </div>
+      <div class="col-10 col-persist padding-left">
+        <a href="#">Alan Muselitch</a>
+        <p class="text-small -margin">Location: Utrecht</p>
+      </div>
+    </div>
+  <!-- Meta Start -->
+  </div>
+<!-- One Grid Item Start -->
+</div>
+<!-- Grid End -->
+```
+
+### Tutorial
+
+In this tutorial we're going to create nested comments using .col-* column based grid system. 
+We will also use some of the core modifiers like: text, margin, padding, display and .round (circle) 
+shape modifier. You can find all of these modifiers in Modifier section. 
+Let's first see the example of what we're going to create.
+
+For a comment wrapper we have used .row in which we have placed two columns, a .col-1 column 
+for our thumbnail and a .col-11 column for our comments meta and comments content. See example code below.
+
+##### html
+----------
+
+```
+<!-- A comment  Start -->
+<div class="row gutter-top-20">
+  <!-- Thumbnail Start  -->
+  <div class="col-1 col-persist">
+    <a href="#" class="pull-left round border solid border-1 gray overflow-hidden">
+      <img class="pull-left full-width" src="media/nouser.png">
+    </a>
+  </div>
+  <!-- Thumbnail End -->
+  <!-- Comment Section Start -->
+  <div class="col-11 col-persist gutter-left-10">
+    <p class="-margin">
+      <a class="text-strong pull-left" href="#">Alan Muselitch</a>
+      <span class="text-gray text-small pull-left margin-left">2 hours ago</span>
+    </p>
+    <p class="text-15 text-black gutter-bottom-5">
+      Comment text ....
+    </p>
+    <ul class="inline">
+      <li><span class="text-strong">125 </span><a href="#">Like>/a>>/li>
+      <li><span class="text-strong">2</span><a href="#">Dislike>/a>>/li>
+      <li><a class="text-strong" href="#">Reply</a>>/li>
+    </ul>
+  </div>
+  <!-- Comment Section End -->
+</div>
+<!-- A Comment End -->
+```
+
+Now, if we want to create nested comments all we have to do is create nested columns. 
+For example we can create another .row wrapper and then in that wrapper we can place two of the same 
+columns we've used for our comment section .col-1 which we'll use as a offset column so that we can 
+pull our nested comment to the right and .col-11 in which we'll place our comment row's. 
+See example Below.
+
+##### html
+----------
+
+```
+<div class="row">
+
+  <div class="col-1">
+    This creates offset of one column
+  </div>
+  
+  <div class="col-11">
+    We can place our comment row's here
+  </div>
+  
+</div>
+```

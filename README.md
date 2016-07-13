@@ -1,8 +1,10 @@
 
-### Modulr.css is fast and easy modular approach to building powerful web and mobile interfaces.
-You can find v1 docs and examples at: [Modulr.css](https://decorator.io/modulr/) 
+### Modulr.css : A fast and modular approach to building powerful web and mobile interfaces.
+You can find v1 docs at: [Modulr.css](https://decorator.io/modulr/) 
 ---
-### Modulr.css soon here :) 
+
+You can find some examples at: [Modulr.css Examples](https://decorator.io/modulr/templates) 
+---
 
 I've included minified css version for those who'd like to test modulr.css before official release.</br>
 Download or copy raw file of modulr.min.css, place it into your project folder and then
@@ -31,4 +33,4 @@ Work in progress:
  * html/css precompiler
 2. Modules Listing Website Section
 3. Angular.js Support
-4. Web And App Examples
+4. Web And App Examples  

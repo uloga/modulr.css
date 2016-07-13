@@ -1,0 +1,257 @@
+### Download / CDN
+We have put together some guides to help you get started with modulr.css 
+The fastest way to start is to download  the CSS version or to include cdn link from example below.
+
+```
+Just add the following <link> element into your page's <head> before your project's stylesheets. 
+<link rel="stylesheet" href="https://decorator.io/tools/modulr.min.css">
+```
+
+### Github Repo
+Clone the repo using git
+
+```
+$ git clone https://github.com/uloga/modulr yourproject
+```
+
+### Install with Bower
+It's also possible to manually install modulr.css into your project through Bower.
+
+```
+$ bower install modulr
+```
+
+### Install with npm
+
+```
+$ npm install modulrcss
+```
+
+### Responsive Website
+The viewport meta element lets you control the the width and scale of the viewport on mobile browsers. 
+Since you're building a responsive website, you want the width to be equal to the device's native width. 
+Add the meta link you see below into your page's <head>.
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+You can make your website or element responsive by adding .fluid class to any element you want to be 
+responsive when viewed on a mobile device. You can make your whole website responsive by adding .fluid 
+class to your <body> tag e.g: <body class="fluid"> However, if you're creating your own non core related
+modules make sure to add .fluid class to any element you want to be responsive, also don't forget 
+to @import responsive.css core module into your main.css project file.
+
+### Starter Template
+
+##### html
+----------
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modulr.css Starter Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons library -->
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- 
+    modulr.css : in this file we @import our modules  
+    in case you want to use a minified cnd version just replace
+    this main.css file with it.
+    -->
+    <link href="css/modulr.css" rel="stylesheet">
+    <!-- 
+    theme.css is used for all the extra edits
+    -->
+    <link href="css/theme.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- Content Start -->
+
+  <!-- Content End -->
+  </body>
+</html>
+```
+
+##### css: modulr.css
+---------------------
+
+```
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
+@import url("modulr/core/reset.css");
+/* -- 
+Import Other Modules Here.
+Make sure that this comment is removed since there are no comments allowed 
+before any @import. See the file structure for more info about core modules  
+-- */
+@import url("modulr/core/color.css");
+@import url("modulr/core/modifier.css");
+@import url("modulr/core/responsive.css");
+```
+
+##### css: theme.css
+--------------------
+
+```
+/*
+ this file is for your own extra edits eg: themes.
+*/
+.body{
+  background: #f6f6f6;
+}
+```
+
+### Modules
+Modulr.css is broken down into modules for easier maintenance, debugging and usability. 
+With Modulr.css you can use core modules separately without including the whole ui kit. 
+You can also create your own or use community created modules without effecting (breaking) 
+the core modules. That way you have a lighter, cleaner and better maintainable stylesheet in your project.
+
+##### Here below you can see Modulr.css file structure.
+
+```
+Click the plus + icon next to the folder you want to expand. 
+Click the minus - icon next to the folder you want to collapse.
+```
+
+### Extending modulr.css with modules
+You can extend modulr.css with your own or third party modules. If you decide to create your own module 
+here are few tips and best practices when creating modules for modulr.css.
+
+*Make sure not to repeat what's already in the core modules.
+*Your module should be a folder and never one single file
+*Naming convention is important! If you're creating a tooltip module, your folder name should be tooltip.
+*Your module folder should always contain two files main.css and modifier.css
+*You should put all of the main styles into main.css fileYou should put all modifiers into modifier.css file
+
+##### Main Module: main.css
+
+Main module (main.css) cloud but don't have to be dependent on one or more core or third party modules. 
+Main module is the main style for your module, once it's created, it should never be modified. 
+Therefor we have a modifier.css included in our module folder.
+
+##### Modifier: modifier.css
+
+Modifier (modifier.css) extends or changes the behavior of your main module. 
+There should always be a modifier.css file included in the module folder, even if it's empty, 
+for reasons that anyone who would want to extend the module in the future, can do so without 
+messing with and possibly breaking the main style of the module.
+
+##### Here below you can see a module file structure
+
+### Let's create a simple tooltip module
+First, let's create our files. We'll keep in mind that the naming convention is important, therefor we will name 
+our module folder tooltip. We will create two files: main.css for our main style and modifier.css which we'll 
+use to extend/modify our module, we will place both of those files into our tooltip module folder. 
+See the file structure below.
+
+##### Now that we've created our files, let's first see an example of what we're about to create
+
+##### html
+----------
+
+```
+<a href="#" class="btn purple hover-tooltip">
+  <span class="tooltip top">Tooltip Top</span>
+  Hover Over Me
+</a>
+```
+Let's see how our main module main.css file looks like.
+
+##### css: main.css
+-------------------
+
+```
+/*
+  Modulr.css Module
+  ---------------------
+  @desc: Tooltip 
+  @author: Alan Muselitch 
+  @copyright: Alan Muselitch
+  @git: https://github.com/uloga/tooltip
+\--------------------------------------------*/
+
+.tooltip{
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 1px 1px rgba(0,0,0,.16);
+  z-index: 10000;
+}
+
+/* __ tooltip position: top __ */
+
+.tooltip.top{
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(-12px);
+}
+
+/* __ tooltip arrow __ */
+
+.tooltip:before{
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+}
+
+/* __ tooltip arrow position __ */
+
+.tooltip.top:before{
+  top: 100%;
+  left: 50%;
+  border-color: #000000 transparent transparent transparent;
+  margin-left: -6px;
+}
+
+/* __ tooltip trigger __*/
+
+.hover-tooltip{
+  position: relative;
+}
+.hover-tooltip:hover > .tooltip{
+  display: block;
+  visibility: visible;
+}
+.tooltip:hover{
+  display: none !important;
+  visibility: hidden !important;
+}
+```
+Let's see how our modified tooltip modifier.css file looks like.
+
+css: modifier.css
+---
+
+```
+/* __ tooltip size: .l for large __ */
+
+.tooltip.l{
+  padding: 7px 14px;
+  font-size: 16px;
+}
+
+/* __ tooltip color: green __ */
+
+.tooltip.green{
+  background: #009688;
+}
+.tooltip.green:before{
+  border-color: #009688 transparent transparent transparent;
+}
+```
+
+Now that we've finished our simple tooltip, I hope that you can see the benefit of separating the main.css 
+and modifier.css styles when creating modules in modulr.css, which is that we as the others who chose to 
+extend the module can extend/modify it without breaking the main.css code of the module.

@@ -1,0 +1,392 @@
+### Button
+
+You can create a button by adding the .btn class to any element. Once you create a button you can style it 
+using a modular modifier approach. See examples below.
+
+##### html
+----------
+
+```
+<a href="#" class="btn">Default Link</a>
+<button class="btn">Default Button</button>
+<div class="btn">Default Div</div>
+```
+
+##### Let's style a button using modulr approach
+
+##### html
+----------
+
+```
+<a href="#" class="btn">Default</a>
+<a href="#" class="btn purple">Purple Button</a>
+<a href="#" class="btn border purple">Bordered Button</a>
+<a href="#" class="btn border border-2 purple rounded">Bordered 2 - Rounded</a>
+<a href="#" class="btn purple round">Purple Round</a>
+<a href="#" class="btn purple round"><i class="fa fa-twitter"></i> Icon Round</a>
+```
+
+As you can see in example above, we use .rounded modifier class to add some rounded corners to our button. 
+Default border-radius set in .rounded modifier is 3px, you can use .rounded-*size modifier to change 
+the border-radius of rounded modifier. *size can be from 2 up to 20.
+
+You can see in example above that we also have a icon in our button, if you want to create some space 
+between icon en text, just add these classes to your .fa element. .prepend for when your icon is on 
+the left side and .append for when your icon is on the right side. See a example below.
+
+##### html
+----------
+
+```
+<a href="#" class="btn green"><i class="fa fa-github fa-lg prepend"></i>Github</a>
+<a href="#" class="btn blue">Google<i class="fa fa-google fa-lg append"></i></a>
+```
+
+> Since we're using Font Awesome icon library, you can change icons sizes by adding font awesome 
+> icon size classes to .fa icon elements. For more info visit Font Awesome
+
+##### Gradient & Glossy Button Modifiers
+
+##### html
+----------
+
+```
+<a href="#" class="btn blue gradient"><i class="fa fa-twitter"></i> Gradient Button </a>
+<a href="#" class="btn pink glossy"><i class="fa fa-dribbble"></i> Glossy Button </a>
+```
+
+##### Let's see how we can change border width on .btn elements using .border-*width, 
+##### *width can be from 2 up to 6. Default border-width is 1px;
+
+##### html
+----------
+
+```
+<button class="btn fill-red text-white hover-fill-green">
+  Custom Button
+</button>
+<button class="btn border border-3 red hover-fill-green">
+  Custom Button
+</button>
+<button 
+  class="btn border border-3 purple text700 
+  hover-fill-transparent hover-text-green hover-border-green">
+  Custom Button
+</button>
+<button 
+  class="btn l border border-3 pink margin-left 
+  rounded-10 -rounded-top-left -rounded-bottom-right text700">
+  Custom Button
+</button>
+```
+
+##### Button Sizes
+
+You can change the size of a button by adding one of the size classes to your .btn element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large and .xxl for extra extra large. 
+See example below.
+
+##### html
+----------
+
+```
+<a href="#" class="btn s success">Small</a>
+<a href="#" class="btn info">Medium</a>
+<a href="#" class="btn l warning">Large</a>
+<a href="#" class="btn xl danger">Extra Large</a>
+<a href="#" class="btn xxl purple">Extra Extra Large</a>
+```
+
+##### Full Width Button: just add .width-100 class to any .btn element.
+
+If you want your buttons to display a full width button when viewed on a mobile device, just add 
+.mobile-full-width class modifier to your .btn element.
+
+##### html
+----------
+
+```
+<a href="#" class="btn l green width-100">Large Full Width Button</a>
+```
+
+### Icon Button
+
+You can create icon buttons by adding an extra .icon class to your .btn element. See example below.
+
+##### html
+----------
+
+```
+<!-- Square Button  -->
+<a href="#" class="btn icon blue"><i class="fa fa-twitter"></i></a>
+<!-- Rounded Button  -->
+<a href="#" class="btn icon blue rounded"><i class="fa fa-twitter"></i></a>
+<!-- Rounded Gradient Button  -->
+<a href="#" class="btn icon blue rounded gradient"><i class="fa fa-twitter"></i></a>
+<!-- Rounded Glossy Button  -->
+<a href="#" class="btn icon blue rounded glossy"><i class="fa fa-twitter"></i></a>
+<!-- Round - Circle Button  -->
+<a href="#" class="btn icon blue round"><i class="fa fa-twitter"></i></a>
+<!-- Round - Border - Circle Button  -->
+<a href="#" class="btn icon border blue round"><i class="fa fa-twitter"></i></a>
+```
+
+> You can also add .border-*width modifiers to your icon buttons as seen in button examples above.
+
+##### Icon Button Sizes
+
+You can change the size of an icon button by adding one of the size classes to your .btn .icon element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large and .xxl 
+for extra extra large. See example below.
+
+##### html
+----------
+
+```
+<!-- Small Start -->
+<a href="#" class="btn icon s success"><i class="fa fa-google"></i></a>
+<!-- Small End -->
+<!-- Medium Start -->
+<a href="#" class="btn icon info"><i class="fa fa-google"></i></a>
+<!-- Medium End -->
+<!-- Large Start -->
+<a href="#" class="btn icon l warning"><i class="fa fa-google"></i></a>
+<!-- Large End -->
+<!-- Extra Large Start -->
+<a href="#" class="btn icon xl danger"><i class="fa fa-google"></i></a>
+<!-- Extra Large End -->
+<!-- Extra Extra Large Start -->
+<a href="#" class="btn icon xxl purple"><i class="fa fa-google"></i></a>
+<!-- Extra Extra Large End -->
+
+<!-- Small Round Start -->
+<a href="#" class="btn icon s round success"><i class="fa fa-google"></i></a>
+<!-- Small Round End -->
+<!-- Medium Round Start -->
+<a href="#" class="btn icon round info"><i class="fa fa-google"></i></a>
+<!-- Medium Round End -->
+<!-- Large Round Start -->
+<a href="#" class="btn icon l round warning"><i class="fa fa-google"></i></a>
+<!-- Large Round End -->
+<!-- Extra Large Round Start -->
+<a href="#" class="btn icon xl round danger"><i class="fa fa-google"></i></a>
+<!-- Extra Large Round End -->
+<!-- Extra Extra Large Round Start -->
+<a href="#" class="btn icon xxl round purple"><i class="fa fa-google"></i></a>
+<!-- Extra Extra Large Round End -->
+```
+
+### Button Group
+
+You can create a button group by wrapping your buttons inside a .buttons wrapper. See example below.
+
+##### html
+----------
+
+```
+<!-- Group Buttons Start -->
+<div class="buttons">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Group Buttons End -->
+<!-- Group Buttons Active Start -->
+<div class="buttons">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue active">Center Active</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Group Buttons Active End -->
+<!-- Group Buttons Round - Glossy - Active Start -->
+<div class="buttons round overflow-hidden">
+  <a href="#" class="btn glossy blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn glossy blue">Right</a>
+</div>
+<!-- Group Buttons Round - Glossy - Active Start-->
+```
+
+##### Custom Button Group
+
+You can create a custom button group by wrapping your buttons inside a .button-group wrapper and 
+then you can use button and color modifiers to style your button-group. See example below.
+
+##### html
+----------
+
+```
+<!-- Remove border class makes it active + add hover-fill-disable to disable on:hover -->
+<button class="btn border-2 blue hover-fill-disable">Left Active Button</button>
+
+<!-- 
+  add -border-v to center button, this will remove vertical (left & right)  borders 
+  since left and right buttons already have active borders   
+-->
+<button class="btn border border-2 blue -border-v">Center Button</button>
+
+<button class="btn border border-2 blue">Right Button</button>
+```
+
+##### Button Group Sizes
+
+You can change the size of button groups by adding one of the size classes to your .buttons wrapper. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large and .xxl for extra extra large. 
+See example below.
+
+##### html
+----------
+
+```
+<!-- Small .s buttons start -->
+<div class="buttons s">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Small .s buttons end -->
+<!-- Medium .m or no extra size class: default buttons start -->
+<div class="buttons m">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Medium .m or no extra size class: default buttons End -->
+<!-- Large .l buttons start  -->
+<div class="buttons l">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Large .l buttons end  -->
+<!-- Extra Large .xl buttons start  -->
+<div class="buttons xl">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Extra Large .xl buttons end  -->
+<!-- Extra Extra Large .xxl buttons start  -->
+<div class="buttons xxl">
+  <a href="#" class="btn blue">Left</a>
+  <a href="#" class="btn blue">Center</a>
+  <a href="#" class="btn blue">Right</a>
+</div>
+<!-- Extra Extra Large .xxl buttons end  -->
+```
+
+### Button Addons
+
+You can create button addons by wrapping your .btn element in a .btn-addon wrapper. 
+Addons contain an extra .addon element. See example below.
+
+##### html
+----------
+
+```
+<!-- Example Twitter Start -->
+<div class="btn-addon">
+  <a href="#" class="btn m info"><i class="fa fa-twitter fa-lg prepend"></i> Follow</a>
+  <a href="#" class="addon m info border">256</a>
+</div>
+<!-- Example Twitter End -->
+
+<!-- Example Youtube Start -->
+<div class="btn-addon">
+  <a href="#" class="btn m red"><i class="fa fa-youtube-play fa-lg prepend"></i> Subscribe</a>
+  <a href="#" class="addon m red border">3256</a>
+</div>
+<!-- Example Youtube End -->
+
+<!-- Example Github Start -->
+<div class="btn-addon">
+  <a href="#" class="addon m brown border">128</a>
+  <a href="#" class="btn m brown">Fork<i class="fa fa-github fa-lg append"></i></a>
+</div>
+<!-- Example Github End -->
+```
+
+##### Button Addons Border Size
+
+When changing the .border-*width on your button addons, make sure that .addon as well as the .btn 
+have the same .border-*width. See example below.
+
+##### html
+----------
+
+```
+<!-- Example Google Start -->
+<div class="btn-addon">
+  <a href="#" class="addon m blue border border-2 text700">128</a>
+  <a href="#" class="btn m blue border-2 text700 padding-left-5">Plus One
+    <i class="fa fa-google-plus fa-lg"></i>
+  </a>
+</div>
+<!-- Example Google End -->
+
+<!-- Example Download Start -->
+<div class="btn-addon">
+  <a href="#" class="addon m green border border-3 text700">256</a>
+  <a href="#" class="btn m green border-3 text700 padding-left-5">
+    Download
+    <i class="fa fa-download fa-lg"></i>
+  </a>
+</div>
+<!-- Example Download End -->
+
+<!-- Example  Start -->
+<div class="btn-addon">
+  <a href="#" class="addon m red border border-3 text700 round-left">256</a>
+  <a href="#" class="btn m red border-3 text700 round-right padding-left-5">
+    Download
+    <i class="fa fa-download fa-lg"></i>
+  </a>
+</div>
+<!-- Example Download End -->
+```
+
+##### Button Addons Sizes
+
+You can change the size of a button addon by adding one of the size classes to your .btn-addon element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large and .xxl 
+for extra extra large. See example below.
+
+##### html
+----------
+
+```
+<!-- Small Start -->
+<div class="btn-addon s">
+  <a href="#" class="btn m blue"> <i class="fa fa-google-plus"></i> Plus One</a>
+  <span href="#" class="addon m blue border">128</span>
+</div>
+<!-- Small End -->
+
+<!-- Medium Start -->
+<div class="btn-addon">
+  <a href="#" class="btn m blue"> <i class="fa fa-google-plus"></i> Plus One</a>
+  <span href="#" class="addon m blue border">128</span>
+</div>
+<!-- Medium End -->
+
+<!-- Large Start -->
+<div class="btn-addon l">
+  <a href="#" class="btn m blue"> <i class="fa fa-google-plus"></i> Plus One</a>
+  <span href="#" class="addon m blue border">128</span>
+</div>
+<!-- Large End -->
+
+<!-- Extra Large Start -->
+<div class="btn-addon xl">
+  <a href="#" class="btn m blue"> <i class="fa fa-google-plus"></i> Plus One</a>
+  <span href="#" class="addon m blue border">128</span>
+</div>
+<!-- Extra Large End -->
+
+<!-- Extra Large Start -->
+<div class="btn-addon xxl">
+  <a href="#" class="btn m blue"> <i class="fa fa-google-plus"></i> Plus One</a>
+  <span href="#" class="addon m blue border">128</span>
+</div>
+<!-- Extra Extra Large End -->
+```

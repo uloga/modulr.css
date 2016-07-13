@@ -1,0 +1,154 @@
+### List
+
+##### Ordered List
+
+The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical. Use the <li> tag to define list items.
+
+##### html
+----------
+
+```
+<!-- Ordered Start -->
+<ol>
+  <li>Australia</li>
+  <li>Austria</li>
+  <li>The Netherlands</li>
+  <li>United States Of America</li>
+  <li>Germany</li>
+  <li>France</li>
+</ol>
+<!-- Ordered End -->
+
+<!-- Inline Ordered Start -->
+<ol class="inline">
+  <li>Australia</li>
+  <li>Austria</li>
+  <li>The Netherlands</li>
+  <li>United States Of America</li>
+  <li>Germany</li>
+  <li>France</li>
+</ol>
+<!-- Inline Ordered End -->
+
+<!-- Ordered - Nested Start -->
+<ol class="pull-left">
+  <li>Australia</li>
+  <li>Austria<</li>
+  <li>The Netherlands</li>
+  <li>Germany</li>
+  <li>France</li>
+  <li>United States Of America
+    <ol>
+      <li>New York</li>
+      <li>California</li>
+      <li>Texas</li>
+      <li>Florida</li>
+    </ol>
+  </li>
+  <li>India</li>
+  <li>South Africa</li>
+  <li>Nigeria</li>
+</ol>
+<!-- Ordered - Nested End -->
+```
+
+##### Unordered List
+
+The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists. 
+See examples below;
+
+##### html
+----------
+
+```
+<!-- Unordered - Nested Start -->
+<ul class="pull-left">
+  <li>Australia</li>
+  <li>Austria</li>
+  <li>The Netherlands</li>
+  <li>Germany</li>
+  <li>France</li>
+  <li>United States Of America
+    <ul class="margin-left">
+      <li>New York</li>
+      <li>California</li>
+      <li>Texas</li>
+      <li>Florida</li>
+    </ul>
+  </li>
+  <li>India</li>
+  <li>South Africa</li>
+  <li>Nigeria</li>
+  <li>Ghana</li>
+  <li>Egypt</li>
+</ul>
+<!-- Unordered - Nested End -->
+
+<!-- Unordered - Nested - Disc & Circle Start -->
+<ul class="disc pull-left">
+  <li>Australia</li>
+  <li>Austria</li>
+  <li>The Netherlands</li>
+  <li>Germany</li>
+  <li>France</li>
+  <li>United States Of America
+    <ul class="circle">
+      <li>New York</li>
+      <li>California</li>
+      <li>Texas</li>
+      <li>Florida</li>
+    </ul>
+  </li>
+  <li>India</li>
+  <li>South Africa</li>
+  <li>Nigeria</li>
+  <li>Ghana</li>
+  <li>Egypt</li>
+</ul>
+<!-- Unordered - Nested - Disc & Circle End -->
+
+<!-- Unordered - Inline Start -->
+<ul class="inline">
+  <li><i class="fa fa-facebook"></i> Facebook</li>
+  <li><i class="fa fa-twitter"></i> Twitter</li>
+  <li><i class="fa fa-github"></i> Github</li>
+  <li><i class="fa fa-dribbble"></i> Dribbble</li>
+</ul>
+<!-- Unordered - Inline End -->
+```
+
+### Tutorial: List
+
+This tutorial will be a learn by example tutorial to show how easy it is to create a list group using modulr.css 
+modules and modifiers. Since .gutter-*value uses padding property, we will use .gutter-20 to add padding of 20px 
+to our <li> elements. See example below.
+
+##### html
+----------
+
+```
+<ul class="full-width pull-left">
+  <li class="gutter-20 text-white fill-blue rounded-10 -rounded-bottom">
+    <h3 class="text-title text-strong margin-bottom">This is a Heading</h3>
+    <p>
+      Acute hunger or starvation are often highlighted on TV screens: 
+      hungry mothers too weak to breastfeed their children in drought-hit Ethiopia.
+    </p>
+  </li>
+  <li class="gutter-20 border border-1 solid silver">
+    <h3 class="text-title text-strong margin-bottom">This is a Heading</h3>
+    <p>
+      Acute hunger or starvation are often highlighted on TV screens: 
+      hungry mothers too weak to breastfeed their children in drought-hit Ethiopia.
+    </p>
+  </li>
+  <li class="gutter-20 border border-1 solid silver rounded-10 -rounded-top -border-top">
+    <h3 class="text-title text-strong margin-bottom">This is a Heading</h3>
+    <p>
+      Acute hunger or starvation are often highlighted on TV screens: 
+      hungry mothers too weak to breastfeed their children in drought-hit Ethiopia.
+    </p>
+  </li>
+</ul>
+```
+

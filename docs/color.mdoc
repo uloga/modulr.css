@@ -1,0 +1,616 @@
+### Color Palette
+Below you can find modulr.css color palette colors located in modulr/core/color.css file.
+
+> When .colorname class is used on an element it will apply the .colorname value to the background-color property. 
+> But, when for example .border class eg : .border .colorname is added to that same element, it will apply that 
+> value as border-color instead.
+
+##### Default Colors
+
+<ul class="grid grid-4">
+      <!-- Row Start -->
+      <li class="success">
+        <span class="color-name">.success</span>
+        <span class="color-hash">#2AA583</span>
+      </li>
+      <li class="info">
+        <span class="color-name">.info</span>
+        <span class="color-hash">#15a3ff</span>
+      </li>
+      <li class="warning">
+        <span class="color-name">.warning</span>
+        <span class="color-hash">#F3AB44</span>
+      </li>
+      <li class="danger">
+        <span class="color-name">.danger</span>
+        <span class="color-hash">#EA4335</span>
+      </li>
+      <!-- Row End -->
+</ul>
+
+##### Color Scheme
+
+<ul class="grid grid-4">
+  <!-- Row Start -->
+  <li class="red">
+    <span class="color-name">.red</span>
+    <span class="color-hash">#F44336</span>
+  </li>
+  <li class="pink">
+    <span class="color-name">.pink</span>
+    <span class="color-hash">#E91E63</span>
+  </li>
+  <li class="purple">
+    <span class="color-name">.purple</span>
+    <span class="color-hash">#673AB7</span>
+  </li>
+  <li class="indigo">
+    <span class="color-name">.indigo</span>
+    <span class="color-hash">#3F51B5</span>
+  </li>
+  <!-- Row End -->
+  
+  <!-- Row Start -->
+  <li class="blue">
+    <span class="color-name">.blue</span>
+    <span class="color-hash">#2196F3</span>
+  </li>
+  <li class="light-blue">
+    <span class="color-name">.light-blue</span>
+    <span class="color-hash">#03A9F4</span>
+  </li>
+  <li class="cyan">
+    <span class="color-name">.cyan</span>
+    <span class="color-hash">#00BCD4</span>
+  </li>
+  <li class="teal">
+    <span class="color-name">.teal</span>
+    <span class="color-hash">#009688</span>
+  </li>
+  <!-- Row End -->
+  
+  <!-- Row Start -->
+  <li class="green">
+    <span class="color-name">.green</span>
+    <span class="color-hash">#4CAF50</span>
+  </li>
+  <li class="light-green">
+    <span class="color-name">.light-green</span>
+    <span class="color-hash">#8BC34A</span>
+  </li>
+  <li class="yellow">
+    <span class="color-name">.yellow</span>
+    <span class="color-hash">#FFC107</span>
+  </li>
+  <li class="light-yellow">
+    <span class="color-name">.light-yellow</span>
+    <span class="color-hash">#FFEB3B</span>
+  </li>
+  <!-- Row End -->
+  
+  <!-- Row Start -->
+  <li class="orange">
+    <span class="color-name">.orange</span>
+    <span class="color-hash">#FF9800</span>
+  </li>
+  <li class="orange-red">
+    <span class="color-name">.orange-red</span>
+    <span class="color-hash">#FF5722</span>
+  </li>
+  <li class="black">
+    <span class="color-name">.black</span>
+    <span class="color-hash">#000000</span>
+  </li>
+  <li class="brown">
+    <span class="color-name">.brown</span>
+    <span class="color-hash">#795548</span>
+  </li>
+  <!-- Row End -->
+  
+  <!-- Row Start -->
+  <li class="gray">
+    <span class="color-name">.gray</span>
+    <span class="color-hash">#9E9E9E</span>
+  </li>
+  <li class="silver">
+    <span class="color-name">.silver</span>
+    <span class="color-hash">#CCCCCC</span>
+  </li>
+  <li class="white">
+    <span class="color-name">.white</span>
+    <span class="color-hash">#FFFFFF</span>
+  </li>
+  <li class="transparent">
+    <span class="color-name">.transparent</span>
+    <span class="color-hash">transparent</span>
+  </li>
+  <!-- Row End -->
+</ul>
+
+### Fill Colors
+Fill colors are the same as the color palette classes, the difference is the naming convention, 
+instead of naming/calling your class .colorname you name/call it .fill-*colorname 
+Another difference between color palette classes and fill classes is that fill colors act on some 
+of the behavior properties like for extample .hover-fill-*colorname which will on element:hover 
+apply fill-color value to the background-color property. or .focus-fill-*colorname which is used 
+for input elements and will on input:focus apply fill-color value to the background-color property. 
+See examples below.
+
+##### html
+----------
+
+```
+<!-- Hover Fill Example Start -->
+  <div class="fill-blue hover-fill-green">
+    HOVER OVER ME
+  </div>
+<!-- Hover Fill Example End -->
+
+<!-- Input Focus Example Start -->
+  <input type="text" class="focus-fill-blue focus-text-white" />
+<!-- Input Focus Example End -->
+```
+
+##### Additional Fill Classes
+In addition to .colorname classes fill colors have two extra classes. .fill-darker which will make any 
+.colorname or .fill-*colorname slightly darker and .fill-lighter which will make any .colorname or 
+.fill-*colorname slightly lighter. Just like any other fill color, these two have their own hover behaviors 
+.hover-fill-darker and .hover-fill-lighter. See examples below.
+
+##### html
+----------
+
+```
+<div class="fill-red">
+  .fill-red
+</div>
+<div class="fill-red fill-lighter">
+  .fill-red .fill-lighter
+</div>
+<div class="fill-red fill-darker">
+  .fill-red .fill-darker
+</div>
+<div class="fill-red">
+  .fill-red
+</div>
+<div class="fill-red hover-fill-lighter">
+  .fill-red .hover-fill-lighter
+</div>
+<div class="fill-red hover-fill-darker">
+  .fill-red .hover-fill-darker
+</div>
+```
+
+### Text Colors
+The color property is used to set the color of the text. We can use color palette defined colors to 
+change the color of any text usng .text-*colorname modifier. In example below we will use .text-teal 
+to highlight words like "hunger" and "hungry" we will also use 
+
+##### html
+----------
+
+```
+<!-- This is just a paragraph from text example above -->
+<p>
+  Acute <span class="text-teal hover-text-red text-strong">hunger</span> 
+  or starvation is often highlighted on TV screens: 
+  <span class="text-teal hover-text-red text-strong">hungry</span> 
+  mothers too weak to nurse their children in drought-hit Ethiopia, 
+  refugees in war-torn Syria queueing for food rations, helicopters 
+  airlifting high energy biscuits to earthquake victims in Haiti or Pakistan.
+</p>
+```
+
+> There is also a parent - child text-color modifier which is used mainly for applying text-color 
+> to #href elements inside a parent element that contains one or more #href children. This is great 
+> for if you have many #href elements in your content and you'd like to apply a color or a color 
+> behavior to all of them at once. Instead of adding that color modifier class individually to each 
+> #href element, you can add that color modifier class to #href parent element. 
+> e.g: .href-text-red to apply text-color and .hover-href-text-red to apply hover behavior.
+> .hover-text-red on same words to show how on-text hover behavior works. In example below, you 
+> can hover over highlighted words to see the result.
+
+##### html
+----------
+
+```
+<!-- Href element text color parent-child -->
+<div class="href-text-red">
+  <a href="#">This text will be red</a>
+</div>
+<!-- On hover href element text color parent-child -->
+<div class="hover-href-text-red">
+  <a href="#">On hover =  text red</a>
+</div>
+```
+
+##### Here below is a example on how to use .focus-text-*colorname class on input elements.
+
+##### html
+----------
+
+```
+<input typte="text" class="focus-text-red"/>
+```
+
+### Border Colors
+Borders in frontend development can be sometimes very useful. Take for example the filter list 
+here on this documentation located in the left sidebar where we use a border-right of 1px by 
+applying a .active class to our current link to specify which module you are currently viewing.
+
+Just like fill and text colors you can apply border colors to any element using .border-*colorname class. 
+eg: .border-red will result in border-color: #F44336; note: it will only effect border-color property, 
+it will not add border-width, border-style or any other border related properties. Those kind of 
+modifiers can be found in our modifier.css module.
+
+Border colors also have behaviors, eg:.hover-border-*colorname which can be used on any element and 
+.focus-border-*colorname, which is used on input elements. See examples below.
+
+##### html
+----------
+
+```
+<!-- Border Pink Start -->
+  <div class="border-pink">
+    .border-pink
+  </div>
+<!-- Border Pink End -->
+
+<!-- Hover Border Pink Start -->
+  <div class="border-purple hover-border-pink">
+    .border-purple .hover-border-pink
+  </div>
+<!-- Hover Border Pink End -->
+
+<!-- Input Border Blue Start -->
+  <div class="border-purple hover-border-blue">
+    .border-blue .focus-border-pink
+  </div>
+<!-- Input Border Blue End -->
+```
+
+### Api
+
+##### Behaviors
+
+<table class="bordered border-blue">
+  <thead class="text-13 fill-blue text-white">
+    <tr>
+      <th>Type</th>
+      <th>Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+    <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.hover-fill-*colorname</td>
+      <td>any</td>
+      <td>On element hover, apply background color</td>
+    </tr>
+    <!-- Tr End -->
+    <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.hover-text-*colorname</td>
+      <td>any</td>
+      <td>On element hover, apply text color</td>
+    </tr>
+    <!-- Tr End -->
+    <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.hover-border-*colorname</td>
+      <td>anyt</td>
+      <td>On element hover, apply border color</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Focus</td>
+      <td class="text-red">.focus-fill-*colorname</td>
+      <td>input</td>
+      <td>On element focus, apply background color</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Focus</td>
+      <td class="text-red">.focus-text-*colorname</td>
+      <td>input</td>
+      <td>On element focus, apply text color</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Focus</td>
+      <td class="text-red">.focus-border-*colorname</td>
+      <td>input</td>
+      <td>On element focus, apply border color.</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Parent - Child Modifier Classes
+
+<table class="bordered border-teal">
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Color</td>
+      <td class="text-red">.href-text-*colorname</td>
+      <td>any except href</td>
+      <td>When used on parent, all of the #href children elements will use this *colorname.</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.hover-href-text-*colorname</td>
+      <td>any except href</td>
+      <td>When used on parent, all of the #href:hover children elements will use this *colorname.</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Default Colors
+
+<table class="bordered">
+  <thead class="text500">
+    <tr class="custom-gray border-light gradient">
+      <th>Background Class</th>
+      <th>Fill Class</th>
+      <th>Text Class</th>
+      <th>Border Class</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+    <!-- Tr Start -->
+    <tr class="success border-light">
+      <td>.success</td>
+      <td>.fill-success</td>
+      <td>.text-success</td>
+      <td>.border-success</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="info border-light">
+      <td>.info</td>
+      <td>.fill-info</td>
+      <td>.text-fill-info</td>
+      <td>.border-info</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="warning border-light">
+      <td>.warning</td>
+      <td>.fill-warning</td>
+      <td>.text-warning</td>
+      <td>.border-warning</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="danger border-light">
+      <td>.danger</td>
+      <td>.fill-danger</td>
+      <td>.text-danger</td>
+      <td>.border-danger</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Color Palette
+
+<table class="bordered">
+  <thead>
+    <tr class="custom-gray gradient border-light">
+      <th>Background Class</th>
+      <th>Fill Class</th>
+      <th>Text Class</th>
+      <th>Border Class</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+    <!-- Tr Start -->
+    <tr class="red border-light">
+      <td>.red</td>
+      <td>.fill-red</td>
+      <td>.text-red</td>
+      <td>.border-red</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="pink border-light">
+      <td>.pink</td>
+      <td>.fill-pink</td>
+      <td>.text-fill-pink</td>
+      <td>.border-pink</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="purple border-light">
+      <td>.purple</td>
+      <td>.fill-purple</td>
+      <td>.text-purple</td>
+      <td>.border-purple</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="indigo border-light">
+      <td>.indigo</td>
+      <td>.fill-indigo</td>
+      <td>.text-indigo</td>
+      <td>.border-indigo</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="blue border-light">
+      <td>.blue</td>
+      <td>.fill-blue</td>
+      <td>.text-blue</td>
+      <td>.border-blue</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="light-blue border-light">
+      <td>.light-blue</td>
+      <td>.fill-light-blue</td>
+      <td>.text-fill-light-blue</td>
+      <td>.border-light-blue</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="cyan border-light">
+      <td>.cyan</td>
+      <td>.fill-cyan</td>
+      <td>.text-cyan</td>
+      <td>.border-cyan</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="teal border-light">
+      <td>.teal</td>
+      <td>.fill-teal</td>
+      <td>.text-teal</td>
+      <td>.border-teal</td>
+    </tr>
+    <!-- Tr End -->
+    
+    
+    <!-- Tr Start -->
+    <tr class="green border-light">
+      <td>.green</td>
+      <td>.fill-green</td>
+      <td>.text-green</td>
+      <td>.border-green</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="light-green border-light">
+      <td>.light-green</td>
+      <td>.fill-light-green</td>
+      <td>.text-light-green</td>
+      <td>.border-light-green</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="yellow border-light">
+      <td>.yellow</td>
+      <td>.fill-yellow</td>
+      <td>.text-yellow</td>
+      <td>.border-yellow</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="light-yellow border-light">
+      <td>.light-yellow</td>
+      <td>.fill-light-yellow</td>
+      <td>.text-light-yellow</td>
+      <td>.border-light-yellow</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="orange border-light">
+      <td>.orange</td>
+      <td>.fill-orange</td>
+      <td>.text-orange</td>
+      <td>.border-orange</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="orange-red border-light">
+      <td>.orange-red</td>
+      <td>.fill-orange-red</td>
+      <td>.text-orange-red</td>
+      <td>.border-orange-red</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="black border-light">
+      <td>.black</td>
+      <td>.fill-black</td>
+      <td>.text-black</td>
+      <td>.border-black</td>
+    </tr>
+    <!-- Tr End -->
+    
+     <!-- Tr Start -->
+    <tr class="brown border-light">
+      <td>.brown</td>
+      <td>.fill-brown</td>
+      <td>.text-brown</td>
+      <td>.border-brown</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr class="gray border-light">
+      <td>.gray</td>
+      <td>.fill-gray</td>
+      <td>.text-gray</td>
+      <td>.border-gray</td>
+    </tr>
+    <!-- Tr End -->
+    <!-- Tr Start -->
+    <tr class="silver border-light">
+      <td>.silver</td>
+      <td>.fill-silver</td>
+      <td>.text-silver</td>
+      <td>.border-silver</td>
+    </tr>
+    <!-- Tr End -->
+    <!-- Tr Start -->
+    <tr class="white">
+      <td>.white</td>
+      <td>.fill-white</td>
+      <td>.text-white</td>
+      <td>.border-white</td>
+    </tr>
+    <!-- Tr End -->
+    <!-- Tr Start -->
+    <tr class="transparent">
+      <td>.transparent</td>
+      <td>.fill-transparent</td>
+      <td>.text-transparent</td>
+      <td>.border-transparent</td>
+    </tr>
+    <!-- Tr End -->
+  </tbody>
+</table>

@@ -1,0 +1,178 @@
+### Table
+
+##### Default Table
+
+Adding .center class to your table element will center the text inside the table. 
+You can also use .text-center on any table element to center the text inside that element.
+
+##### html
+----------
+
+```
+<table class="center">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+##### Table Hover
+
+Add the .hover class to your table element to display a hover state on table rows.
+
+##### html
+----------
+
+```
+<table class="hover">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+##### Striped Table
+
+Create a zebra striped table by adding the .striped class to your table element.
+
+##### html
+----------
+
+```
+<table class="striped">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+##### Bordered Table
+
+Create a bordered table by adding the .bordered class to your table element.
+
+##### html
+----------
+
+```
+<table class="bordered">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+##### Bordered Table
+
+Create a responsive table by wrapping your table inside a <div> element with a .overflow-x-scroll class or, 
+if you want your table to act responsive only when viewed on a mobile device add the 
+.mobile-overflow-x-scroll instead. You must also add a .responsive class to your table element. 
+
+##### html
+----------
+
+```
+<!-- Responsive Div Wrapper Start -->
+<div class="overflow-x-scroll mobile-overflow-x-scroll">
+<table class="responsiv">
+  <thead>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+<!-- Responsive Div Wrapper End -->
+```
+
+### Custom Table
+
+Let's see in few code examples how you can create a custom table using core modules such as colors.css and modifier.css.
+
+By adding .border-*color class modifier to our bordered table we can change the border color of our table. 
+By adding .border-*width class modifier to our bordered table we can change the border width of our table. 
+*width can be from 2 up to 6;
+
+##### html
+----------
+
+```
+<table class="bordered border-blue border-2">...</table>
+```
+
+In example below we've added an extra class .text-strong to our <table> element to make table text thicker. 
+We've also added .fill-blue and .text-white to our <thead> element to add a blue background with white text.
+
+##### html
+----------
+
+```
+<table class="bordered border-blue border-2 text-strong">
+  <thead class="fill-blue text-white">
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+

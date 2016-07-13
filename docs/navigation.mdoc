@@ -1,0 +1,840 @@
+### Navbar
+
+The navbar component consists of the navbar itself and one or more navigations or drop-down menus. 
+The navbar component is located in navigation.css core module. You can create a navbar using .navbar class. 
+You can style your navbar using color.css module, you can also position your navbar using some of the navbar 
+position modifiers; .left-bar and .right-bar The navbar component is responsive on its own, it will act differently 
+depending on device viewport size. You can add a menu list to your navbar by creating a <ul> with a class of .menu 
+in order to position your menu inside the navbar you can use .pull-left to float or position the menu to the left or 
+.pull-right to float or position the menu to the right. 
+Here below you can find some of the examples on how to use / create different navbars.
+
+##### Default .navbar is a top navbar.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar">
+  <!-- Brand Start --> 
+    <a href="#" class="brand">Brand</a>
+  <!-- Brand End --> 
+  <!-- First Menu Start --> 
+    <ul class="menu pull-left">
+      <li class="divider"></li>
+      <li><a class="active" href="#">Left 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Left 2</a></li>
+      <li class="divider"></li>
+    </ul>
+  <!-- First Menu End --> 
+  <!-- Search Form Start --> 
+    <form class="form icon-right">
+      <input class="border-transparent" type="text" placeholder="Search anything..">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+ <!-- Search Form End --> 
+ <!-- Second Start --> 
+    <ul class="menu pull-right">
+      <li class="divider"></li>
+      <li><a class="active" href="#">Right 1</a></li>
+    </ul>
+  <!-- Second End --> 
+</div>
+<!-- Navbar End -->
+```
+
+##### Left-Bar .navbar .left-bar will create a left positioned navbar.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar left-bar">
+  <!-- Brand Start -->
+    <a href="#" class="brand">Brand</a>
+  <!-- Brand End -->
+  <!-- Search Form Start -->
+    <form class="form icon-right">
+      <input class="border-transparent" type="text" placeholder="Search anything..">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  <!-- Search Form End -->
+  <!-- Menu Start -->
+    <ul class="menu">
+      <li class="divider"></li>
+      <li><a class="active" href="#">Link 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Link 2</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  <!-- Menu End -->
+</div>
+<!-- Navbar End -->
+```
+
+##### Right-Bar .navbar .right-bar will create a right positioned navbar.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar right-bar">
+  <!-- Brand Start -->
+    <a href="#" class="brand">Brand</a>
+  <!-- Brand End -->
+  <!-- Search Form Start -->
+    <form class="form icon-right">
+      <input class="border-transparent" type="text" placeholder="Search anything..">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  <!-- Search Form End -->
+  <!-- Menu Start -->
+    <ul class="menu">
+      <li class="divider"></li>
+      <li><a class="active" href="#">Link 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Link 2</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  <!-- Menu End -->
+</div>
+<!-- Navbar End -->
+```
+
+##### Styled Navbar .navbar
+
+You can style your .navbar by choosing one of the color modifiers from color.css core module. 
+In example below we've used .purple color modifier. By adding an extra .purple class modifier 
+to the navbar element we have created #href hover and active states automatically.
+
+One thing you should keep in mind is, if you have a search form in your navbar, the same color modifier 
+that you've added to the navbar element should be added to the search form as well, that way the navbar 
+color will fit nicely with the search form element. 
+See example below.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar purple">
+  <!-- Brand Start --> 
+    <a href="#" class="brand">Brand</a>
+  <!-- Brand End --> 
+  <!-- First Menu Start --> 
+    <ul class="menu pull-left">
+      <li class="divider"></li>
+      <li><a class="active" href="#">Left 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Left 2</a></li>
+      <li class="divider"></li>
+    </ul>
+  <!-- First Menu End --> 
+  <!-- Search Form Start --> 
+    <form class="form icon-right purple">
+      <input class="border-transparent" type="text" placeholder="Search anything..">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+ <!-- Search Form End --> 
+ <!-- Second Start --> 
+    <ul class="menu pull-right">
+      <li class="divider"></li>
+      <li><a href="#">Right 1</a></li>
+    </ul>
+  <!-- Second End --> 
+</div>
+<!-- Navbar End -->
+```
+
+### Icon Bar
+
+You can create a icon-bar by adding an extra .icon-bar class to your .navbar. element. 
+When creating icon-bar that contains a icon only menu, you must add an extra .icon-menu class to your 
+.menu element. See example below.
+
+##### Default - Top Icon Bar .navbar .icon-bar
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar icon-bar indigo">
+
+  <!-- Brand Start -->
+    <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End -->
+
+  <!-- Icon-Menu Start We use icon-menu for bigger icons -->
+    <ul class="menu icon-menu pull-left">
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-user"></i></a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-cloud"></i></a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-cog"></i></a></li>
+      <li class="divider"></li>
+    </ul>
+  <!-- Icon-Menu End -->
+  
+  <!-- 
+  Menu Start : when you add icons to a standard menu 
+  these will be displayed as small icons 
+  -->
+    <ul class="menu pull-right">
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-cloud"></i> Cloud</a></li>
+      <li class="divider"></li>
+      <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+      <li class="divider"></li>
+    </ul>
+  <!-- Menu End -->
+  
+</div>
+<!-- Navbar End -->
+```
+
+##### Left Icon Bar .navbar .left-bar .icon-bar
+
+You can create a left positioned icon-bar by adding an extra .left-bar class to your .navbar element.
+
+n our example below we will add an extra .title class to our menu #href elements to display the titles 
+of the menu items right under our icons. See example below.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar left-bar icon-bar purple">
+  
+  <!-- Band Start -->
+    <a href="#" class="brand text-white">Brand</a>
+  <!-- Band End -->
+  
+  <!-- Icon Menu Start -->
+  <ul class="menu icon-menu pull-left">
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-user"></i>
+        <span>Users</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-cloud"></i>
+        <span>Cloud</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-cog"></i>
+        <span>Settings</span>
+      </a>
+    </li>
+  </ul>
+  <!-- Icon Menu End -->
+</div>
+<!-- Navbar End -->
+```
+
+##### Right Icon Bar .navbar .right-bar .icon-bar
+
+Just as the left positioned icon-bar you can create a right positioned icon-bar by 
+adding an extra .right-bar class instead of .left-bar class to your .navbar element. See example below.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar right-bar icon-bar purple">
+  
+  <!-- Band Start -->
+    <a href="#" class="brand text-white">Brand</a>
+  <!-- Band End -->
+  
+  <!-- Icon Menu Start -->
+  <ul class="menu icon-menu pull-left">
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-user"></i>
+        <span>Users</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-cloud"></i>
+        <span>Cloud</span>
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="#" class="title">
+        <i class="fa fa-cog"></i>
+        <span>Settings</span>
+      </a>
+    </li>
+  </ul>
+  <!-- Icon Menu End -->
+</div>
+<!-- Navbar End -->
+```
+
+### Dropdown
+
+You can create a dropdown menu by adding .dropdown class to any element that contains at least one <ul> 
+element with a class of .child. Dropdown component supports multilevel dropdown menus.
+
+You can position dropdown menu by adding an extra class to .child element, .left for left positioning and 
+.right for right positioning. See example below.
+
+##### Let's add a simple dropdown menu to a .btn button
+
+> When creating dropdowns or multilevel dropdowns make sure that the first .child element has an extra 
+> .first class. That class is very useful for positioning of dropdown child elements, especially when 
+> you have multilevel dropdown menus. See example code below.
+
+##### html
+----------
+
+```
+<!-- Dropdown Right Start -->
+<div class="btn purple dropdown">
+  A Dropdown <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Dropdown Right End -->
+
+<!-- Dropdown Left Start -->
+<div class="btn indigo dropdown">
+  A Dropdown <i class="fa fa-angle-down"></i>
+  <ul class="child first left">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Dropdown Left End -->
+```
+
+##### You can use button sizes on your dropdown menus. See example below.
+
+##### html
+----------
+
+```
+<!-- Small Dropdown Start -->
+<div class="btn s purple dropdown">
+  Small <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Small Dropdown End -->
+
+<!-- Medium / Default Button Size Dropdown Start -->
+<div class="btn indigo dropdown">
+  Medium <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Medium Dropdown End -->
+
+<!-- Large Dropdown Start -->
+<div class="btn l purple dropdown">
+  Large <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Large Dropdown End -->
+
+<!-- Extra Large Dropdown Start -->
+<div class="btn xl indigo dropdown">
+  Extra Large <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Extra Large Dropdown Start -->
+
+<!-- Extra Extra Large Dropdown Start -->
+<div class="btn xxl purple dropdown">
+  Extra Extra Large <i class="fa fa-angle-down"></i>
+  <ul class="child first right">
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
+</div>
+<!-- Extra Extra Large Dropdown Start -->
+```
+
+##### Let's create a navbar with two multilevel dropdowns menu
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar purple">
+  <!-- Brand Start-->
+  <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End-->
+  <!-- Menu Start-->
+  <ul class="menu pull-left">
+    <li class="divider"></li>
+    
+    <!-- Dropdown Start -->
+    <li class="dropdown">
+      <a href="#">Dropdown <i class="fa fa-angle-down"></i></a>
+      <ul class="child">
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li class="dropdown">
+          <a href="#">Dropdown 2 <i class="fa fa-angle-right"></i></a>
+          <ul class="child right">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Third</a></li>
+            <li><a href="#">Fourth</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Fourth</a></li>
+      </ul>
+    </li>
+    <!-- Dropdown Start -->
+
+    <li class="divider"></li>
+  </ul>
+  <!-- Menu End -->
+  
+  <!-- Search Form Start-->
+  <form class="form purple icon-right">
+    <input class="border-transparent" type="text" placeholder="Search anything..">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+   <!-- Search Form End-->
+  
+  <!-- Menu Start -->
+  <ul class="menu pull-right">
+    <li class="divider"></li>
+    <li><a class="active" href="#">Right 1</a></li>
+    <li class="divider"></li>
+    
+    <!-- Dropdown Start -->
+    <li class="dropdown">
+      <a href="#">Dropdown 1 <i class="fa fa-angle-down"></i></a>
+      <ul class="child first left">
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fa fa-angle-left"></i> Dropdown 2</a>
+          <ul class="child left">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Third</a></li>
+            <li><a href="#">Fourth</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Third</a></li>
+        <li><a href="#">Fourth</a></li>
+      </ul>
+    </li>
+    <!-- Dropdown End -->
+
+  </ul>
+  <!-- Menu End -->
+  
+</div>
+<!-- Navbar End -->
+```
+
+##### Let's create a .navbar .left-bar with multilevel dropdowns menu
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar left-bar purple">
+  
+  <!-- Brand Start -->
+  <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End -->
+  
+  <!-- Search Form Start -->
+  <form class="form purple icon-right">
+    <input class="border-transparent" type="text" placeholder="Search anything..">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <!-- Search Form End -->
+  
+  <!-- Menu Start -->
+  <ul class="menu">
+    <li class="divider"></li>
+    <li><a class="active" href="#">Left1</a></li>
+    <li class="divider"></li>
+    <li><a href="#">A Link</a></li>
+    <li class="divider"></li>
+    
+    <!-- Dropdown Start -->
+    <li class="dropdown">
+      <a href="#">Dropdown <i class="fa fa-angle-right"></i></a>
+      <ul class="child">
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li class="dropdown">
+          <a href="#">Dropdown 2 <i class="fa fa-angle-right"></i></a>
+          <ul class="child right">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Third</a></li>
+            <li><a href="#">Fourth</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Fourth</a></li>
+      </ul>
+    </li>
+    <!-- Dropdown End -->
+
+    <li class="divider"></li>
+    <li><a href="#">A Link</a></li>
+    <li class="divider"></li>
+    <li><a href="#">A Link</a></li>
+  </ul>
+  <!-- Menu End -->
+
+</div>
+<!-- Navbar End -->
+```
+
+### Filters
+
+Filters are filter menus: <ul> -> <li> elements. You can create a filter menu by adding .filter class 
+to a <ul> element. Default filter style is filter-left but you can specify the border position of a filter 
+menu by choosing from .filter-top, .filter-right and .filter-bottom.
+
+You can use color palette colors to style the filter menu, you can also use modifier.css core border 
+modifiers to change the width of the filter borders. See examples below.
+
+##### Default filter menu: filter-left
+
+##### html
+----------
+
+```
+<ul class="filter red">
+  <li><a class="active" href="#">Photos <span class="label pink">21</span></a></li>
+  <li><a href="#">Location</a></li>
+  <li><a href="#">Events</a></li>
+  <li><a href="#">Groups</a></li>
+</ul>
+```
+
+> Default hover state is displaying border, you can remove (disable) border on:hover by adding 
+> .hover-disable class to your <ul> element.
+
+Below you can find example of a top filter menu: using .border-1 class. for specifying filter border width. 
+which will result in eg: border-width: 1px; You can change filter border width by adding .border-*width class 
+to your <ul> element, *width can be from 1 up to 6.
+
+As you can see in example below, we also use .line class on our <ul> element to display a line under our filter. 
+By adding an extra .border-*width class to our <ul> element, the .line will inherit the same border width as 
+the filter's border width.
+
+##### html
+----------
+
+```
+<ul class="filter filter-top line border-1 purple">
+  <li><a class="active" href="#">Photos <span class="label pink">21</span></a></li>
+  <li><a href="#">Location</a></li>
+  <li><a href="#">Events</a></li>
+  <li><a href="#">Groups</a></li>
+</ul>
+```
+
+###### Filter Bottom Example: filter-bottom using .line .border-6 .hover-disable
+
+##### html
+----------
+
+```
+<ul class="filter filter-bottom line border-6 blue hover-disable">
+  <li><a class="active" href="#">Photos <span class="label blue">21</span></a></li>
+  <li><a href="#">Location</a></li>
+  <li><a href="#">Events</a></li>
+  <li><a href="#">Groups</a></li>
+</ul>
+```
+
+##### Filter Right Example
+
+##### html
+----------
+
+```
+<ul class="filter filter-right green">
+  <li><a class="active" href="#">Photos <span class="label green">21</span></a></li>
+  <li><a href="#">Location</a></li>
+  <li><a href="#">Events</a></li>
+  <li><a href="#">Groups</a></li>
+</ul>
+```
+
+##### Let's see how we can combine navbar and filter, we can even add filters to dropdown menus if we choose to.
+
+Since navbar menus have a slightly lighter on:hover fill (background-color), we will add .hover-fill-disable class 
+to our .filter element to disable on:hover background-color.
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar pink">
+
+  <!-- Brand Start -->
+  <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End -->
+
+  <!-- Filter Menu Start -->
+  <ul class="filter filter-bottom white hover-fill-disable">
+    <li><a class="active" href="#">Fight Hunger</a></li>
+    <li><a href="#">Stop War</a></li>
+    <li><a href="#">Save The Children</a></li>
+    <li><a href="#">Stop HIV</a></li>
+  </ul>
+  <!-- Filter Menu End -->
+
+</div>
+<!-- Navbar End -->
+```
+
+##### A Icon-Bar Filter Example
+
+##### html
+----------
+
+```
+<!-- Navbar Start -->
+<div class="navbar left-bar icon-bar black">
+
+  <!-- Brand Start -->
+  <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End -->
+
+  <!-- Icon Menu Filter Start -->
+  <ul class="icon-menu filter filter-right white hover-filter-disable">
+      <li class="divider"></li>
+      <li>
+        <a href="#" class="title active">
+          <i class="fa fa-user"></i>
+          <span>Users</span>
+        </a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="#" class="title">
+          <i class="fa fa-cloud"></i>
+          <span>Cloud</span>
+        </a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="#" class="title">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+  </ul>
+  <!-- Icon Menu Filter End -->
+</div>
+<!-- Navbar End -->
+```
+
+### Pagination
+
+You can create a pagination using .pagination class. You can style the pagination using color palette colors. 
+You can also add .filter classes to your pagination. See example below.
+
+##### html
+----------
+
+```
+<!-- Default Pagination Start -->
+<ul class="pagination info">
+  <li><a href="#">«</a></li>
+  <li><a class="active" href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">...</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+<!-- Default Pagination End -->
+
+<!-- Filter Pagination Start -->
+<ul class="pagination filter filter-top purple">
+  <li><a href="#">«</a></li>
+  <li><a class="active" href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">...</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+<!-- Filter Pagination End -->
+```
+
+### Breadcrumb
+
+You can create breadcrumb using .breadcrumb class. See example below.
+
+##### html
+----------
+
+```
+<ul class="breadcrumb">
+  <li><a href="#">Dashboard</a></li>
+  <li><a href="#">Posts</a></li>
+  <li class="active">Add New</li>
+</ul>
+```
+
+### Tutorial
+
+This tutorial will be a learn by example tutorial. In this tutorial we will create a big drop down menu, 
+using .navbar , .dropdown, .form, .col-* and .grid-* components. 
+Let's first see the example.
+
+Few things to notice in the code below: we have added a .relative class to our navbar, next we have removed 
+relative position from our dropdown by adding a .static class to our dropdown, next we have added .fixed-top 
+class to our dropdown's child element, that way we can have a full width drop down menu that relates to our 
+navbar instead of our dropdown. We have also added a .mobile-relative class to our dropdown, this will set 
+the dropdown position back to relative when viewed on a mobile device. 
+See example code below.
+
+##### html
+----------
+
+```
+<!-- Navbar Start : add reletive position by adding relative class -->
+<div class="navbar indigo relative">
+
+  <!-- Brand Start -->
+  <a href="#" class="brand text-white">Brand</a>
+  <!-- Brand End -->
+
+  <!-- Menu Start -->
+  <ul class="menu pull-left">
+    <li class="divider"></li>
+    <li><a href="#">Menu 1</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Menu 2</a></li>
+    <li class="divider"></li>
+
+    <!-- 
+    Drop Down Start: remove relative position by adding static class,
+    also add mobile-relative class, this will set the position back 
+    to relative when viewed on a mobile device.
+    -->
+    <li class="dropdown static mobile-relative">
+
+      <a href="#">
+        Big Social Dropper
+        <i class="fa fa-angle-down"></i>
+      </a>
+
+      <!-- 
+      Child Start: add fixed-top to make a full width 
+      dropdown that relates to the navbar 
+      -->
+      <div class="child row fixed-top">
+        <!-- col-9 Start -->
+        <div class="col-9 gutter-10">
+
+          <!-- Grid Start -->
+          <div class="grid grid-3">
+            <div class="-margin-bottom">
+              <a href="#" class="-padding thumbnail">
+                <img src="media/1.jpg">
+              </a>
+            </div>
+            <div class="-margin-bottom">
+              <a href="#" class="-padding thumbnail">
+                <img src="media/2.jpg">
+              </a>
+            </div>
+            <div class="-margin-bottom">
+              <a href="#" class="-padding thumbnail">
+                <img src="media/3.jpg">
+              </a>
+            </div>
+          </div>
+          <!-- Grid End -->
+
+          <div class="row gutter-top-15 -margin">
+            This big dropdown menu is made using modulr.css core components only!
+          </div>
+
+        </div>
+        <!-- col-9 End -->
+        
+        <!-- col-3 Start -->
+        <ul class="col-3">
+          <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+        </ul>
+        <!-- col-3 End -->
+
+      </div>
+      <!-- Child End -->
+
+    </li>
+    <!-- Drop Down End -->
+
+    <li class="divider"></li>
+  </ul>
+  <!-- Menu End -->
+
+  <!-- Search Form Start -->
+  <form class="form indigo icon-right">
+    <input class="border-transparent" type="text" placeholder="Search anything..">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <!-- Search Form End -->
+
+</div>
+<!-- Navbar End -->
+```

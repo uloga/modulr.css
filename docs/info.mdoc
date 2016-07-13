@@ -1,0 +1,87 @@
+### Label
+
+You can use the .label modifier class to create a label from any element, 
+you can then use border and color modifiers to style your label. See example below.
+
+##### html
+----------
+
+```
+<span class="label">Default Label</span>
+<span class="label green -rounded">Green Square</span>
+<span class="label blue">Blue Rounded</span>
+<span class="label purple round">Purple Round</span>
+<span class="label border red">Border Red</span>
+```
+
+##### Labels scale to match the size of the immediate parent element by using relative font sizing and em units.
+
+### Alert
+
+You can use the .alert modifier class to create an alert message from any element. 
+There are five default colors used for alerts .default .success , .info, .warning and .danger but 
+you can also use color palette colors and other modifiers to create your own custom alert message. 
+See examples below.
+
+##### html
+----------
+
+```
+<p class="alert default">
+  Hi there, this is a default alert message
+  <a href="#" class="close">close</a>
+</p>
+<p class="alert success">
+  Hi there, this is a success alert message
+  <a href="#" class="close">close</a>
+</p>
+<p class="alert info">
+  Hi there, this is a info alert message
+  <a href="#" class="close">close</a>
+</p>
+<p class="alert warning">
+  Hi there, this is a warning alert message
+  <a href="#" class="close">close</a>
+</p>
+<p class="alert danger">
+  Hi there, this is a danger alert message
+  <a href="#" class="close">close</a>
+</p>
+<-- 
+This is a custom alert message using
+purple for background-color, rounded-6 for border-radius
+of 6px and text-white for white text-color.
+ -->
+<p class="alert purple rounded-6 text-white">
+  Hi there, this is a custom alert message
+  <a href="#" class="close">close</a>
+</p>
+```
+
+### Quotes
+
+Quotes are the same as <blockquote> except that you can create a quote from any element by 
+adding .quote modifier class to a certain element you want to be styled as a <blockquote> 
+Quotes could be used for highlighting a warning, danger, info or success in your content. 
+See example below.
+
+##### html
+----------
+
+```
+<p class="quote">
+  This is a default quote
+</p>
+<p class="quote success">
+  This is a success quote
+</p>
+<p class="quote info">
+  This is a info quote
+</p>
+<p class="quote warning">
+  This is a warning quote
+</p>
+<p class="quote danger">
+  This is a danger quote
+</p>
+```

@@ -1,0 +1,994 @@
+### Form
+
+Easily create nicely looking forms with different styles and layouts. Forms are built with a combination of standard form elements, 
+as well as the Grid .col-* system.
+
+> To apply form component, use .form class on a <form> or any other parent element that contains form elements.
+
+You can style your form elements individually or you can style those using a parent-child classes. 
+Parent - child classes are added to the main .form element. You can use any of the color.css modifier 
+classes on your .form element to style all of the containing child elements. 
+There are also two custom parent-child form modifiers: .wire for creating wire forms (line based form elements) 
+and .border for creating bordered forms as shown in example below.
+
+> When creating bordered forms, you can change border width of your form elements by adding one of the border 
+> width modifier classes to your form element .border-*width. *width can be from 2 up to 4.
+
+##### html
+----------
+
+```
+<!-- Form Start -->
+<form class="form border teal col-8">
+  <!-- Input Start -->
+  <div class="col-6 gutter-right-10">
+    <label>First Name <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-user"></i></span>
+      <input type="text" placeholder="first name col-6"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Input Start -->
+  <div class="col-6 gutter-left-10">
+    <label>Last Name <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-users"></i></span>
+      <input type="text" placeholder="last name col-6"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Input Start -->
+  <div class="col-6 gutter-right-10">
+    <label>Email <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-envelope"></i></span>
+      <input type="text" placeholder="email col-6"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Input Start -->
+  <div class="col-6 gutter-left-10">
+    <label>Phone <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-phone"></i></span>
+      <input type="text" placeholder="phone col-6"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Select Start -->
+  <div class="col-12">
+    <label>Country <span class="require">*</span></label>
+      <div class="addon-prepend">
+        <span class="prepend btn" type="password"><i class="fa fa-map-marker"></i></span>
+        <select>
+          <option>United States</option>
+          <option>The Netherlnds</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>Austria</option>
+        </select>
+      </div>
+  </div>
+  <!-- Select End -->
+
+  <!-- Textarea Start -->
+  <div class="col-12">
+    <label class="text600">Comment</label>
+    <textarea placeholder="add your comment"></textarea>
+  </div>
+  <!-- Textarea End -->
+
+  <!-- Custom Checkbox start -->
+  <div class="group">
+    <label class="checkbox">
+      <input type="checkbox" name="check">
+      <i class="text600">Do you agree with the terms?</i>
+    </label>
+  </div>
+  <!-- Custom Checkbox End -->
+
+  <!-- Custom Switch Start -->
+  <div class="group">
+    <label class="auto-width pull-left padding-right text-strong">
+      Subscribe To Email: 
+    </label>
+    <label class="toggle pull-left round">
+      <input type="checkbox">
+      <span class="switch"></span>
+      <span class="track"></span> 
+    </label>
+  </div>
+  <!-- Custom Switch End -->
+
+  <!-- Button Start -->
+  <button class="btn rounded-2 hover-fill-teal hover-text-white">Submit</button>
+  <!-- Button End -->
+
+</form> 
+<!-- Form End -->
+```
+
+##### Form Sizes
+
+You can change the size of a form and its elements by adding one of the size classes to your .form element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. See examples below.
+
+##### Small Form Example .form .s
+
+##### html
+----------
+
+```
+<!-- Small Start --> 
+<form class="form s success">
+
+  <!-- Input Start -->
+  <div class="col-12">
+    <label class="text600">First Name <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-user"></i></span>
+      <input type="text" placeholder="first name"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Custom Checkbox start -->
+  <div class="group">
+    <label class="checkbox">
+      <input type="checkbox" name="check">
+      <i class="text600">Do you agree with the terms?</i>
+    </label>
+  </div>
+  <!-- Custom Checkbox End -->
+
+  <!-- Custom Switch Start -->
+  <div class="group">
+    <label class="auto-width pull-left padding-right text-strong">
+      Subscribe To Email: 
+    </label>
+    <label class="toggle pull-left round">
+      <input type="checkbox">
+      <span class="switch"></span>
+      <span class="track"></span> 
+    </label>
+  </div>
+  <!-- Custom Switch End -->
+</form>
+
+<!-- Small End -->
+```
+
+##### Large Form Example .form .l
+
+##### html
+----------
+
+```
+<!-- Large Start --> 
+<form class="form l info">
+
+  <!-- Input Start -->
+  <div class="col-12">
+    <label class="text600">First Name <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-user"></i></span>
+      <input type="text" placeholder="first name"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Custom Checkbox start -->
+  <div class="group">
+    <label class="checkbox">
+      <input type="checkbox" name="check">
+      <i class="text600">Do you agree with the terms?</i>
+    </label>
+  </div>
+  <!-- Custom Checkbox End -->
+
+  <!-- Custom Switch Start -->
+  <div class="group">
+    <label class="auto-width pull-left padding-right text-strong">
+      Subscribe To Email: 
+    </label>
+    <label class="toggle pull-left round">
+      <input type="checkbox">
+      <span class="switch"></span>
+      <span class="track"></span> 
+    </label>
+  </div>
+  <!-- Custom Switch End -->
+</form>
+
+<!-- Large End -->
+```
+
+##### Extra Large Form Example .form .xl
+
+##### html
+----------
+
+```
+<!-- Extra Large Start --> 
+<form class="form xl addons green">
+
+  <!-- Input Start -->
+  <div class="col-12">
+    <label class="text600">First Name <span class="require">*</span></label>
+    <div class="addon-prepend">
+      <span class="prepend btn"><i class="fa fa-user"></i></span>
+      <input type="text" placeholder="first name"/>
+    </div>
+  </div>
+  <!-- Input End -->
+
+  <!-- Custom Checkbox start -->
+  <div class="group">
+    <label class="checkbox">
+      <input type="checkbox" name="check">
+      <i class="text600">Do you agree with the terms?</i>
+    </label>
+  </div>
+  <!-- Custom Checkbox End -->
+
+  <!-- Custom Switch Start -->
+  <div class="group">
+    <label class="auto-width pull-left padding-right text-strong">
+      Subscribe To Email: 
+    </label>
+    <label class="toggle pull-left round">
+      <input type="checkbox">
+      <span class="switch"></span>
+      <span class="track"></span> 
+    </label>
+  </div>
+  <!-- Custom Switch End -->
+</form>
+
+<!-- Extra Large End -->
+```
+
+### Input
+
+##### html
+----------
+
+```
+<!-- Default Input -->
+<input type="text" placeholder="default input" />
+
+<!-- On hover border color green -->
+<input class="hover-border-green margin-top" type="text" />
+
+<!-- Custom Input: border-2 green  -->
+<input class="border border-2 green" type="text" />
+
+<!-- Custom Input: border-2 blue rounded-3  -->
+<input class="fill-blue text-white border-blue rounded-3" type="text" />
+
+<!-- Custom Input: border-2 purple round  -->
+<input class="border border-2 purple round" type="text" />
+```
+
+##### Input Sizes
+
+You can change the size of an input element by adding one of the size classes to your input element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. See examples below.
+
+##### html
+----------
+
+```
+<!-- Small Input -->
+<input class="border success s" type="text"/>
+<!-- Medium Default Input -->
+<input class="border info" type="text" />
+<!-- Large Input -->
+<input class="border warning l" type="text" />
+<!-- Extra Large Input -->
+<input class="border danger xl" type="text" />
+```
+
+> As you can see in example above, it's easy to create custom input elements using modulr.css. 
+> You can use any color.css and modifier.css modifiers to customize your input elements.
+
+##### Textarea
+
+##### html
+----------
+
+```
+<!-- Default Textarea -->
+<textarea placeholder="default textarea"></textarea>
+<!-- Custom Textarea -->
+<textarea class="border border-2 red" placeholder="custom textarea"></textarea>
+```
+
+### Select
+
+##### html
+----------
+
+```
+<select>
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+```
+
+##### Styled Dropdown Select
+
+##### html
+----------
+
+```
+<!-- Select Start -->
+<select class="hover-border-teal border-2">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select Start -->
+
+<!-- Select Start -->
+<select class="border border-2 teal">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select Start -->
+
+<!-- Select Start -->
+<select class="teal border-teal">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select End -->
+```
+
+##### Dropdown Select Sizes
+
+You can change the size of a dropdown select element by adding one of the size classes to your select element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. See examples below.
+
+##### html
+----------
+
+```
+<!-- Select .s Start -->
+<select class="border-teal s">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select .s End -->
+
+<!-- Select Medium Default Start -->
+<select class="border-teal">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select Medium Default End -->
+
+<!-- Select .l Start -->
+<select class="border-teal l">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select .l End -->
+
+<!-- Select .xl Start -->
+<select class="border-teal xl">
+  <option>Option One</option>
+  <option>Option Two</option>
+</select>
+<!-- Select .xl End -->
+```
+
+##### Multi-Select Default
+
+##### html
+----------
+
+```
+<select multiple="multiple">
+  <option>Option One</option>
+  <option>Option Two</option>
+  <option>Option Three</option>
+  <option>Option Four</option>
+  <option>Option Five</option>
+</select>
+```
+
+##### Multi-Select Styled
+
+##### html
+----------
+
+```
+<select multiple="multiple" class="border border-2 blue">
+  <option>Option One</option>
+  <option>Option Two</option>
+  <option>Option Three</option>
+  <option>Option Four</option>
+  <option>Option Five</option>
+</select>
+```
+
+##### Numeric Select
+
+##### html
+----------
+
+```
+<input class="select-number border border-2 danger" 
+      type="number" min="14" max="42" step="1" name="length" value="14">
+```
+
+> Just like every other form element, you can use modifiers to change the style of numeric select element.
+
+##### Date Select
+
+##### html
+----------
+
+```
+<input type="date" class="border teal">
+```
+
+### Checkbox
+
+By wrapping chceckbox input inside a label element with a class of .checkbox, you create custom checkboxes. 
+See example below.
+
+##### html
+----------
+
+```
+<!-- Default Start -->
+<label class="checkbox">
+  <input type="checkbox" name="check">
+  <i>Item One</i>
+</label>
+<!-- Default End -->
+
+<!-- Checked Start -->
+<label class="checkbox">
+  <input type="checkbox" name="check" checked>
+  <i>Item Two Checked</i>
+</label>
+<!-- Checked End -->
+
+<!-- Disabled Start -->
+<label class="checkbox">
+  <input type="checkbox" name="check" disabled>
+  <i>Disabled</i>
+</label>
+<!-- Disabled End -->
+```
+
+##### Styled Checkbox
+
+You can style your checkbox using .text-*color modifier class from color.css core module on your 
+label / .checkbox element. In example below we use .text-*color to apply color and .text700 to apply 
+a thicker text to our checkbox elements.
+
+#### html
+---------
+
+```
+<!-- Geen Start -->
+<label class="checkbox text-green text700">
+  <input type="checkbox" name="check">
+  <i>Item Green</i>
+</label>
+<!-- Green End -->
+
+<!-- Purple Start -->
+<label class="checkbox text-purple text700">
+  <input type="checkbox" name="check">
+  <i>Item Purple</i>
+</label>
+<!-- Purple End -->
+```
+
+##### Checkbox Sizes
+
+You can change the size of a checkbox element by adding one of the size classes to your label / .checkbox element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. See examples below.
+
+##### html
+----------
+
+```
+<!-- Small Start -->
+<label class="checkbox s text-green text600">
+  <input type="checkbox" name="check">
+  <i>Item Small</i>
+</label>
+<!-- Small End -->
+
+<!-- Medium Default Start -->
+<label class="checkbox text-green text600">
+  <input type="checkbox" name="check">
+  <i>Item Medium Defaul</i>
+</label>
+<!-- Medium Default End -->
+
+<!-- Large Start -->
+<label class="checkbox l text-green text600">
+  <input type="checkbox" name="check">
+  <i>Item Large</i>
+</label>
+<!-- Large End -->
+
+<!-- Extra Large Start -->
+<label class="checkbox xl text-green text600">
+  <input type="checkbox" name="check">
+  <i>Item Extra Large</i>
+</label>
+<!-- Extra Large End -->
+```
+
+### Radio
+
+By wrapping radio input inside a label element with a class of .radio, you create custom radios. 
+See example below.
+
+##### html
+----------
+
+```
+<!-- Radio Start -->
+<label class="radio">
+  <input type="radio" name="radio"> 
+  <i>Radio</i>
+</label>
+<!-- Radio End -->
+
+<!-- Radio Checked Start -->
+<label class="radio">
+  <input type="radio" name="radio" checked> 
+  <i>Radio Checked</i>
+</label>
+<!-- Radio Checked End -->
+
+<!-- Radio Disabled Start -->
+<label class="radio">
+  <input type="radio" name="radio" disabled> 
+  <i>Radio Disabled</i>
+</label>
+<!-- Radio Disabled End -->
+```
+
+##### Styled Radio
+
+You can style your radio using .text-*color modifier class from color.css core module on your 
+label / .radio element. In example below we use .text-*color to apply color and .text700 to apply 
+a thicker text to our radio elements.
+
+
+##### html
+----------
+
+```
+<!-- Green Start -->
+<label class="radio text-green text700">
+  <input type="radio" name="radio"> 
+  <i>Radio</i>
+</label>
+<!-- Green End -->
+
+<!-- Purple Checked Start -->
+<label class="radio text-purple text700">
+  <input type="radio" name="radio"> 
+  <i>Purple Checked</i>
+</label>
+<!-- Purple Checked End -->
+```
+
+##### Radio Sizes
+
+You can change the size of radio element by adding one of the size classes to your label / .radio element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. See examples below.
+
+##### html
+----------
+
+```
+<!-- Radio Small Start -->
+<label class="radio s text-green text600">
+  <input type="radio" name="radio"> 
+  <i>Radio Small</i>
+</label>
+<!-- Radio Small End -->
+
+<!-- Radio Medium Default Start -->
+<label class="radio text-green text600">
+  <input type="radio" name="radio"> 
+  <i>Radio Medium</i>
+</label>
+<!-- Radio Medium Default Start -->
+
+<!-- Radio Large Start -->
+<label class="radio l text-green text600">
+  <input type="radio" name="radio"> 
+  <i>Radio Large</i>
+</label>
+<!-- Radio Large Start -->
+
+<!-- Radio Extra Large Start -->
+<label class="radio xl text-green text600">
+  <input type="radio" name="radio"> 
+  <i>Radio Extra Large</i>
+</label>
+<!-- Radio Extra Large Start -->
+```
+
+### Toggle Switch
+
+By wrapping a checkbox element inside a lable with a class of .switch, you create a toggle switch element. 
+Default switch is a boxed style switch, you can create a rounded style switch by adding .round modifier 
+class to your label / .toggle element. See example below.
+
+##### Default Toggle Switch
+
+##### html
+----------
+
+```
+<!-- Default Off Start -->
+<label class="toggle pull-left">
+  <input type="checkbox" class="check">
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Default Off End -->
+
+<!-- Default On Start -->
+<label class="toggle pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Default On End -->
+
+<!-- Default On Start -->
+<label class="toggle round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Default On End -->
+```
+
+##### Styled Toggle Switch
+
+You can style toggle switch element, by adding a *color class from color.css core module to your 
+label / .toggle element. See example below.
+
+##### html
+----------
+
+```
+<!-- Default On Start -->
+<label class="toggle warning round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Default On End -->
+
+<!-- Default On Start -->
+<label class="toggle purple round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Default On End -->
+```
+
+##### Toggle Switch Sizes
+
+You can change the size of a switch element by adding one of the size classes to your label / .toggle element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. 
+See examples below.
+
+##### html
+----------
+
+```
+<!-- Small  Start -->
+<label class="toggle s success round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Small End -->
+
+<!-- Medium Default On Start -->
+<label class="toggle info round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Medium Default End -->
+
+<!-- Large Start -->
+<label class="toggle l warning round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Large End -->
+
+<!-- Extra Large Start -->
+<label class="toggle xl danger round pull-left">
+  <input type="checkbox" class="check" checked>
+  <span class="switch"></span>
+  <span class="track"></span>
+</label>
+<!-- Extra Large End -->
+```
+
+### Add-on
+
+You can add addons to your input elements by wrapping those inside a .addon-prepend for inserting addons 
+before an input and .addon-append for inserting addons after an input. We've chosen this approach so that 
+we can have more control over addon wrapped elements, for example when adding styles or thicker border or 
+applying different sizes to our input elements.
+
+An addon inside a addon-wrapper is a separate element which can have a .prepend or .append class. 
+.addon-prepend wrapper is to include a .prepend addon element and .addon-append wrapper is to include a 
+.append addon element. You can also include both addons at the same time by adding .addon-prepend .addon-append 
+class to your wrapper which will is to include both .prepend and .append addons. 
+See example below.
+
+##### Addon Prepend
+
+##### html
+----------
+
+```
+<form class="form green">
+  <label>Addon Prepend <span class="require">*</span></label>
+  <div class="addon-prepend">
+    <span class="prepend btn"><i class="fa fa-user"></i></span>
+    <input type="text" placeholder="addon prepend">
+  </div>
+</form>
+```
+
+##### Addon Append
+
+##### html
+----------
+
+```
+<form class="form green">
+  <label>Addon Append <span class="require">*</span></label>
+  <div class="addon-append">
+    <input type="text" placeholder="addon append">
+    <span class="append btn"><i class="fa fa-user"></i></span>
+  </div>
+</form>
+```
+
+##### Addon Prepend + Addon Append
+
+##### html
+----------
+
+```
+<form class="form green">
+  <label>Addon Prepend + Addon Append <span class="require">*</span></label>
+  <div class="addon-prepend addon-append">
+    <span class="prepend btn"><i class="fa fa-user"></i></span>
+    <input type="text" placeholder="addon prepend * append">
+    <span class="append btn"><i class="fa fa-cloud"></i></span>
+  </div>
+</form>
+```
+
+##### Custom Style Addons: Search Form
+
+##### html
+----------
+
+```
+<!-- Search Form Left Start -->
+<form class="form blue">
+  <label>Search Button Left<span class="require">*</span></label>
+  <div class="addon-prepend">
+    <span class="prepend btn"><button>Search</button></span>
+    <input type="text" placeholder="Search Custom Addon">
+  </div>
+</form>
+<!-- Search Form Left End -->
+
+<!-- Search Right Start  -->
+<form class="form teal">
+  <label>Search Button Right<span class="require">*</span></label>
+  <div class="addon-append">
+    <input type="text" placeholder="Search Custom Addon">
+    <span class="append btn"><button>Search</button></span>
+  </div>
+</form>
+<!-- Search Right End  -->
+
+<!-- Search Extra Modifier Start -->
+<form class="form teal">
+  <label>Search Extra<span class="require">*</span></label>
+  <div class="addon-append addon-prepend">
+    <span class="prepend btn dropdown teal">
+      Select <i class="fa fa-lg fa-angle-down"></i>
+      <ul class="child first right">
+        <li><a href="#">Search Food</a></li>
+        <li><a href="#">Search Music</a></li>
+        <li><a href="#">Search Fun</a></li>
+      </ul>
+    </span>
+    <input class="border-teal border-2" type="text" placeholder="Search Custom Addon">
+    <span class="append btn"><button>Search</button></span>
+  </div>
+</form>
+<!-- Search Extra Modifier End -->
+```
+
+You can change the size of addons by adding one of the size classes to your form / .form element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. 
+See examples below.
+
+
+### Search Form
+
+##### Default Search Form
+
+##### html
+----------
+
+```
+<!-- Search Form Icon Left Start -->
+<form class="form icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Icon Left End -->
+
+<!-- Search Form Icon Right Start -->
+<form class="form icon-right">
+  <input type="text" placeholder="search form icon right">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-- Search Form Icon End Start -->
+```
+
+##### Styled Search Form
+
+##### html
+----------
+
+```
+<!-- Search Form Icon Left Start -->
+<form class="form purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Icon Left End -->
+
+<!-- Search Form Icon Right Start -->
+<form class="form icon-right border purple">
+  <!-- We can use .round class on our input to create a rounded form -->
+  <input class="round" type="text" placeholder="search form icon right">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-- Search Form Icon End Start -->
+
+<!-- Search Form Icon Left Border-*Size Start -->
+<form class="form border border-2 purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Icon Border-*Size Left End -->
+```
+
+##### Search Form Sizes
+
+You can change the size of a search form by adding one of the size classes to your form / .form element. 
+Default size is medium, other sizes are: .s for small .l for large, .xl for extra large. 
+See examples below.
+
+##### html
+----------
+
+```
+<!-- Search Form Small Start -->
+<form class="form s purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Small End -->
+
+<!-- Search Form Medium Default Start -->
+<form class="form purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Medium Default End -->
+
+<!-- Search Form Large Start -->
+<form class="form l purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Large End -->
+
+<!-- Search Form Extra Large Start -->
+<form class="form xl purple icon-left">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="search form icon left">
+</form>
+<!-- Search Form Extra Large End -->
+```
+
+### Tutorial
+
+This will be a learn by example tutorial. In this tutorial we will create a custom register form. 
+You can see example and code below.
+
+##### html
+----------
+
+```
+<!-- Form Start -->
+<form class="form l info hover-disable col-4 pull-right-col-4">
+
+  <div class="col-12">
+
+    <!-- Username Start -->
+    <div class="icon-left pull-left width-100">
+      <span class="btn text-info hover-disable"><i class="fa fa-user-secret"></i></span>
+      <input class="rounded-4 -border -rounded-bottom" 
+          type="text" placeholder="username"/>
+    </div>
+    <!-- Username End -->
+
+    <!-- Email Start -->
+    <div class="icon-left pull-left width-100">
+      <span class="btn text-info hover-disable"><i class="fa fa-envelope"></i></span>
+      <input class="-border-bottom -border-v -rounded" type="text" placeholder="email"/>
+    </div>
+    <!-- Email End -->
+
+    <!-- Country Select Start -->
+    <div class="icon-left pull-left width-100">
+      <span class="btn text-info hover-disable"><i class="fa fa-street-view"></i></span>
+      <select class="-border-v -rounded">
+        <option disabled selected>country</option>
+        <option>Australia</option>
+        <option>United States</option>
+        <option>The Netherlands</option>
+        <option>Germany</option>
+      </select>
+    </div>
+    <!-- Country Select End -->
+
+    <!-- Password Start -->
+    <div class="icon-left pull-left width-100">
+      <span class="btn text-info hover-disable"><i class="fa fa-key"></i></span>
+      <input class="rounded-4 -rounded-top -border" 
+        type="password" placeholder="password"/>
+    </div>
+    <!-- Password End -->
+    
+    <!-- Button Start -->
+    <button class="btn fill-darker full-width rounded-4 margin-top" 
+      type="submit">Register</button>
+    <!-- Button End -->
+    
+  </div>
+</form>
+<!-- Form End -->
+```

@@ -1,0 +1,633 @@
+### Animation
+
+CSS3 animations allows animation of most HTML elements without using JavaScript or Flash! 
+Modulr.css has included a small animation module. You can always extend the core animation 
+module by creating your own. You can trigger modulr.css animations using direct or parent-child 
+hover behavior modifier, but you can also use javascript to trigger animations.
+
+When applying animation to an element you can use .*animation-name class direct on that element.
+
+Parent-child animations are mostly triggered by parents hover behavior. eg: .hover-animate-children 
+class is used on a parent element, .mouseenter-*animation-name for when mouse enters an element, 
+and .mouseleave-*animation-name for when mouse leaves an element are used on child elements of a
+parent element with .hover-animate-children class modifier. See example below.
+
+##### html
+----------
+
+```
+<!-- Animate an element -->
+<div class="move-in-down fast">Move in down fast</div>
+
+<!-- Animate an child on parent's hover -->
+<div class="hover-animate-children">
+  <span class="mouseenter-fade-out-down mouseleave-fade-in-up fast">
+    Animated Child
+  </span>
+</div>
+```
+
+##### Animation Speed
+
+You can specify speed of an animation using one of the speed class modifiers .slow for slow {2.2s}, 
+.normal for normal {1s}, .medium for medium {0.6s}, .fast for fast {0.3s} and .faster for fastest {0.15s} 
+You can also create your own animation speed modifiers by looking at the example in animation core module.
+
+##### Let's see how we can use a simple on hover animation.
+
+##### html
+----------
+
+```
+<a href="#" class="btn blue hover-scale-out medium">Hover Scale Out</a>
+
+<a href="#" class="btn purple overflow-hidden hover-animate-children">
+  Hover Animate Child 
+  <span class="inline-block mouseenter-fade-out-down mouseleave-fade-in-up fast">
+    Animate Child
+  </span>
+</a>
+```
+
+As you can see in the code example above, we're using .mouseenter-*animation-name and .mouseleave-*animation-name 
+inside our .hover-animate-children parent element. With this two classes you can specify when and what kind of 
+animation should be triggered on .hover-animate-children:hover
+
+
+##### Let's use parent-child animations with some of the core modifiers to create a cool button effect
+
+##### html
+----------
+
+```
+<div class="relative overflow-hidden pull-left hover-animate-children ">
+  <a href="#" class="btn purple absolute
+    mouseenter-move-out-down mouseleave-move-in-up faster">
+    Hover Over Me
+  </a>
+  <a href="#" class="btn blue 
+    mouseenter-move-in-down mouseleave-move-out-up faster">
+    Hover Over Me
+  </a>
+</div>
+```
+
+As you can see in the code above, we've created a .hover-animate-children wrapper with a relative position 
+and overflow:hidden. Inside our wrapper we have two buttons which will react to our on parent:hover > trigger children 
+animation behavior. First button has absolute position, this will allow us to place two buttons one on top of the other. 
+The animation classes are pretty self explanatory, .mousenter-*animation-name will trigger the animation-name when mouse 
+enters the element and .mouseleave-*animation-name will trigger the animation-name when mouse leaves the element.
+
+
+### Api
+
+##### Animate Children
+
+<table class="bordered border-blue">
+
+  <thead class="text-13 fill-blue text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.hover-animate-children</td>
+      <td>any parent</td>
+      <td>When applied to a parent it will trigger animation on child:hover</td>
+    </tr>
+    <!-- Tr End -->
+    
+     <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.mouseenter-*animation-name</td>
+      <td>any child</td>
+      <td>On mouse enter element, trigger animation name *animation-name must be replaced with the animation you want to triggered</td>
+    </tr>
+    <!-- Tr End -->
+    
+     <!-- Tr Start -->
+    <tr>
+      <td>Hover Behavior</td>
+      <td class="text-red">.mouseleave-*animation-name</td>
+      <td>any child</td>
+      <td>On mouse leave element, trigger animation name *animation-name must be replaced with the animation you want to be triggered</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Animation Speed / Duration
+
+<table class="bordered border-purple">
+
+  <thead class="text-13 fill-purple text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Duration</td>
+      <td class="text-red">.slow</td>
+      <td>any</td>
+      <td>Specify animation duration: slow is {2.2s}</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Duration</td>
+      <td class="text-red">.normal</td>
+      <td>any</td>
+      <td>Specify animation duration: normal is {1s}</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Duration</td>
+      <td class="text-red">.medium</td>
+      <td>any</td>
+      <td>Specify animation duration: medium is {0.6s}</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Duration</td>
+      <td class="text-red">.fast</td>
+      <td>any</td>
+      <td>Specify animation duration: fast is {0.3s}</td>
+    </tr>
+    <!-- Tr End -->
+    
+     <!-- Tr Start -->
+    <tr>
+      <td>Duration</td>
+      <td class="text-red">.faster</td>
+      <td>any</td>
+      <td>Specify animation duration: faster is {0.15s}</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Animation Timing
+
+<table class="bordered border-purple">
+
+  <thead class="text-13 fill-purple text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Timing</td>
+      <td class="text-red">.linear</td>
+      <td>any</td>
+      <td>The animation has the same speed from start to end</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Timing</td>
+      <td class="text-red">.ease</td>
+      <td>any</td>
+      <td>Default value. The animation has a slow start, then fast, before it ends slowly</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Timing</td>
+      <td class="text-red">.ease-in</td>
+      <td>any</td>
+      <td>The animation has a slow start</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Timing</td>
+      <td class="text-red">.ease-out</td>
+      <td>any</td>
+      <td>The animation has a slow end</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Timing</td>
+      <td class="text-red">.ease-in-out</td>
+      <td>any</td>
+      <td>The animation has both a slow start and a slow end</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Animation Transitions
+
+<table class="bordered border-teal">
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-200">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-all</td>
+      <td>any</td>
+      <td>Trigger all transition</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-visibility</td>
+      <td>any</td>
+      <td>Trigger visibility transition</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-height</td>
+      <td>any</td>
+      <td>Trigger height transition</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-width</td>
+      <td>any</td>
+      <td>Trigger width transition</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-border-width</td>
+      <td>any</td>
+      <td>Trigger border width transition</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-children-border-width</td>
+      <td>any</td>
+      <td>When applied to a parent element it will trigger border-width transition on that parents children</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-background</td>
+      <td>any</td>
+      <td>Trigger background transition</td>
+    </tr>
+    <!-- Tr End -->'
+    <!-- Tr Start -->
+    <tr>
+      <td>Transition</td>
+      <td class="text-red">.animate-children-background</td>
+      <td>any</td>
+      <td>When applied to a parent element it will trigger background transition on that parents children</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Animations
+
+You can trigger animations directly on an element using *animation-name or .hover-*animation-name 
+You can also trigger animation using .mouseenter-*animation-name and .mouseleave-*animation-name behaviors 
+on child elements of a parent with a .hover-animate-children class.
+
+##### html
+----------
+
+```
+<!-- Direct animation trigger -->
+<div class="fade-in fast">Fade in fast</div>
+
+<!-- Hover behavior animation trigger -->
+<div class="hover-fade-in fast">On hover, fade in fast</div>
+
+<!-- Animate children animation trigger -->
+<div class="hover-animate-children">
+  <span class="mouseenter-fade-in mouseleave-fade-out fast">
+    on mouse enter fade in fast and on mouse leave fade out fast
+  </span>
+</div>
+```
+
+##### Fade In Animation
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-in</td>
+      <td>any</td>
+      <td>Fade in animation</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-in-up</td>
+      <td>any</td>
+      <td>Fade in from bottom</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-in-down</td>
+      <td>any</td>
+      <td>Fade in from top</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-in-left</td>
+      <td>any</td>
+      <td>Fade in from left</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-in-right</td>
+      <td>any</td>
+      <td>Fade in from right</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Fade Out Animation
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-out</td>
+      <td>any</td>
+      <td>Fade out animation</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-out-up</td>
+      <td>any</td>
+      <td>Fade out bottom</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-out-down</td>
+      <td>any</td>
+      <td>Fade out top</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-out-left</td>
+      <td>any</td>
+      <td>Fade out left</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.fade-out-right</td>
+      <td>any</td>
+      <td>Fade out right</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Move In Animation
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-in-up</td>
+      <td>any</td>
+      <td>Move in from bottom</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-in-down</td>
+      <td>any</td>
+      <td>Move in from top</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-in-left</td>
+      <td>any</td>
+      <td>Move in from left</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-in-right</td>
+      <td>any</td>
+      <td>Move in from right</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Move Out Animation
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-out-up</td>
+      <td>any</td>
+      <td>Move out top</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-out-down</td>
+      <td>any</td>
+      <td>Move out bottom</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-out-left</td>
+      <td>any</td>
+      <td>Move out left</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.move-out-right</td>
+      <td>any</td>
+      <td>Move out right</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Scale Animation
+
+<table class="bordered border-teal">
+
+  <thead class="text-13 fill-teal text-white">
+    <tr>
+      <th>Type</th>
+      <th class="mx-150">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+  
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.scale-in</td>
+      <td>any</td>
+      <td>Zoom In / Scale In</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Animation</td>
+      <td class="text-red">.scale-out</td>
+      <td>any</td>
+      <td>Zoom Out / Scale Out</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>

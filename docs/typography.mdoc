@@ -1,0 +1,271 @@
+### Heading
+
+Use the <h1> to <h6> elements to define your headings.
+
+##### html
+----------
+
+```
+<h1>h1. Modulr.css <small>Secondary text</small></h1>
+<h2>h2. Modulr.css <small>Secondary text</small></h2>
+<h3>h3. Modulr.css <small>Secondary text</small></h3>
+<h4>h4. Modulr.css <small>Secondary text</small></h4>
+<h5>h5. Modulr.css <small>Secondary text</small></h5>
+<h6>h6. Modulr.css <small>Secondary text</small></h6>
+```
+
+### Text
+
+Below you can find list and a short overview of the most commonly used text semantics in modulr.css
+
+<div class="inner"> 
+  <p class="col-3 text-strong -margin">Element</p><p class="col-9 text-strong -margin">Description</p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;a&gt;</code>
+    <span class="col-9">  Turn text into hypertext using the a <a href="#">element</a>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;em&gt;</code>
+    <span class="col-9">Emphasize text using the em <em class="text-gray">element</em>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;small&gt;</code>
+    <span class="col-9">De-emphasize text for small print using the <small>small element</small>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;strong&gt;</code>
+    <span class="col-9">Imply any extra importance using the <strong>strong element</strong>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;code&gt;</code>
+    <span class="col-9">Define inline code snippets using the <code>code element</code>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;del&gt;</code>
+    <span class="col-9">Mark document changes as deleted text using the <del>del element</del>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;ins&gt;</code>
+    <span class="col-9">Mark document changes as inserted text using the <ins>ins element</ins>.</span>
+  </p>
+  <p class="text-15 stripe -margin">
+    <code class="text-red col-3">&lt;mark&gt;</code>
+    <span class="col-9">Mark document changes as inserted text using the <ins>mark element</ins>.</span>
+  </p>
+  <p class="text-15 stripe -margin -border-bottom">
+    <code class="text-red col-3">&lt;abbr&gt;</code>
+    <span class="col-9">Define an abbreviation using the <abbr title="Abbreviation Element">abbr element</abbr> with a title.</span>
+  </p>
+</div>
+
+##### Text Sizes
+
+These sizes are used in modulr.css to balance content density and reading comfort under typical usage conditions. 
+Text sizes are specified in px.
+
+<table class="bordered border-teal">
+
+  <thead class="fill-teal text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-125">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-caption</td>
+      <td>any</td>
+      <td>Regular 13px</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-body</td>
+      <td>any</td>
+      <td>Regular 15px</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-heading</td>
+      <td>any</td>
+      <td>Medium 17px</td>
+    </tr>
+    <!-- Tr End -->
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-title</td>
+      <td>any</td>
+      <td>Medium 19px</td>
+    </tr>
+    <!-- Tr End -->
+    
+   <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-display</td>
+      <td>any</td>
+      <td>Medium 26px</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+There are also .text-*value sizes that range from 12px up to 26px. Just replace *value with the 
+desired text value eg: .text-16 will apply text of 16px to certain element that is using that class.
+
+<table class="bordered border-teal">
+
+  <thead class="fill-teal text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-125">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.text-*value</td>
+      <td>any</td>
+      <td>Replace *value with desired text value, these range from 12 up to 26</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+##### Parent - Child Text Sizes
+
+Parent - child text sizes are only used for parents child #href elements. 
+This is great for if you have many #href child elements in a parent you'd like to apply that text-size to.
+
+<table class="bordered border-teal">
+
+  <thead class="fill-teal text-white">
+    <tr>
+      <th class="mx-90">Type</th>
+      <th class="mx-125">Class</th>
+      <th>Element</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text500">
+    
+    <!-- Tr Start -->
+    <tr>
+      <td>Text Size</td>
+      <td class="text-red">.href-text-*value</td>
+      <td>any except href</td>
+      <td>Replace *value with desired text value, these range from 12 up to 26</td>
+    </tr>
+    <!-- Tr End -->
+    
+  </tbody>
+</table>
+
+### Blockquote
+
+The <blockquote> tag specifies a section that is quoted from another source. Browsers usually indent <blockquote> elements. 
+You can create a blockquote using any element by adding .quote class to that element. You can change the style of the 
+blockquote using default colors .success, .info, .warning, .danger, just make sure that any blackquote you want to 
+use default colors on has a .quote class applied to.
+
+##### html
+----------
+
+```
+<!-- Blockquote Start -->
+<blockquote>
+  <p>
+    There is enough in the world for everyone's need, but not for everyone's greed.
+  </p>
+  <cite>Frank Buchman</cite>
+</blockquote>
+<!-- Blockquote End -->
+
+<!-- Blockquote Success Start -->
+<blockquote class="quote success">
+  <p>
+    Coming together is a beginning; keeping together is progress; 
+    working together is success.
+  </p>
+  <cite>Henry Ford</cite>
+</blockquote>
+<!-- Blockquote Success End -->
+```
+
+Using .reverse class, we can flip / reverse blockquotes. See example below.
+
+##### html
+----------
+
+```
+<!-- Blockquote Start -->
+<blockquote class="quote info reverse">
+  <p>
+    There is enough in the world for everyone's need, but not for everyone's greed.
+  </p>
+  <cite>Frank Buchman</cite>
+</blockquote>
+<!-- Blockquote End -->
+```
+
+### Drop Cap
+
+A drop cap is a means to stylize a paragraph and to add a little splash and flavor to a page. 
+You can create a drop cap by adding .dropcap class to a paragraph and wrapping the first letter 
+of that paragraph inside a <span> tag with a .dp class for basic drop cap or .dp-bg class for 
+background drop cap. See examples below.
+
+##### html
+----------
+
+```
+<!-- Default Drop Cap Start -->
+<p class="dropcap">
+  <span class="dp">O</span>ver 100,000 people are estimated to have died since the 
+  violence began, and more than two million have fled over the borders as refugees into 
+  Lebanon, Turkey, Jordan and Iraq. A million of these refugees are children. Stories 
+  emerged of children being detained, tortured by, and even used as human shields by the 
+  security forces. In August 2013 chemical weapons were allegedly used against civilians.
+</p>
+<!-- Default Drop Cap End -->
+
+<!-- Background Drop Cap Start -->
+<p class="dropcap">
+  <span class="dp-bg blue">O</span>ver 100,000 people are estimated to have died since the 
+  violence began, and more than two million have fled over the borders as refugees into 
+  Lebanon, Turkey, Jordan and Iraq. A million of these refugees are children. Stories 
+  emerged of children being detained, tortured by, and even used as human shields by the 
+  security forces. In August 2013 chemical weapons were allegedly used against civilians.
+</p>
+<!-- Background Drop Cap End -->
+```
+
+
+
+
+
+
+
+
+
