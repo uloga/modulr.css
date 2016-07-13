@@ -1,0 +1,154 @@
+/*
+  Modulr.css Module
+  ---------------------
+  @desc: Tooltip 
+  @author: Alan Museljic 
+  @copyright: Alan Museljic  
+  @git: http://www.github.com/uloga/tooltip
+\--------------------------------------------*/
+
+.tooltip{
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 1px 1px rgba(0,0,0,.16);
+  z-index: 10000;
+}
+.tooltip.top,
+.tooltip.bottom{
+  left: 50%;
+}
+.tooltip.top, 
+.tooltip.top-left,
+.tooltip.top-right{
+  bottom: 100%;
+}
+.tooltip.bottom,
+.tooltip.bottom-left,
+.tooltip.bottom-right{
+  top: 100%;
+}
+.tooltip.top{
+  transform: translateX(-50%) translateY(-12px);
+}
+.tooltip.bottom{
+  transform: translateX(-50%) translateY(12px);
+}
+.tooltip.top-left,
+.tooltip.bottom-left{
+  left: 0;
+}
+.tooltip.top-right,
+.tooltip.bottom-right{
+  right: 0;
+}
+.tooltip.top-left,
+.tooltip.top-right{
+  transform: translateX(0) translateY(-12px);
+}
+.tooltip.bottom-left,
+.tooltip.bottom-right{
+  transform: translateX(0) translateY(12px);
+}
+.tooltip.left{
+  right: 100%;
+  bottom: 50%;
+  transform: translateX(-12px);
+  margin-bottom: -14px;
+}
+.tooltip.right{
+  left: 100%;
+  bottom: 50%;
+  transform: translateX(12px);
+  margin-bottom: -14px;
+}
+
+/* __ tooltip arrow __ */
+
+.tooltip:before{
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+}
+
+/* __ top, top-left, top-right __ */
+
+.tooltip.top:before,
+.tooltip.top-left:before,
+.tooltip.top-right:before{
+  top: 100%;
+  border-color: #000000 transparent transparent transparent;
+}
+.tooltip.top:before{
+  left: 50%;
+  margin-left: -6px;
+}
+.tooltip.top-left:before{
+  left: 0;
+  margin-left: 6px;
+}
+.tooltip.top-right:before{
+  right: 0;
+  margin-right: 6px;
+}
+
+/* __ bottom, bottom-left, bottom-right __ */
+
+.tooltip.bottom:before,
+.tooltip.bottom-left:before,
+.tooltip.bottom-right:before{
+  bottom: 100%;
+  border-color: transparent transparent #000000  transparent;
+}
+.tooltip.bottom:before{
+  left: 50%;
+  margin-left: -6px;
+}
+.tooltip.bottom-left:before{
+  left: 0;
+  margin-left: 6px;
+}
+.tooltip.bottom-right:before{
+  right: 0;
+  margin-right: 6px;
+}
+
+/*__ left __ */
+
+.tooltip.left:before{
+  top: 50%;
+  left: 100%;
+  margin-top: -6px;
+  border-color: transparent transparent transparent #000000;
+}
+
+/*__ right __ */
+
+.tooltip.right:before{
+  top: 50%;
+  right: 100%;
+  margin-top: -6px;
+  border-color: transparent #000000 transparent transparent;
+}
+
+/* __ tooltip trigger __*/
+
+.hover-tooltip{
+  position: relative;
+}
+.hover-tooltip:hover > .tooltip{
+  display: block;
+  visibility: visible;
+}
+.tooltip:hover{
+  display: none !important;
+  visibility: hidden !important;
+}

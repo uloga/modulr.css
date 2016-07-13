@@ -1,0 +1,157 @@
+/*
+  Info Module v1
+  ---------------------
+  @desc: Info: label, alert, quotes
+  @author: Alan Museljic
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://www.decorator.io/modulr
+\--------------------------------------------*/
+
+/* __ label __ */
+
+.label{
+  background: #eee;
+  display: inline-block;
+  padding: .48em .4em .43em;
+  font-size: 75.5%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: .6;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border: 1px solid transparent;
+  border-radius: .12rem;
+}
+
+/* __ THEMED LABEL__ */
+
+.label.success,
+a:hover .label.success,
+.filter li a:hover .label.success{
+  background: #2AA583;
+  color: #fff;
+}
+.label.info,
+a:hover .label.info,
+.filter li a:hover .label.info{
+  background: #15a3ff;
+  color: #fff;
+}
+.label.warning,
+a:hover .label.warning,
+.filter li a:hover .label.warning{
+  background: #F3AB44;
+  color: #fff;
+}
+.label.danger,
+a:hover .label.danger,
+.filter li a:hover .label.danger{
+  background: #EA4335;
+  color: #fff;
+}
+
+/*__ label border __ */
+
+.label.border.success,
+a:hover .label.border.success,
+.filter li a:hover .label.border.success{
+  background: transparent;
+  border-color: #2AA583;
+  color: #2AA583;
+}
+.label.border.info,
+a:hover .label.border.info,
+.filter li a:hover .label.border.info{
+  background: transparent;
+  border-color: #15a3ff;
+  color: #15a3ff;
+}
+.label.border.warning,
+a:hover .label.border.warning,
+.filter li a:hover .label.border.warning{
+  background: transparent;
+  border-color: #F3AB44;
+  color: #F3AB44;
+}
+.label.border.danger,
+a:hover .label.border.danger,
+.label.border.danger:hover,
+.filter li a:hover .label.border.danger{
+  background: transparent;
+  border-color: #EA4335;
+  color: #EA4335;
+}
+
+/* __ THEMED QUOTE INFOS __ */
+
+.quote.default {
+  background-color: #f4f4f4;
+  border-color: #555;
+  color: #333;
+}
+
+.quote.success {
+  background-color: #E4F0ED;
+  border-color: #189371;
+  color: #0C8161;
+}
+.quote.info {
+  background-color: #E0EDF6;
+  border-color: #15a3ff;
+  color: #0687DB;
+}
+.quote.warning {
+  background-color: #F8F1E6;
+  border-color: #F3AB44;
+  color: #C77B0F;
+}
+.quote.danger {
+  background-color: #F8E7E5;
+  border-color: #EE4D3B;
+  color: #DF311E;
+}
+
+/* __ alerts __ */
+
+.alert{
+  padding: 15px;
+  float: left;
+  width: 100%;
+  color: #f6f6f6;
+  margin-bottom: 20px;
+  font-size: 14px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,.36);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.36);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.36);
+}
+.alert .close{
+  position: absolute;
+  right: 15px;
+  color: #fff;
+}
+.alert .close:hover{
+  text-decoration: underline;
+}
+.alert.default{
+  background: #333;
+  color: #fff;
+}
+.alert.success{
+  background: #2AA583;
+  color: #fff;
+}
+.alert.info{
+  background: #15a3ff;
+  color: #fff;
+}
+.alert.warning{
+  background: #F3AB44;
+  color: #fff;
+}
+.alert.danger{
+  background: #EA4335;
+  color: #fff;
+}

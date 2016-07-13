@@ -1,0 +1,88 @@
+/*
+  Table Module v1
+  -------------------------
+  @desc: Tables
+  @author: Alan Museljic
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://www.decorator.io/modulr
+\--------------------------------------------*/
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  max-width: 100%;
+  width: 100%;
+  float: left;
+}
+table thead th, table thead td {
+  border-top: none;
+  text-align: left;
+}
+table td, table th{
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+table td .action a{
+  padding: 0 1px;
+}
+table td .action a:hover{
+  text-decoration: underline;
+  color: #444;
+}
+table.hover tbody tr:hover {
+  background: #f6f6f6;
+}
+table.bordered td,
+table.bordered th{
+  border: 1px solid #ddd;
+}
+table.striped tr:nth-child(odd) > td {
+  background: #f6f6f6;
+}
+table.center *{
+  text-align: center;
+}
+table.media td,
+table.media th{
+  padding: 8px;
+}
+
+/* __ modefiers __ */
+
+table.center td,
+table.center th,
+td.center, th.center{
+  text-align: center;
+}
+
+/* __ responsive __ */
+
+table.responsive{
+  white-space: nowrap;
+}
+
+
+/* __ borders __ */
+
+table.bordered.border-2 td,
+table.bordered.border-2 th{
+  border-width: 2px;
+}
+table.bordered.border-3 td,
+table.bordered.border-3 th{
+  border-width: 3px;
+}
+table.bordered.border-4 td,
+table.bordered.border-4 th{
+  border-width: 4px;
+}
+table.bordered.border-5 td,
+table.bordered.border-5 th{
+  border-width: 5px;
+}
+table.bordered.border-6 td,
+table.bordered.border-6 th{
+  border-width: 6px;
+}

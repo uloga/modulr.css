@@ -1,0 +1,1364 @@
+/*
+  Colors Module v1
+  ---------------------
+  @desc: Default color scheme
+  @author: Alan Museljic
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://modulr.decorator.io
+\--------------------------------------------*/
+
+/* __ background colors __ */
+
+.red,
+.btn.border.red:hover,
+.pagination.red li a:hover,
+.pagination.red li .active,
+.navbar.red ul, .navbar.red .child,
+.navbar.red li a, .menu.red li a,
+.dropdown.red .child li a,
+.form.red .btn,
+.form.red input[type=checkbox]:checked ~ .track,
+.red input[type=checkbox]:checked ~ .track{
+  background: #F44336;
+  color: #FFFFFF;
+}
+.pink,
+.btn.border.pink:hover,
+.pagination.pink li a:hover,
+.pagination.pink li .active,
+.navbar.pink ul, .navbar.pink .child,
+.navbar.pink li a, .menu.pink li a,
+.dropdown.pink .child li a,
+.form.pink .btn,
+.form.pink input[type=checkbox]:checked ~ .track,
+.pink input[type=checkbox]:checked ~ .track{
+  background: #E91E63;
+  color: #FFFFFF;
+}
+.purple,
+.btn.border.purple:hover,
+.pagination.purple li a:hover,
+.pagination.purple li .active,
+.navbar.purple ul, .navbar.purple .child,
+.navbar.purple li a, .menu.purple li a,
+.dropdown.purple .child li a,
+.form.purple .btn,
+.form.purple input[type=checkbox]:checked ~ .track,
+.purple input[type=checkbox]:checked ~ .track{
+  background: #673AB7;
+  color: #FFFFFF;
+}
+.indigo,
+.btn.border.indigo:hover,
+.pagination.indigo li a:hover,
+.pagination.indigo li .active,
+.navbar.indigo ul, .navbar.indigo .child,
+.navbar.indigo li a, .menu.indigo li a,
+.dropdown.indigo .child li a,
+.form.indigo.btn,
+.form.indigo input[type=checkbox]:checked ~ .track,
+.indigo input[type=checkbox]:checked ~ .track{
+  background: #3F51B5;
+  color: #FFFFFF;
+}
+.blue,
+.btn.border.blue:hover,
+.pagination.blue li a:hover,
+.pagination.blue li .active,
+.navbar.blue ul, .navbar.blue .child,
+.navbar.blue li a, .menu.blue li a,
+.dropdown.blue .child li a,
+.form.blue .btn,
+.form.blue input[type=checkbox]:checked ~ .track,
+.blue input[type=checkbox]:checked ~ .track{
+  background: #2196F3;
+  color: #FFFFFF;
+}
+.light-blue,
+.btn.border.light-blue:hover,
+.pagination.light-blue li a:hover,
+.pagination.light-blue li .active,
+.navbar.light-blue ul, .navbar.light-blue .child,
+.navbar.light-blue li a, .menu.light-blue li a,
+.dropdown.light-blue .child li a,
+.form.light-blue .btn,
+.form.light-blue input[type=checkbox]:checked ~ .track,
+.light-blue input[type=checkbox]:checked ~ .track{
+  background: #03A9F4;
+  color: #FFFFFF;
+}
+.cyan,
+.btn.border.cyan:hover,
+.pagination.cyan li a:hover,
+.pagination.cyan li .active,
+.navbar.cyan ul, .navbar.cyan .child,
+.navbar.cyan li a, .menu.cyan li a,
+.dropdown.cyan .child li a,
+.form.cyan .btn,
+.form.cyan input[type=checkbox]:checked ~ .track,
+.cyan input[type=checkbox]:checked ~ .track{
+  background: #00BCD4;
+  color: #FFFFFF;
+}
+.teal,
+.btn.border.teal:hover,
+.pagination.teal li a:hover,
+.pagination.teal li .active,
+.navbar.teal ul, .navbar.teal .child,
+.navbar.teal li a, .menu.teal li a,
+.dropdown.teal .child li a,
+.form.teal .btn,
+.form.teal input[type=checkbox]:checked ~ .track,
+.teal input[type=checkbox]:checked ~ .track{
+  background: #009688;
+  color: #FFFFFF;
+}
+.green,
+.btn.border.green:hover,
+.pagination.green li a:hover,
+.pagination.green li .active,
+.navbar.green ul, .navbar.green .child,
+.navbar.green li a, .menu.green li a,
+.dropdown.green .child li a,
+.form.green .btn,
+.form.green input[type=checkbox]:checked ~ .track,
+.green input[type=checkbox]:checked ~ .track{
+  background: #4CAF50;
+  color: #FFFFFF;
+}
+.light-green,
+.btn.border.light-green:hover,
+.pagination.light-green li a:hover,
+.pagination.light-green li .active,
+.navbar.light-green ul, .navbar.light-green .child,
+.navbar.light-green li a, .menu.light-green li a,
+.dropdown.light-green .child li a,
+.form.light-green .btn,
+.form.light-green input[type=checkbox]:checked ~ .track,
+.light-green input[type=checkbox]:checked ~ .track{
+  background: #8BC34A;
+  color: #FFFFFF;
+}
+.yellow,
+.btn.border.yellow:hover,
+.pagination.yellow li a:hover,
+.pagination.yellow li .active,
+.navbar.yellow ul, .navbar.yellow .child,
+.navbar.yellow li a, .menu.yellow li a,
+.dropdown.yellow .child li a,
+.form.yellow .btn,
+.form.yellow input[type=checkbox]:checked ~ .track,
+.yellow input[type=checkbox]:checked ~ .track{
+  background: #FFC107;
+  color: #FFFFFF;
+}
+.light-yellow,
+.btn.border.light-yellow:hover,
+.pagination.light-yellow li a:hover,
+.pagination.light-yellow li .active,
+.navbar.light-yellow ul, .navbar.light-yellow .child,
+.navbar.light-yellow li a, .menu.light-yellow li a,
+.dropdown.light-yellow .child li a,
+.form.light-yellow .btn,
+.form.light-yellow input[type=checkbox]:checked ~ .track,
+.light-yellow input[type=checkbox]:checked ~ .track{
+  background: #FFEB3B;
+  color: #806103;
+}
+.orange,
+.btn.border.orange:hover,
+.pagination.orange li a:hover,
+.pagination.orange li .active,
+.navbar.orange ul, .navbar.orange .child,
+.navbar.orange li a, .menu.orange li a,
+.dropdown.orange .child li a,
+.form.orange .btn,
+.form.orange input[type=checkbox]:checked ~ .track,
+.orange input[type=checkbox]:checked ~ .track{
+  background: #FF9800;
+  color: #FFFFFF;
+}
+.orange-red,
+.btn.border.orange-red:hover,
+.pagination.orange-red li a:hover,
+.pagination.orange-red li .active,
+.navbar.orange-red ul, .navbar.orange-red .child,
+.navbar.orange-red li a, .menu.orange-red li a,
+.dropdown.orange-red .child li a,
+.form.orange-red .btn,
+.form.orange-red input[type=checkbox]:checked ~ .track,
+.orange-red input[type=checkbox]:checked ~ .track{
+  background: #FF5722;
+  color: #FFFFFF;
+}
+.black,
+.btn.border.black:hover,
+.pagination.black li a:hover,
+.pagination.black li .active,
+.navbar.black ul, .navbar.black .child,
+.navbar.black li a, .menu.black li a,
+.dropdown.black .child li a,
+.form.black .btn,
+.form.black input[type=checkbox]:checked ~ .track,
+.black input[type=checkbox]:checked ~ .track{
+  background: #000000;
+  color: #FFFFFF;
+}
+.brown,
+.btn.border.brown:hover,
+.pagination.brown li a:hover,
+.pagination.brown li .active,
+.navbar.brown ul, .navbar.brown .child,
+.navbar.brown li a, .menu.brown li a,
+.dropdown.brown .child li a,
+.form.brown .btn,
+.form.brown input[type=checkbox]:checked ~ .track,
+.brown input[type=checkbox]:checked ~ .track{
+  background: #795548;
+  color: #FFFFFF;
+}
+.gray,
+.btn.border.gray:hover,
+.pagination.gray li a:hover,
+.pagination.gray li .active,
+.navbar.gray ul, .navbar.gray .child,
+.navbar.gray li a, .menu.gray li a,
+.dropdown.gray .child li a,
+.form.gray .btn,
+.form.gray input[type=checkbox]:checked ~ .track,
+.gray input[type=checkbox]:checked ~ .track{
+  background: #9E9E9E;
+  color: #FFFFFF;
+}
+.silver,
+.btn.border.silver:hover,
+.pagination.silver li a:hover,
+.pagination.silver li .active,
+.navbar.silver ul, .navbar.silver .child,
+.navbar.silver li a, .menu.silver li a,
+.dropdown.silver .child li a,
+.form.silver .btn,
+.form.silver input[type=checkbox]:checked ~ .track,
+.silver input[type=checkbox]:checked ~ .track{
+  background: #CCCCCC;
+  color: #444444;
+}
+.white,
+.btn.border.white:hover,
+.pagination.white li a:hover,
+.pagination.white li .active,
+.navbar.white ul, .navbar.white .child,
+.navbar.white li a, .menu.white li a,
+.dropdown.white .child li a,
+.form.white .btn,
+.form.white input[type=checkbox]:checked ~ .track,
+.white input[type=checkbox]:checked ~ .track{
+  background: #FFFFFF;
+  color: #444444;
+}
+.transparent{
+  background: transparent;
+  color: #444444;
+}
+
+/* __ border colors __ */
+
+.border.red, .filter.red,
+.filter.red li a:hover,
+.filter.red li .active,
+.pagination.red,
+.form.border.red .btn,
+.form.border.red select,
+.form.border.red input,
+.form.border.red textarea,
+.form.red input:hover,
+.form.red textarea:hover,
+.form.red input:focus,
+.form.red textarea:focus,
+.form.red select:hover{
+  background: transparent;
+  border-color: #F44336;
+  color: #F44336;
+}
+.border.pink, .filter.pink,
+.filter.pink li a:hover,
+.filter.pink li .active,
+.pagination.pink,
+.form.border.pink .btn,
+.form.border.pink select,
+.form.border.pink input,
+.form.border.pink textarea,
+.form.pink input:hover,
+.form.pink textarea:hover,
+.form.pink input:focus,
+.form.pink textarea:focus,
+.form.pink select:hover{
+  background: transparent;
+  border-color: #E91E63;
+  color: #E91E63;
+}
+.border.purple, .filter.purple,
+.filter.purple li a:hover,
+.filter.purple li .active,
+.pagination.purple,
+.form.border.purple .btn,
+.form.border.purple select,
+.form.border.purple input,
+.form.border.purple textarea,
+.form.purple input:hover,
+.form.purple textarea:hover,
+.form.purple input:focus,
+.form.purple textarea:focus,
+.form.purple select:hover{
+  background: transparent;
+  border-color: #673AB7;
+  color: #673AB7;
+}
+.border.indigo, .filter.indigo,
+.filter.indigo li a:hover,
+.filter.indigo li .active,
+.pagination.indigo,
+.form.border.indigo .btn,
+.form.border.indigo select,
+.form.border.indigo input,
+.form.border.indigo textarea,
+.form.indigo input:hover,
+.form.indigo textarea:hover,
+.form.indigo input:focus,
+.form.indigo textarea:focus,
+.form.indigo select:hover{
+  background: transparent;
+  border-color: #3F51B5;
+  color: #3F51B5;
+}
+.border.blue, .filter.blue,
+.filter.blue li a:hover,
+.filter.blue li .active,
+.pagination.blue,
+.form.border.blue .btn,
+.form.border.blue select,
+.form.border.blue input,
+.form.border.blue textarea,
+.form.blue input:hover,
+.form.blue textarea:hover,
+.form.blue input:focus,
+.form.blue textarea:focus,
+.form.blue select:hover{
+  background: transparent;
+  border-color: #2196F3;
+  color: #2196F3;
+}
+.border.light-blue,
+.filter.light-blue,
+.filter.light-blue li a:hover,
+.filter.light-blue li .active,
+.pagination.light-blue,
+.form.border.light-blue .btn,
+.form.border.light-blue select,
+.form.border.light-blue input,
+.form.border.light-blue textarea,
+.form.light-blue input:hover,
+.form.light-blue textarea:hover,
+.form.light-blue input:focus,
+.form.light-blue textarea:focus,
+.form.light-blue select:hover{
+  background: transparent;
+  border-color: #03A9F4;
+  color: #03A9F4;
+}
+.border.cyan, .filter.cyan,
+.filter.cyan li a:hover,
+.filter.cyan li .active,
+.pagination.cyan,
+.form.border.cyan .btn,
+.form.border.cyan select,
+.form.border.cyan input,
+.form.border.cyan textarea,
+.form.cyan input:hover,
+.form.cyan textarea:hover,
+.form.cyan input:focus,
+.form.cyan textarea:focus,
+.form.cyan select:hover{
+  background: transparent;
+  border-color: #00BCD4;
+  color: #00BCD4;
+}
+.border.teal, .filter.teal,
+.filter.teal li a:hover,
+.filter.teal li .active,
+.pagination.teal,
+.form.border.teal .btn,
+.form.border.teal select,
+.form.border.teal input,
+.form.border.teal textarea,
+.form.teal input:hover,
+.form.teal textarea:hover,
+.form.teal input:focus,
+.form.teal textarea:focus,
+.form.teal select:hover{
+  background: transparent;
+  border-color: #009688;
+  color: #009688;
+}
+.border.green, .filter.green,
+.filter.green li a:hover,
+.filter.green li .active,
+.pagination.green,
+.form.border.green .btn,
+.form.border.green select,
+.form.border.green input,
+.form.border.green textarea,
+.form.green input:hover,
+.form.green textarea:hover,
+.form.green input:focus,
+.form.green textarea:focus,
+.form.green select:hover{
+  background: transparent;
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+.border.light-green,
+.filter.light-green,
+.filter.light-green li a:hover,
+.filter.light-green li .active,
+.pagination.light-green,
+.form.border.light-green .btn,
+.form.border.light-green select,
+.form.border.light-green input,
+.form.border.light-green textarea,
+.form.light-green input:hover,
+.form.light-green textarea:hover,
+.form.light-green input:focus,
+.form.light-green textarea:focus,
+.form.light-green select:hover{
+  background: transparent;
+  border-color: #8BC34A;
+  color: #8BC34A;
+}
+.border.yellow, .filter.yellow,
+.filter.yellow li a:hover,
+.filter.yellow li .active,
+.pagination.yellow,
+.form.border.yellow .btn,
+.form.border.yellow select,
+.form.border.yellow input,
+.form.border.yellow textarea,
+.form.yellow input:hover,
+.form.yellow textarea:hover,
+.form.yellow input:focus,
+.form.yellow textarea:focus,
+.form.yellow select:hover{
+  background: transparent;
+  border-color: #FFC107;
+  color: #FFC107;
+}
+.border.light-yellow,
+.filter.light-yellow,
+.filter.light-yellow li a:hover,
+.filter.light-yellow li .active,
+.pagination.light-yellow,
+.form.border.light-yellow .btn,
+.form.border.light-yellow select,
+.form.border.light-yellow input,
+.form.border.light-yellow textarea,
+.form.light-yellow input:hover,
+.form.light-yellow textarea:hover,
+.form.light-yellow input:focus,
+.form.light-yellow textarea:focus,
+.form.light-yellow select:hover{
+  background: transparent;
+  border-color: #FFEB3B;
+  color: #FFEB3B;
+}
+.border.orange, .filter.orange,
+.filter.orange li a:hover,
+.filter.orange li .active,
+.pagination.orange,
+.form.border.orange .btn,
+.form.border.orange select,
+.form.border.orange input,
+.form.border.orange textarea,
+.form.orange input:hover,
+.form.orange textarea:hover,
+.form.orange input:focus,
+.form.orange textarea:focus,
+.form.orange select:hover{
+  background: transparent;
+  border-color: #FF9800;
+  color: #FF9800;
+}
+.border.orange-red,
+.filter.orange-red,
+.filter.orange-red li a:hover,
+.filter.orange-red li .active,
+.pagination.orange-red,
+.form.border.orange-red .btn,
+.form.border.orange-red select,
+.form.border.orange-red input,
+.form.border.orange-red textarea,
+.form.orange-red input:hover,
+.form.orange-red textarea:hover,
+.form.orange-red input:focus,
+.form.orange-red textarea:focus,
+.form.orange-red select:hover{
+  background: transparent;
+  border-color: #FF5722;
+  color: #FF5722;
+}
+.border.black, .filter.black,
+.filter.black li a:hover,
+.filter.black li .active,
+.pagination.black,
+.form.border.black .btn,
+.form.border.black select,
+.form.border.black input,
+.form.border.black textarea,
+.form.black input:hover,
+.form.black textarea:hover,
+.form.black input:focus,
+.form.black textarea:focus,
+.form.black select:hover{
+  background: transparent;
+  border-color: #000000;
+  color: #000000;
+}
+.border.brown, .filter.brown,
+.filter.brown li a:hover,
+.filter.brown li .active,
+.pagination.brown,
+.form.border.brown .btn,
+.form.border.brown select,
+.form.border.brown input,
+.form.border.brown textarea,
+.form.brown input:hover,
+.form.brown textarea:hover,
+.form.brown input:focus,
+.form.brown textarea:focus,
+.form.brown select:hover{
+  background: transparent;
+  border-color: #795548;
+  color: #795548;
+}
+.border.gray, .filter.gray,
+.filter.gray li a:hover,
+.filter.gray li .active,
+.pagination.gray,
+.form.border.gray .btn,
+.form.border.gray select,
+.form.border.gray input,
+.form.border.gray textarea,
+.form.gray input:hover,
+.form.gray textarea:hover,
+.form.gray input:focus,
+.form.gray textarea:focus,
+.form.gray select:hover{
+  background: transparent;
+  border-color: #9E9E9E;
+  color: #9E9E9E;
+}
+.border.silver, .filter.silver,
+.filter.silver li a:hover,
+.filter.silver li .active,
+.pagination.silver,
+.form.border.silver .btn,
+.form.border.silver select,
+.form.border.silver input,
+.form.border.silver textarea,
+.form.silver input:hover,
+.form.silver textarea:hover,
+.form.silver input:focus,
+.form.silver textarea:focus,
+.form.silver select:hover{
+  background: transparent;
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+}
+.border.white, .filter.white,
+.filter.white li a:hover,
+.filter.white li .active,
+.pagination.white,
+.form.border.white .btn,
+.form.border.white select,
+.form.border.white input,
+.form.border.white textarea,
+.form.white input,
+.form.white textarea,
+.form.white input,
+.form.white textarea,
+.form.white select,
+.form.white input:hover,
+.form.white textarea:hover,
+.form.white input:focus,
+.form.white textarea:focus,
+.form.white select:hover{
+  background: transparent;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.border.transparent{
+  background: transparent;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+/* __ filter styles __ */
+
+.filter.white li a{
+  color: rgba(255,255,255,0.8);
+}
+.filter.white li a:hover,
+.filter.white li .active{
+  color: #fff;
+}
+
+/* __ .form label & checkbox modifiers __ */
+
+.form.red label,
+.form.red label i:before,
+.icon-left.red i,
+.icon-right.red i{
+  color: #F44336;
+}
+.form.pink label,
+.form.pink label i:before,
+.icon-left.pink i,
+.icon-right.pink i{
+  color: #E91E63;
+}
+.form.purple label,
+.form.purple label i:before,
+.icon-left.purple i,
+.icon-right.purple i{
+  color: #673AB7;
+}
+.form.indigo label,
+.form.indigo label i:before,
+.icon-left.indigo i,
+.icon-right.indigo i{
+  color: #3F51B5;
+}
+.form.blue label,
+.form.blue label i:before,
+.icon-left.blue i,
+.icon-right.blue i{
+  color: #2196F3;
+}
+.form.light-blue,
+.form.light-blue label i:before,
+.icon-left.light-blue i,
+.icon-right.light-blue i{
+  color: #03A9F4;
+}
+.form.cyan label,
+.form.cyan label i:before,
+.icon-left.cyan i,
+.icon-right.cyan i{
+  color: #00BCD4;
+}
+.form.teal label,
+.form.teal label i:before,
+.icon-left.teal i,
+.icon-right.teal i{
+  color: #009688;
+}
+.form.green label,
+.form.green label i:before,
+.icon-left.green i,
+.icon-right.green i{
+  color: #4CAF50;
+}
+.form.light-green,
+.form.light-green label i:before,
+.icon-left.light-green i,
+.icon-right.light-green i{
+  color: #8BC34A;
+}
+.form.yellow label,
+.form.yellow label i:before,
+.icon-left.yellow i,
+.icon-right.yellow i{
+  color: #FFC107;
+}
+.form.light-yellow label,
+.form.light-yellow label i:before,
+.icon-left.light-yellow i,
+.icon-right.light-yellow i{
+  color: #FFEB3B;
+}
+.form.orange label,
+.form.orange label i:before,
+.icon-left.orange i,
+.icon-right.orange i{
+  color: #FF9800;
+}
+.form.orange-red label,
+.form.orange-red label i:before,
+.icon-left.orange-red i,
+.icon-right.orange-red i{
+  color: #FF5722;
+}
+.form.black label,
+.form.black label i:before{
+  color: #000000;
+}
+.form.brown label,
+.form.brown label i:before,
+.icon-left.brown i,
+.icon-right.brown i{
+  color: #795548;
+}
+.form.gray label,
+.form.gray label i:before,
+.icon-left.gray i,
+.icon-right.gray i{
+  color: #9E9E9E;
+}
+.form.silver label,
+.form.silver label i:before,
+.icon-left.silver i,
+.icon-right.silver i{
+  color: #CCCCCC;
+}
+.form.white label,
+.form.white label i:before,
+.icon-left.white i,
+.icon-right.white i{
+  color: #FFFFFF;
+}
+
+/* __ text modifiers __ */
+
+
+.text-red,
+.hover-text-red:hover,
+.focus-text-red:focus,
+.text-red i:before,
+.hover-text-red:hover i:before,
+.href-text-red a,
+.hover-href-text-red a:hover{
+  color: #F44336 !important;
+}
+.text-pink,
+.hover-text-pink:hover,
+.focus-text-pink:focus,
+.text-pink i:before,
+.hover-text-pink:hover i:before,
+.href-text-pink a,
+.hover-href-text-pink a:hover{
+  color: #E91E63 !important;
+}
+.text-purple,
+.hover-text-purple:hover,
+.focus-text-purple:focus,
+.text-purple i:before,
+.hover-text-purple:hover i:before,
+.href-text-purple a,
+.hover-href-text-purple a:hover{
+  color: #673AB7 !important;
+}
+.text-indigo,
+.hover-text-indigo:hover,
+.focus-text-indigo:focus,
+.text-indigo i:before,
+.hover-text-indigo:hover i:before,
+.href-text-indigo a,
+.hover-href-text-indigo a:hover{
+  color: #3F51B5 !important;
+}
+.text-blue,
+.hover-text-blue:hover,
+.focus-text-blue:focus,
+.text-blue i:before,
+.hover-text-blue:hover i:before,
+.href-text-blue a,
+.hover-href-text-blue a:hover{
+  color: #2196F3 !important;
+}
+.text-light-blue,
+.hover-text-light-blue:hover,
+.focus-text-light-blue:focus,
+.text-light-blue i:before,
+.hover-text-light-blue:hover i:before,
+.href-text-light-blue a,
+.hover-href-text-light-blue a:hover{
+  color: #03A9F4 !important;
+}
+.text-cyan,
+.hover-text-cyan:hover,
+.focus-text-cyan:focus,
+.text-cyan i:before,
+.hover-text-cyan:hover i:before,
+.href-text-cyan a,
+.hover-href-text-cyan a:hover{
+  color: #00BCD4 !important;
+}
+.text-teal,
+.hover-text-teal:hover,
+.focus-text-teal:focus,
+.text-teal i:before,
+.hover-text-teal:hover i:before,
+.href-text-teal a,
+.hover-href-text-teal a:hover{
+  color: #009688 !important;
+}
+.text-green,
+.hover-text-green:hover,
+.focus-text-green:focus,
+.text-green i:before,
+.hover-text-green:hover i:before,
+.href-text-green a,
+.hover-href-text-green a:hover{
+  color: #4CAF50 !important;
+}
+.text-light-green,
+.hover-text-light-green:hover,
+.focus-text-light-green:focus,
+.text-light-green i:before,
+.hover-text-light-green:hover i:before,
+.href-text-light-green a,
+.hover-href-text-light-green a:hover{
+  color: #8BC34A !important;
+}
+.text-yellow,
+.hover-text-yellow:hover,
+.focus-text-yellow:focus,
+.text-yellow i:before,
+.hover-text-yellow:hover i:before,
+.href-text-yellow a,
+.hover-href-text-yellow a:hover{
+  color: #FFC107 !important;
+}
+.text-light-yellow,
+.hover-text-light-yellow:hover,
+.focus-text-light-yellow:focus,
+.text-light-yellow i:before,
+.hover-text-light-yellow:hover i:before,
+.href-text-light-yellow a,
+.hover-href-text-light-yellow a:hover{
+  color: #FFEB3B !important;
+}
+.text-orange,
+.hover-text-orange:hover,
+.focus-text-orange:focus,
+.text-orange i:before,
+.hover-text-orange:hover i:before,
+.href-text-orange a,
+.hover-href-text-orange a:hover{
+  color: #FF9800 !important;
+}
+.text-orange-red,
+.hover-text-orange-red:hover,
+.focus-text-orange-red:focus,
+.text-orange-red i:before,
+.hover-text-orange-red:hover i:before,
+.href-text-orange-red a,
+.hover-href-text-orange-red a:hover{
+  color: #FF5722 !important;
+}
+.text-black,
+.hover-text-black:hover,
+.focus-text-black:focus,
+.text-black i:before,
+.hover-text-black:hover i:before,
+.href-text-black a,
+.hover-href-text-black a:hover{
+  color: #000000 !important;
+}
+.text-brown,
+.hover-text-brown:hover,
+.focus-text-brown:focus,
+.text-brown i:before,
+.hover-text-brown:hover i:before,
+.href-text-brown a,
+.hover-href-text-brown a:hover{
+  color: #795548 !important;
+}
+.text-gray,
+.hover-text-gray:hover,
+.focus-text-gray:focus,
+.text-gray i:before,
+.hover-text-gray:hover i:before,
+.href-text-gray a,
+.hover-href-text-gray a:hover{
+  color: #9E9E9E !important;
+}
+.text-silver,
+.hover-text-silver:hover,
+.focus-text-silver:focus,
+.text-silver i:before,
+.hover-text-silver:hover i:before,
+.href-text-silver a,
+.hover-href-text-silver a:hover{
+  color: #CCCCCC !important;
+}
+.text-white,
+.hover-text-white:hover,
+.focus-text-white:focus,
+.text-white i:before,
+.hover-text-white:hover i:before,
+.href-text-white a,
+.hover-href-text-white a:hover{
+  color: #FFFFFF !important;
+}
+
+/* __ borders modefiers __ */
+
+.border-red,
+.hover-border-red:hover,
+.focus-border-red:focus,
+.border-red td,
+.border-red th{
+  border-color: #F44336 !important;
+}
+.border-pink,
+.hover-border-pink:hover,
+.focus-border-pink:focus,
+.border-pink td,
+.border-pink th{
+  border-color: #E91E63 !important;
+}
+.border-purple,
+.hover-border-purple:hover,
+.focus-border-purple:focus,
+.border-purple td,
+.border-purple th{
+  border-color: #673AB7 !important;
+}
+.border-indigo,
+.hover-border-indigo:hover,
+.focus-border-indigo:focus,
+.border-indigo td,
+.border-indigo th{
+  border-color: #3F51B5 !important;
+}
+.border-blue,
+.hover-border-blue:hover,
+.focus-border-blue:focus,
+.border-blue td,
+.border-blue th{
+  border-color: #2196F3 !important;
+}
+.border-light-blue,
+.hover-border-light-blue:hover,
+.focus-border-light-blue:focus,
+.border-light-blue td,
+.border-light-blue th{
+  border-color: #03A9F4 !important;
+}
+.border-cyan,
+.hover-border-cyan:hover,
+.focus-border-cyan:focus,
+.border-cyan td,
+.border-cyan th{
+  border-color: #00BCD4 !important;
+}
+.border-teal,
+.hover-border-teal:hover,
+.focus-border-teal:focus,
+.border-teal td,
+.border-teal th{
+  border-color: #009688 !important;
+}
+.border-green,
+.hover-border-green:hover,
+.focus-border-green:focus,
+.border-green td,
+.border-green th{
+  border-color: #4CAF50 !important;
+}
+.border-light-green,
+.hover-border-light-green:hover,
+.focus-border-light-green:focus,
+.border-light-green td,
+.border-light-green th{
+  border-color: #8BC34A !important;
+}
+.border-yellow,
+.hover-border-yellow:hover,
+.focus-border-yellow:focus,
+.border-yellow td,
+.border-yellow th{
+  border-color: #FFC107 !important;
+}
+.border-light-yellow,
+.hover-border-light-yellow:hover,
+.focus-border-light-yellow:focus,
+.border-light-yellow td,
+.border-light-yellow th{
+  border-color: #FFEB3B !important;
+}
+.border-orange,
+.hover-border-orange:hover,
+.focus-border-orange:focus,
+.border-orange td,
+.border-orange th{
+  border-color: #FF9800 !important;
+}
+.border-orange-red,
+.hover-border-orange-red:hover,
+.focus-border-orange-red:focus,
+.border-orange-red td,
+.border-orange-red th{
+  border-color: #FF5722 !important;
+}
+.border-black,
+.hover-border-black:hover,
+.focus-border-black:focus,
+.border-black td,
+.border-black th{
+  border-color: #000000 !important;
+}
+.border-brown,
+.hover-border-brown:hover,
+.focus-border-brown:focus,
+.border-brown td,
+.border-brown th{
+  border-color: #795548 !important;
+}
+.border-gray,
+.hover-border-gray:hover,
+.focus-border-gray:focus,
+.border-gray td,
+.border-gray th{
+  border-color: #9E9E9E !important;
+}
+.border-silver,
+.hover-border-silver:hover,
+.focus-border-silver:focus,
+.border-silver td,
+.border-silver th{
+  border-color: #CCCCCC !important;
+}
+.border-white,
+.hover-border-white:hover,
+.focus-border-white:focus,
+.border-white td,
+.border-white th{
+  border-color: #FFFFFF !important;
+}
+.border-transparent,
+.hover-border-transparent:hover,
+.focus-border-transparent:focus,
+.form.border-transparent input,
+.form.border-transparent select,
+.form.border-transparent textarea,
+.border-transparent td,
+.border-transparent th{
+  border-color: transparent !important;
+}
+
+/* __ fill modefiers __ */
+
+.fill-red,
+.hover-fill-red:hover,
+.focus-fill-red:focus{
+  background-color: #F44336 !important;
+}
+.fill-pink,
+.hover-fill-pink:hover,
+.focus-fill-pink:focus{
+  background-color: #E91E63 !important;
+}
+.fill-purple,
+.hover-fill-purple:hover,
+.focus-fill-purple:focus{
+  background-color: #673AB7 !important;
+}
+.fill-indigo,
+.hover-fill-indigo:hover,
+.focus-fill-indigo:focus{
+  background-color: #3F51B5 !important;
+}
+.fill-blue,
+.hover-fill-blue:hover,
+.focus-fill-blue:focus{
+  background-color: #2196F3 !important;
+}
+.fill-light-blue,
+.hover-fill-light-blue:hover,
+.focus-fill-light-blue:focus{
+  background-color: #03A9F4 !important;
+}
+.fill-cyan,
+.hover-fill-cyan:hover,
+.focus-fill-cyan:focus{
+  background-color: #00BCD4 !important;
+}
+.fill-teal,
+.hover-fill-teal:hover,
+.focus-fill-teal:focus{
+  background-color: #009688 !important;
+}
+.fill-green,
+.hover-fill-green:hover,
+.focus-fill-green:focus{
+  background-color: #4CAF50 !important;
+}
+.fill-light-green,
+.hover-fill-light-green:hover,
+.focus-fill-light-green:focus{
+  background-color: #8BC34A !important;
+}
+.fill-yellow,
+.hover-fill-yellow:hover,
+.focus-fill-yellow:focus{
+  background-color: #FFC107 !important;
+}
+.fill-light-yellow,
+.hover-fill-light-yellow:hover,
+.focus-fill-light-yellow:focus{
+  background-color: #FFEB3B !important;
+}
+.fill-orange,
+.hover-fill-orange:hover,
+.focus-fill-orange:focus{
+  background-color: #FF9800 !important;
+}
+.fill-orange-red,
+.hover-fill-orange-red:hover,
+.focus-fill-orange-red:focus{
+  background-color: #FF5722 !important;
+}
+.fill-black,
+.hover-fill-black:hover,
+.focus-fill-black:focus{
+  background-color: #000000 !important;
+}
+.fill-brown,
+.hover-fill-brown:hover,
+.focus-fill-brown:focus{
+  background-color: #795548 !important;
+}
+.fill-gray,
+.hover-fill-gray:hover,
+.focus-fill-gray:focus{
+  background-color: #9E9E9E !important;
+}
+.fill-silver,
+.hover-fill-silver:hover,
+.focus-fill-silver:focus{
+  background-color: #CCCCCC !important;
+}
+.fill-white,
+.hover-fill-white:hover,
+.focus-fill-white:focus{
+  background-color: #FFFFFF !important;
+}
+.fill-transparent,
+.hover-fill-transparent:hover,
+.focus-fill-transparent:focus{
+  background-color: transparent !important;
+}
+.fill-darker,
+.hover-fill-darker:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+}
+.fill-lighter,
+.hover-fill-lighter:hover{
+  background-image: linear-gradient(rgba(255,255,255,0.12),rgba(255,255,255,0.12))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#EEEEEEEE)"!important;
+}
+.hover-fill-disable:hover{
+  background-image: none !important;
+}
+
+/* __ btn color fix for colored elements __ */
+
+.btn a{
+  color: #fff;
+}
+.btn.white a{
+  color: #555;
+}
+
+/* __ navbar fix __ */
+
+.navbar .filter.white li a:hover,
+.navbar .filter.white li .active{
+  color: #fff;
+}
+
+/* __ default colors __ */
+
+.success,
+.pagination.success li a:hover,
+.pagination.success li .active{
+  background: #2AA583;
+  color: #FFFFFF;
+}
+.info,
+.pagination.info li a:hover,
+.pagination.info li .active{
+  background: #15a3ff;
+  color: #FFFFFF;
+}
+.warning,
+.pagination.warning li a:hover,
+.pagination.warning li .active{
+  background: #F3AB44;
+  color: #FFFFFF;
+}
+.danger,
+.pagination.danger li a:hover,
+.pagination.danger li .active{
+  background: #EA4335;
+  color: #FFFFFF;
+}
+
+/* __ default border colors __ */
+
+.border.success, .filter.success,
+.filter.success li a:hover,
+.filter.success li .active,
+.pagination.success,
+.form.border.success .btn,
+.form.border.success select,
+.form.border.success input,
+.form.border.success textarea,
+.form.success input:hover,
+.form.success textarea:hover,
+.form.success input:focus,
+.form.success textarea:focus,
+.form.success select:hover{
+  background: transparent;
+  border-color: #2AA583;
+  color: #2AA583;
+}
+.text-success,
+.hover-text-success:hover,
+.focus-text-success:focus{
+  color: #2AA583 !important;
+}
+.fill-success,
+.hover-fill-success:hover,
+.focus-fill-success:focus{
+  background-color: #2AA583 !important;
+}
+.border-success,
+.hover-border-success:hover,
+.focus-border-success:focus,
+.border-success td,
+.border-success th{
+  border-color: #2AA583 !important;
+}
+
+.border.info, .filter.info,
+.filter.info li a:hover,
+.filter.info li .active,
+.pagination.info,
+.form.border.info .btn,
+.form.border.info select,
+.form.border.info input,
+.form.border.info textarea,
+.form.info input:hover,
+.form.info textarea:hover,
+.form.info input:focus,
+.form.info textarea:focus,
+.form.info select:hover{
+  background: transparent;
+  border-color: #15a3ff;
+  color: #15a3ff;
+}
+
+.text-info,
+.hover-text-info:hover,
+.focus-text-info:focus{
+  color: #15a3ff !important;
+}
+.fill-info,
+.hover-fill-info:hover,
+.focus-fill-info:focus{
+  background-color: #15a3ff !important;
+}
+.border-info,
+.hover-border-info:hover,
+.focus-border-info:focus,
+.border-info td,
+.border-info th{
+  border-color: #15a3ff !important;
+}
+
+.border.warning, .filter.warning,
+.filter.warning li a:hover,
+.filter.warning li .active,
+.pagination.warning,
+.form.border.warning .btn,
+.form.border.warning select,
+.form.border.warning input,
+.form.border.warning textarea,
+.form.warning input:hover,
+.form.warning textarea:hover,
+.form.warning input:focus,
+.form.warning textarea:focus,
+.form.warning select:hover{
+  background: transparent;
+  border-color: #F3AB44;
+  color: #F3AB44;
+}
+
+.text-warning,
+.hover-text-warning:hover,
+.focus-text-warning:focus{
+  color: #F3AB44 !important;
+}
+.fill-warning,
+.hover-fill-warning:hover,
+.focus-fill-warning:focus{
+  background-color: #F3AB44 !important;
+}
+.border-warning,
+.hover-border-warning:hover,
+.focus-border-warning:focus,
+.border-warning td,
+.border-warning th{
+  border-color: #F3AB44 !important;
+}
+
+.border.danger, .filter.danger,
+.filter.danger li a:hover,
+.filter.danger li .active,
+.pagination.danger,
+.form.border.danger .btn,
+.form.border.danger select,
+.form.border.danger input,
+.form.border.danger textarea,
+.form.danger input:hover,
+.form.danger textarea:hover,
+.form.danger input:focus,
+.form.danger textarea:focus,
+.form.danger select:hover{
+  background: transparent;
+  border-color: #EA4335;
+  color: #EA4335;
+}
+
+.text-danger,
+.hover-text-danger:hover,
+.focus-text-danger:focus{
+  color: #EA4335 !important;
+}
+.fill-danger,
+.hover-fill-danger:hover,
+.focus-fill-danger:focus{
+  background-color: #EA4335 !important;
+}
+.border-danger,
+.hover-border-danger:hover,
+.focus-border-danger:focus,
+.border-danger td,
+.border-danger th{
+  border-color: #EA4335 !important;
+}
+
+/* __ table extra borders  __*/
+
+.border-light,
+.border-light td,
+.border-light th {
+  border-color: rgba(255,255,255,0.1) !Important;
+}
+.border-dark,
+.border-dark td,
+.border-dark th{
+  border-color: rgba(0,0,0,0.3) !important;
+}

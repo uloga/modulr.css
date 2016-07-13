@@ -1,0 +1,72 @@
+/*
+  Modulr.css Module
+  ---------------------
+  @desc: Treeview 
+  @author: Alan Muselitch 
+  @copyright: Alan Muselitch
+  @git: http://github.com/uloga/treeview
+\--------------------------------------------*/
+
+.treeview{
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.treeview,
+.treeview ul,
+.treeview ul li{
+  width: 100%;
+  float: left;
+}
+.treeview .folder{
+  position: relative;
+}
+.treeview .folder i{
+  padding-left: 22px;
+}
+.treeview .folder:before,
+.treeview .file:before,
+.treeview .external:before{
+  font-family:'FontAwesome';
+  float: left;
+  margin-right: 6px;
+}
+.treeview .folder:before{
+  content: "\f114";
+  position: absolute;
+  left: 17px;
+  font-size: 17px;
+}
+.treeview .file:before{
+  font-size: 90%;
+  content: "\f016"
+}
+.treeview .external:before{
+  font-size: 90%;
+  content: "\f122";
+}
+.treeview .extend .folder > ul{
+  display: none;
+  margin-left: 18px;
+}
+.treeview .extend label{
+  float: left;
+}
+.treeview .extend input{
+  display: none;
+}
+.treeview .extend input[type=checkbox] + i:before {
+  content: "\f196";
+  color: #111;
+  float: left;
+  font-size: 14px;
+  margin-left: 1px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.treeview .extend input[type=checkbox]:checked + i:before{
+  content: "\f147";
+}
+.treeview .extend input[type=checkbox]:checked ~ ul{
+  display: block;
+}

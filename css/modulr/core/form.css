@@ -1,0 +1,963 @@
+/*
+  Form Module v1
+  ---------------------
+  @desc: Default & Custom Form Elements
+  @author: Alan Museljic
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://modulr.decorator.io/
+\--------------------------------------------*/
+
+form *:focus,
+input:focus,
+textarea:focus,
+select:focus{
+  outline: none;
+  outline: 0 !important;
+}
+.form .group,
+.input-group{
+  width: 100%;
+  float: left;
+}
+.form > div,
+.form .group{
+  margin-bottom: 12px;
+}
+input {
+  height: 32px;
+  min-width: 80%;
+}
+textarea {
+  float: left;
+  resize: vertical;
+  min-height: 100px;
+}
+input, textarea, select{
+  width: 100%;
+  color: #555;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid #c8c8c8;
+  transition: border ease-in 0.2s;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+input:focus, input:hover,
+textarea:active,
+textarea:focus,
+textarea:hover {
+  border-color: #4281EF;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+}
+select{
+  padding: 5px;
+  height: 32px;
+}
+input[type=number] {
+  padding: 0 0 0 5px;
+}
+select[multiple=multiple]{
+  min-height: 100px;
+  padding: 0;
+}
+select[multiple=multiple] *{
+  padding: 5px 8px;
+}
+
+/* __ label __ */
+
+form label{
+  width: 100%;
+  color: #666;
+  margin-bottom: 4px;
+  font-weight: 600;
+  float: left;
+}
+form label .require{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* __ error / msg __ */
+
+form .msg{
+  float: left;
+  width: 100%;
+}
+
+/*__ checkboxes / radios __ */
+
+.checkbox, .radio,
+input[type=checkbox],
+input[type=radio] {
+  float: left;
+  width: auto;
+  padding: 0;
+  height: auto;
+  min-width: 15px;
+  margin: 4px 4px 0 0;
+}
+
+input[type=file]:focus,
+input[type=file]:hover,
+input[type=checkbox]:focus,
+input[type=checkbox]:hover,
+input[type=radio]:focus,
+input[type=radio]:hover {
+  background: 0 0!important;
+  color: #555!important;
+  box-shadow: none!important;
+  border: none!important;
+}
+input.border-2{
+  height: 36px;
+}
+input.border-3{
+  height: 38px;
+}
+input.border-4{
+  height: 40px;
+}
+input.border-5{
+  height: 42px;
+}
+input.border-6{
+  height: 44px;
+}
+
+/*__ custom form elements __ */
+
+form button,
+form .btn{
+  text-align: center;
+  z-index: 2;
+  font-size: 15px;
+  line-height: 20px;
+}
+.button-left input,
+.button-right input {
+  width: 80%;
+  float: left;
+  margin: 0;
+}
+.button-left button,
+.button-right button {
+  display: inline-block;
+  min-width: 20%;
+  float: left;
+  margin: 0;
+}
+
+/* __ search form buttons __ */
+
+.button-left button{
+  border-right: 0;
+}
+.button-right button{
+  border-left: 0;
+}
+.button-left button,
+.button-right button{
+  position: relative;
+  min-width: 20%;
+  float: left;
+  margin: 0;
+}
+.button-left .btn{
+  left: 1px;
+}
+.button-right .btn{
+  right: 1px
+}
+
+/* __ search form icons __ */
+
+.icon-left, .icon-right{
+  position: relative;
+}
+.icon-left input{
+  padding-left: 35px;
+}
+.icon-left select{
+  padding-left: 31px;
+}
+.icon-left button,
+.icon-right button,
+.icon-left .btn,
+.icon-right .btn{
+  background: transparent !important;
+  width: auto;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  top: 1px;
+  padding: 5px 10px;
+}
+.icon-left button:hover,
+.icon-right button:hover{
+  color: #555;
+  transition: color 0.3s ease-in;
+}
+.icon-left button,
+.icon-left .btn{
+  left: 0;
+}
+.icon-right button,
+.icon-right .btn{
+  right: 5px;
+}
+
+/* __ addons append / prepend __ */
+
+.addon-prepend, .addon-append{
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.addon-prepend input,
+.addon-prepend select{
+  display: table-cell;
+  position: relative;
+  border-radius: 0 2px 2px 0;
+  border-left: 0 !important;
+}
+.addon-append input,
+.addon-append select{
+  border-right: 0 !important;
+  border-radius: 2px 0 0 2px;
+}
+.addon-prepend.addon-append input,
+.addon-prepend.addon-append select{
+  border-radius: 0 !important;
+}
+.addon-prepend .prepend,
+.addon-append .append{
+  min-width: 36px;
+  display: table-cell !important;
+  position: relative;
+  width: 1%;
+  z-index: 11;
+  line-height: 1 !important;
+}
+.addon-prepend .prepend{
+  border-radius: 2px 0 0 2px;
+}
+.addon-append .append{
+  border-radius: 0 2px 2px 0;
+}
+.addon-prepend .prepend .fa,
+.addon-append .append .fa{
+  position: relative;
+  top: 1px;
+  left: 0;
+}
+.addon-prepend .prepend .fa-angle-down,
+.addon-append .append.fa-angle-down{
+  top: 0;
+}
+.addon-prepend .prepend button,
+.addon-append .append button{
+  height: auto !important;
+  line-height: 1.1 !important;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+}
+.addon-prepend .prepend.dropdown,
+.addon-append .append.dropdown{
+  line-height: 1.1 !important;
+}
+.form.s .addon-prepend .prepend.dropdown,
+.form.s .addon-append .append.dropdown,
+.form.s .addon-prepend .prepend button,
+.form.s .addon-append .append button{
+  line-height: 1 !important;
+}
+
+/* __ wire form __*/
+
+.form.wire input,
+.form.wire textarea{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  padding: 5px 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+   box-shadow: 0 0 0 !important;
+}
+
+/* __ custom checkboxes / radios __ */
+
+label i{
+  font-style: normal;
+}
+label input[type=checkbox],
+label input[type=radio]{
+  display: none;
+}
+input[type=checkbox] + i:before,
+input[type=radio] + i:before{
+  color: #555;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  line-height: 1em;
+  font-style: normal;
+  display: inline-block;
+  width: 1em;
+  cursor: pointer;
+  vertical-align: middle;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: left;
+}
+
+/* __ checkbox __ */
+
+input[type=checkbox] + i:before{
+  content: "\f096";
+}
+input[type=checkbox]:checked + i:before{
+  content: "\f046";
+}
+input[type=checkbox]:disabled + i:before{
+  content: "\f0c8";
+  color: #bbb;
+  font-size: 19px;
+}
+
+/* __ radio __ */
+
+input i:before{
+  margin: -1px;
+}
+input + i:before{
+  content: "\f10c";
+  font-size: 21px;
+}
+input:checked + i:before{
+  content: "\f192";
+}
+input:disabled + i:before{
+  content: "\f111";
+  color: #bbb !important;
+}
+
+/* __ date input __ */
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* __ toggle switch __*/
+
+.toggle{
+  background: transparent !important;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.toggle input[type=checkbox]{
+  display: none;
+}
+.toggle .track{
+  background: #ccc;
+  width: 100%;
+  height: 17px;
+  float: left;
+}
+.toggle .switch{
+  background: #fff;
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: ease-out 0.08s;
+  transition-property: left, right;
+  box-shadow: 0 0 1px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.36);
+}
+input[type=checkbox]:checked ~ .switch{
+  left: 24px;
+  transition: ease-out 0.08s;
+  transition-property: left, right;
+}
+input[type=checkbox]:checked ~ .track{
+  background: #2196F3;
+  transition: ease-in-out 0.02s;
+  transition-property: background;
+  transition-delay: 0.08s;
+}
+
+.round .switch,
+.round .track{
+  border-radius: 122px;
+  -webkit-border-radius: 122px;
+  -moz-border-radius: 122px;
+}
+
+/* __ INPUT SIZES __ */
+
+/* __ Small __ */
+
+.form.s input,
+.form.s select,
+input.s, select.s,
+.form.s .append,
+.form.s .prepend{
+  font-size: 13px;
+  height: 24px;
+  line-height: 24px;
+}
+.form.s input,
+input.s{
+  padding: 0 8px;
+}
+select.s,
+.form.s select{
+  padding: 0 5px;
+}
+select[multiple=multiple].s *,
+.form.s select[multiple=multiple] *{
+  padding: 1px 8px;
+}
+select[multiple=multiple].s,
+.form.s select[multiple=multiple]{
+  padding: 0;
+  min-height: 65px;
+}
+.form.s .btn, .form.s button {
+  min-width: 26px;
+  height: inherit;
+  padding: 0 5px !important;
+}
+.form.s.icon-left button,
+.form.s.icon-right button,
+.form.s .icon-left button,
+.form.s .icon-right button,
+.form.s.icon-left .btn,
+.form.s.icon-right .btn,
+.form.s .icon-left .btn,
+.form.s .icon-right .btn{
+  font-size: 13px;
+  padding: 0 10px;
+  line-height: 24px;
+  top: 0;
+}
+.form.s.icon-left input,
+.form.s .icon-left input{
+  padding-left: 24px;
+}
+.form.s.icon-left select,
+.form.s .icon-left select{
+  padding-left: 20px;
+}
+.form.s label,
+label.s{
+  font-size: 13px;
+}
+.radio.s,
+.checkbox.s,
+.form.s .radio,
+.form.s .checkbox{
+  line-height: 22px;
+}
+
+/* __ checkboxes / radios / switch __*/
+
+.form.s .toggle,
+.toggle.s{
+  width: 32px;
+  margin-top: 3px;
+}
+.form.s .toggle .switch,
+.toggle.s .switch{
+  height: 12px;
+  width: 12px;
+}
+.form.s .toggle .track,
+.toggle.s .track{
+  height: 14px;
+}
+.form.s input[type=checkbox]:checked ~ .switch,
+.toggle.s input[type=checkbox]:checked ~ .switch{
+  left: 19px;
+}
+.form.s .checkbox i::before,
+.form.s .radio i::before,
+label.s i::before{
+  font-size: 16px;
+  margin-top: 4px;
+}
+.radio.s i::before,
+.form.s .radio i::before{
+  margin-top: 3px;
+}
+
+/* __ Large __ */
+
+.form.l input,
+.form.l select,
+input.l, select.l,
+.form.l .append,
+.form.l .prepend{
+  font-size: 16px;
+  height: 42px;
+  line-height: 26px;
+}
+.form.l input,
+input.l{
+  padding: 0 10px;
+}
+select.l,
+.form.l select{
+  padding: 0 5px;
+}
+select[multiple=multiple].l *,
+.form.l select[multiple=multiple] *{
+  padding: 10px;
+}
+select[multiple=multiple].l,
+.form.l select[multiple=multiple]{
+  padding: 0;
+  min-height: 120px;
+}
+.form.l .btn, .form.l button{
+  height: 42px;
+  font-size: 16px;
+  line-height: inherit;
+}
+.form.l.icon-left button,
+.form.l.icon-right button,
+.form.l.icon-left .btn,
+.form.l.icon-right .btn,
+.form.l .icon-left button,
+.form.l .icon-right button,
+.form.l .icon-left .btn,
+.form.l .icon-right .btn{
+  font-size: 20px;
+  line-height: 30px;
+}
+.form.l.icon-left input,
+.form.l .icon-left input{
+  padding-left: 40px;
+}
+.form.l.icon-left select,
+.form.l .icon-left select{
+  padding-left: 36px;
+}
+/* __ checkboxes / radios / switch __*/
+
+.form.l label{
+  font-size: 16px;
+}
+.form.l .toggle,
+.toggle.l{
+  width: 50px;
+}
+.form.l .toggle .switch,
+.toggle.l .switch{
+  height: 20px;
+  width: 20px;
+}
+.form.l input[type=checkbox]:checked ~ .switch,
+.toggle.l input[type=checkbox]:checked ~ .switch{
+  left: 29px;
+}
+.form.l .toggle .track,
+.toggle.l .track{
+  height: 22px;
+}
+.form.l .checkbox i::before,
+.form.l .radio i::before,
+label.l i::before{
+  font-size: 24px;
+}
+label.l{
+  font-size: 20px;
+}
+.radio.l,
+.checkbox.l,
+.form.l .radio,
+.form.l .checkbox{
+  line-height: 23px;
+}
+
+.radio.l i::before,
+.form.l .radio i::before{
+  margin-top: -1px;
+}
+
+/* __ adon sizes __ */
+
+.form.l .append,
+.form.l .prepend{
+  min-width: 42px;
+}
+
+/* __ Extra Large __ */
+
+.form.xl input,
+.form.xl select,
+input.xl, select.xl,
+.form.xl .append,
+.form.xl .prepend{
+  font-size: 18px;
+  height: 50px;
+  line-height: 32px;
+}
+.form.xl input,
+input.xl{
+  padding: 0 10px;
+}
+select.xl,
+.form.xl select{
+  padding: 0 5px;
+}
+select[multiple=multiple].xl *,
+.form.xl select[multiple=multiple] *{
+  padding: 10px;
+}
+select[multiple=multiple].xl,
+.form.xl select[multiple=multiple]{
+  padding: 0;
+  min-height: 120px;
+}
+.form.xl .btn, .form.xl button{
+  height: 46px;
+  font-size: 18px;
+}
+
+.form.xl.icon-left button,
+.form.xl.icon-right button,
+.form.xl.icon-left .btn,
+.form.xl.icon-right .btn,
+.form.xl .icon-left button,
+.form.xl .icon-right button,
+.form.xl .icon-left .btn,
+.form.xl .icon-right .btn{
+  font-size: 22px;
+  line-height: 36px;
+  top: -1px;
+}
+.form.xl.icon-left input,
+.form.xl .icon-left input{
+  padding-left: 40px;
+}
+.form.xl.icon-left select,
+.form.xl .icon-left select{
+  padding-left: 36px;
+}
+.form.xl label .require{
+  font-size: 35px;
+}
+input[type=number]{
+  padding-right: 0 !important;
+}
+
+/* __ checkboxes / radios / switch __*/
+
+.form.xl label{
+  font-size: 18px;
+  line-height: 26px;
+}
+.form.xl .toggle,
+.toggle.xl{
+  width: 58px;
+}
+.form.xl .toggle .switch,
+.toggle.xl .switch{
+  height: 24px;
+  width: 24px;
+}
+.form.xl input[type=checkbox]:checked ~ .switch,
+.toggle.xl input[type=checkbox]:checked ~ .switch{
+  left: 33px;
+}
+.form.xl .toggle .track,
+.toggle.xl .track{
+  height: 26px;
+}
+.form.xl .checkbox i::before,
+.form.xl .radio i::before,
+label.xl i::before{
+  font-size: 26px;
+}
+label.xl i::before{
+  margin-top: -2px;
+}
+label.xl{
+  font-size: 23px;
+}
+
+/* __ addon sizes __ */
+
+.form.xl .prepend,
+.form.xl .append{
+  min-width: 46px;
+}
+
+
+/* __ checkbox / radio fix __ */
+
+.checkbox{
+  line-height: 20px;
+}
+.radio{
+  line-height: 22px;
+}
+
+/* __ icon forms __ */
+
+.icon-left.l .btn,
+.icon-right.l .btn,
+.form.l .icon-left .btn,
+.form.l .icon-right .btn{
+  line-height: 30px;
+}
+
+/* ___ THEMED FORM ELEMENTS  ___*/
+
+/* __ success __ */
+
+.form.success input:hover,
+.form.success input:focus,
+.form.success select:hover,
+.form.success select:focus,
+.form.success textarea:hover,
+.form.success textarea:focus{
+  border-color: #2AA583;
+  color: #2AA583;
+}
+.form.success .btn,
+.form.success input[type=checkbox]:checked ~ .track,
+.success input[type=checkbox]:checked ~ .track{
+  background: #2AA583;
+  color: #fff;
+}
+.icon-left.success .btn,
+.icon-right.success .btn,
+.icon-left.success button,
+.icon-right.success button,
+.form.success label i:before,
+.form.success label{
+  color: #2AA583;
+}
+
+form.border.success input,
+form.border.success select,
+form.border.success .btn{
+  background: transparent;
+  color: #2AA583;
+  border-color: #2AA583;
+}
+
+/* __ info __ */
+
+.form.info input:hover,
+.form.info input:focus,
+.form.info select:hover,
+.form.info select:focus,
+.form.info textarea:hover,
+.form.info textarea:focus{
+  border-color: #15a3ff;
+  color: #15a3ff;
+}
+.form.info .btn,
+.form.info input[type=checkbox]:checked ~ .track,
+.info input[type=checkbox]:checked ~ .track{
+  background: #15a3ff;
+  color: #fff;
+}
+.icon-left.info .btn,
+.icon-right.info .btn,
+.icon-left.info button,
+.icon-right.info button,
+.form.info label i:before,
+.form.info label{
+  color: #15a3ff;
+}
+form.border.info input,
+form.border.info select,
+form.border.info .btn{
+  background: transparent;
+  color: #15a3ff;
+  border-color: #15a3ff;
+}
+
+/* __ warning __ */
+
+.form.warning input:hover,
+.form.warning input:focus,
+.form.warning select:hover,
+.form.warning select:focus,
+.form.warning textarea:hover,
+.form.warning textarea:focus{
+  border-color: #F3AB44;
+  color: #F3AB44;
+}
+.form.warning .btn,
+.form.warning input[type=checkbox]:checked ~ .track,
+.warning input[type=checkbox]:checked ~ .track{
+  background: #F3AB44;
+  color: #fff;
+}
+.icon-left.warning .btn,
+.icon-right.warning .btn,
+.icon-left.warning button,
+.icon-right.warning button,
+.form.warning label i:before,
+.form.warning label{
+  color: #F3AB44;
+}
+form.border.warning input,
+form.border.warning select,
+form.border.warning .btn{
+  background: transparent;
+  color: #F3AB44;
+  border-color: #F3AB44;
+}
+
+/* __ danger __ */
+
+.form.danger input:hover,
+.form.danger input:focus,
+.form.danger select:hover,
+.form.danger select:focus,
+.form.danger textarea:hover,
+.form.danger textarea:focus{
+  border-color: #EA4335;
+  color: #EA4335;
+}
+.form.danger .btn,
+.form.danger input[type=checkbox]:checked ~ .track,
+.danger input[type=checkbox]:checked ~ .track{
+  background: #EA4335;
+  color: #fff;
+}
+.icon-left.danger .btn,
+.icon-right.danger .btn,
+.icon-left.danger button,
+.icon-right.danger button,
+.form.danger label i:before,
+.form.danger label{
+  color: #EA4335;
+}
+form.border.danger input,
+form.border.danger select,
+form.border.danger .btn{
+  background: transparent;
+  color: #EA4335;
+  border-color: #EA4335;
+}
+
+/* __ form border sizes __ */
+
+.form.border-2 input,
+.form.border-2 textarea,
+.form.border-2 select,
+.form.border-2 .btn,
+.form.border-2 button{
+  border-width: 2px;
+}
+.form.border-3 input,
+.form.border-3 textarea,
+.form.border-3 select,
+.form.border-3 .btn,
+.form.border-3 button{
+  border-width: 3px;
+}
+.form.border-4 input,
+.form.border-4 textarea,
+.form.border-4 select,
+.form.border-4 .btn,
+.form.border-4 button{
+  border-width: 4px;
+}
+
+/* __ fix form themed bg __ */
+
+.form{
+  background: transparent !important;
+}
+
+.form input:hover, form select:hover,
+.form input:focus, form select:focus{
+  background: #fff !important;
+}
+.form.wire input, form.wire select,
+.form.wire input:hover, form.wire select:hover,
+.form.wire input:focus, form.wire select:focus{
+  background: transparent !important;
+}
+.form.border .btn{
+  background-image: none !important;
+}
+
+/* __ disable focus and hover __ */
+
+.hover-disable input,
+.hover-disable select,
+.hover-disable select.option:checked
+input.hover-disable, select.hover-disable{
+  border-color: #c8c8c8 !important;
+  box-shadow: 0 0 0 !important;
+  transition: none !important;
+}
+
+/* __ placeholder __ */
+
+::-webkit-input-placeholder {
+  color:    #666;
+}
+:-moz-placeholder {
+  color:    #666;
+  opacity:  1;
+}
+::-moz-placeholder {
+  color:    #666;
+  opacity:  1;
+}
+:-ms-input-placeholder {
+  color:    #666;
+}
+:placeholder-shown {
+  color:    #666;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder{
+  color: transparent;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder{
+  color: transparent;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder{
+  color: transparent;
+}

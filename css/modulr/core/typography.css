@@ -1,0 +1,212 @@
+/*
+  Typography Module v1
+  ---------------------
+  @desc: Typography
+  @author: Alan Muselitch
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://www.decorator.io/modulr
+\--------------------------------------------*/
+
+small{
+  font-size: 80%;
+}
+ins, mark{
+  background: #D4F5FF;
+  color: #666;
+  text-decoration: none;
+}
+abbr{
+    border-bottom: 1px dotted;
+}
+dfn, em{
+  font-style: italic;
+}
+del{
+  text-decoration: line-through;
+}
+em{
+  color: #F44336;
+}
+strong {
+    font-weight: 700;
+}
+.code,
+code{
+  color: #F44336 !important;
+  font-family: monospace, arial;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.75rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+h5{
+  font-size: 1.25rem;
+}
+h6{
+  font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  color: #444;
+  line-height: 1.2;
+}
+h1 small,h2 small,h3 small,
+h4 small,h5 small,h6 small{
+  color: #666;
+  font-size: 60%;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* __ typography text modifiers __ */
+
+.text-12,
+.href-text-12 a{
+  font-size: 12px !important;
+}
+.text-caption,
+.text-13,
+.href-text-13 a{
+  font-size: 13px !important;
+}
+.text-14,
+.href-text-14 a{
+  font-size: 14px !important;
+}
+.text-body,
+.text-15,
+.href-text-15 a{
+  font-size: 15px !important;
+}
+.text-16,
+.href-text-16 a{
+  font-size: 16px !important;
+}
+.text-heading,
+.text-17,
+.href-text-17 a{
+  font-size: 17px !important;
+  font-weight: 500;
+}
+.text-18,
+.href-text-18 a{
+  font-size: 18px !important;
+}
+.text-title,
+.text-19,
+.href-text-19 a{
+  font-size: 19px !important;
+  font-weight: 500;
+}
+.text-20,
+.href-text-20 a{
+  font-size: 20px !important;
+}
+.text-21,
+.href-text-21 a{
+  font-size: 21px !important;
+}
+.text-22,
+.href-text-22 a{
+  font-size: 22px !important;
+}
+.text-23,
+.href-text-23 a{
+  font-size: 23px !important;
+}
+.text-24,
+.href-text-24 a{
+  font-size: 24px !important;
+}
+.text-25,
+.href-text-25 a{
+  font-size: 24px !important;
+}
+.text-display,
+.text-26,
+.href-text-26 a{
+  font-size: 26px !important;
+  font-weight: 600;
+}
+
+/*__ blockquote & alerts __ */
+
+blockquote, .quote {
+  background: #fafafa;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 23px;
+  border-left: 3px solid #ccc;
+}
+blockquote.reverse,
+.quote.revers{
+  text-align: right;
+  border-right: 3px solid #ccc;
+  border-left: 0;
+}
+blockquote cite,
+blockquote .cite,
+.quote cite, .quote .cite{
+  font-size: 14px;
+  color: #777;
+  line-height: 36px;
+}
+cite::before,
+.cite::before{
+  content: '\2014 \00A0';
+}
+.reverse cite::before,
+.reverse .cite::before{
+  content: "";
+}
+.reverse cite::after,
+.reverse .cite::after{
+  content: '\00A0 \2014';
+}
+
+/* __ dropcap __ */
+
+.dropcap{
+  line-height: 23px;
+}
+.dp{
+  float: left;
+  font-size: 52px;
+  line-height: 48px;
+  margin: 0 5px 0 -3px;
+  font-weight: 500;
+}
+.dp-bg{
+  float: left;
+  background: #eee;
+  padding: 6px 9px;
+  line-height: 48px;
+  font-size: 55px;
+  margin: 7px 5px 0 0;
+}
+
+/* __ line height __ */
+
+.lh-1{
+  line-height: 1;
+}
+.lh-12{
+  line-height: 1.2;
+}
+.lh-15{
+  line-height: 15px;
+}
+.lh-2{
+  line-height: 2;
+}

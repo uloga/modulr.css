@@ -1,0 +1,381 @@
+/*
+  Button Module v1
+  ---------------------
+  @desc: Buttons, addons, groups
+  @author: Alan Museljic
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://www.decorator.io/modulr
+\--------------------------------------------*/
+
+/* __ buttons __ */
+
+.btn,
+.addon{
+  display: inline-block;
+  padding: 5px  10px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: background  ease-in-out 0.1s;
+}
+.btn, button{
+  background: #eee;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  border:0;
+  padding:0;
+}
+button:hover{
+  cursor: pointer;
+}
+
+/* __ button append / prepend __*/
+
+.btn.s > .prepend{
+  padding-right: 5px;
+}
+.btn.s > .append{
+  padding-left: 5px;
+}
+.btn > .prepend,
+.btn.m > .prepend,
+.btn.l > .prepend{
+  padding-right: 8px;
+}
+.btn > .append,
+.btn.m > .append,
+.btn.l > .append{
+  padding-left: 8px;
+}
+.btn.xl > .prepend{
+  padding-right: 10px;
+}
+.btn.xl > .append{
+  padding-left: 10px;
+}
+.btn.xxl > .prepend{
+  padding-right: 12px;
+}
+.btn.xxl > .append{
+  padding-left: 12px;
+}
+
+/* __ button sizes __ */
+
+.btn.s,
+.buttons.s .btn,
+.button-group.s .btn,
+.btn-addon.s .btn,
+.btn-addon.s .addon,
+.form.s .btn{
+  padding: 2px 5px 1px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.btn.l,
+.buttons.l .btn,
+.button-group.l .btn,
+.btn-addon.l .btn,
+.btn-addon.l .addon{
+  font-size: 17px;
+  padding: 8px  15px;
+}
+.btn.xl,
+.buttons.xl .btn,
+.button-group.xl .btn,
+.btn-addon.xl .btn,
+.btn-addon.xl .addon{
+  font-size: 21px;
+  padding: 9px 16px;
+}
+.btn.xxl,
+.buttons.xxl .btn,
+.button-group.xxl .btn,
+.btn-addon.xxl .btn,
+.btn-addon.xxl .addon{
+  font-size: 27px;
+  padding: 9px 20px;
+}
+
+/* __ icons __ */
+
+
+.btn.icon{
+  height: 32px;
+  width: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 0;
+}
+
+.btn.icon.s{
+  height: 20px;
+  width: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.btn.icon.l{
+  height: 42px;
+  width: 42px;
+  font-size: 27px;
+  line-height: 42px;
+}
+.btn.icon.xl{
+  height: 50px;
+  width: 50px;
+  font-size: 32px;
+  line-height: 50px;
+}
+.btn.icon.xxl{
+  height: 58px;
+  width: 58px;
+  font-size: 38px;
+  line-height: 58px;
+}
+
+/* __ btn icon border modifiers __ */
+
+.btn.icon.border-2{
+  line-height: 30px;
+}
+.btn.icon.s.border-2{
+  line-height: 18px;
+}
+.btn.icon.l.border-2{
+  line-height: 38px;
+}
+.btn.icon.xl.border-2{
+  line-height: 46px;
+}
+.btn.icon.xxl.border-2{
+  line-height: 58px;
+}
+.btn.icon.border-3{
+  line-height: 28px;
+}
+.btn.icon.s.border-3{
+  line-height: 16px;
+}
+.btn.icon.l.border-3{
+  line-height: 36px;
+}
+.btn.icon.xl.border-3{
+  line-height: 44px;
+}
+.btn.icon.xxl.border-3{
+  line-height: 56px;
+}
+.btn.icon.border-4{
+  line-height: 26px;
+}
+.btn.icon.s.border-4{
+  line-height: 14px;
+}
+.btn.icon.l.border-4{
+  line-height: 34px;
+}
+.btn.icon.xl.border-4{
+  line-height: 42px;
+}
+.btn.icon.xxl.border-4{
+  line-height: 54px;
+}
+.btn.icon.border-5{
+  line-height: 24px;
+}
+.btn.icon.s.border-5{
+  line-height: 12px;
+}
+.btn.icon.l.border-5{
+  line-height: 32px;
+}
+.btn.icon.xl.border-5{
+  line-height: 40px;
+}
+.btn.icon.xxl.border-5{
+  line-height: 52px;
+}
+.btn.icon.border-6{
+  line-height: 22px;
+}
+.btn.icon.s.border-6{
+  line-height: 10px;
+}
+.btn.icon.l.border-6{
+  line-height: 30px;
+}
+.btn.icon.xl.border-6{
+  line-height: 38px;
+}
+.btn.icon.xxl.border-6{
+  line-height: 50px;
+}
+
+
+/* __ buttons /  group of buttons __*/
+
+.buttons,
+.button-group,
+.btn-addon{
+  display: inline-block;
+}
+.buttons .btn,
+.button-group .btn,
+.btn-addon .btn,
+.btn-addon .addon{
+  margin: 0;
+  float: left;
+}
+.buttons .btn{
+  border-right: 1px solid rgba(255,255,255,0.36);
+}
+.buttons .btn:last-child{
+  border-right: none;
+}
+
+/* __ BUTTON THEMES __ */
+
+/* __ success __ */
+
+.btn.success,
+.btn.border.success:hover{
+  background: #2AA583;
+  color: #fff;
+}
+.btn.border.success,
+.addon.border.success{
+  background: transparent;
+  border-color: #2AA583;
+  color: #2AA583;
+}
+
+/* __ info __ */
+
+.btn.info,
+.btn.border.info:hover{
+  background: #15a3ff;
+  color: #fff;
+}
+.btn.border.info,
+.addon.border.info{
+  background: transparent;
+  border-color: #15a3ff;
+  color: #15a3ff;
+}
+
+/* __ warning __ */
+
+.btn.warning,
+.btn.border.warning:hover{
+  background: #F3AB44;
+  color: #fff;
+}
+.btn.border.warning,
+.addon.border.warning{
+  background: transparent;
+  border-color: #F3AB44;
+  color: #F3AB44;
+}
+
+/* __ danger__ */
+
+.btn.danger,
+.btn.border.danger:hover{
+  background: #EA4335;
+  color: #fff;
+}
+.btn.border.danger,
+.addon.border.danger{
+  background: transparent;
+  border-color: #EA4335;
+  color: #EA4335;
+}
+
+/* __ hover states __ */
+
+.btn:hover,
+.btn.active{
+  background-image: linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+}
+.btn.border:hover,
+.btn[class~="hover-"]{
+  background-image: none !important;
+}
+a.addon:hover{
+  text-decoration: underline;
+}
+
+/* __ gradient buttons  __ */
+
+.btn.gradient {
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.15))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)"!important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15)!important;
+}
+.btn.gradient:hover{
+  background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.26))!important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#28000000)"!important;
+}
+
+/* __ glossy buttons __*/
+
+.btn.glossy{
+  box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 15px 0 rgba(255,255,255,.26);
+}
+.btn.s.glossy{
+  box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 9px 0 rgba(255,255,255,.26);
+}
+.btn.l.glossy{
+  box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 21px 0 rgba(255,255,255,.26);
+}
+.btn.xl.glossy{
+  box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 24px 0 rgba(255,255,255,.26);
+}
+.btn.xxl.glossy{
+  box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+  -wbkit-box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+  -moz-box-shadow: inset 0 31px 0 rgba(255,255,255,.26);
+}
+
+/* __ button helpers __ */
+
+/* must be added to parent element */
+
+.button-center{
+  text-align: center;
+}
+
+/* __ disable hover __ */
+
+.btn.border.hover-none:hover,
+.btn.border.hover-disable:hover{
+  background: transparent !important;
+  cursor: default;
+}
+.btn.hover-disable:hover{
+  background: transparent !important;
+  background-image: none !Important;
+  cursor: default;
+}
+.btn.hover-fill-transparent:hover{
+  background: transparent !important;
+  background-image: none !Important;
+}
+.btn-addon .btn:hover{
+  background-image: none !Important;
+}
+.btn.hover-fill-disable:hover{
+  background-image: none !important;
+}
