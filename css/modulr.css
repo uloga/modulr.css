@@ -4,7 +4,7 @@
 /* --
 Import Other Modules Here.
 Make sure that this comment is removed since there are no comments allowed
-before any @import. See the file structure for more info about core modules
+before any @import. See the file structure at: https://decorator.io/modulr/getstarted for more info on how to include core modules
 -- */
 @import url("modulr/core/color.css");
 @import url("modulr/core/modifier.css");
