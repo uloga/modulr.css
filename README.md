@@ -8,7 +8,7 @@ Examples: [Modulr.css Examples](https://decorator.io/modulr/templates)
 
 You can find all of the modulr.css core modules in ```css/modulr/core``` folder. 
 Place your own modules into ```css/modulr/modules``` folder.
-See also gestarted.html file for more info on how to include the fw into your own project.
+See gestarted.html file for more info on how to include the fw into your own project.
 
 Work in progress v2:
 ---
