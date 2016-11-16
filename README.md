@@ -2,6 +2,8 @@
 ### Modulr.css : A fast and modular approach to building powerful web and mobile interfaces.
 V1 Docs: [Modulr.css](https://decorator.io/modulr/) 
 ---
+Only 17k in size.
+---
 
 You can find all of the modulr.css core modules in ```css/modulr/core``` folder. 
 Place your own modules into ```css/modulr/modules``` folder.
