@@ -1,6 +1,6 @@
 {
   "name": "modulr",
-  "description": "A fast and easy modular approach to building powerful web and mobile interfaces.",
+  "description": "A fast and modular approach to building powerful web and mobile interfaces.",
   "main": "modulr.js",
   "ignore": [
     "bower.json",
