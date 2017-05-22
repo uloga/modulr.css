@@ -1,4 +1,7 @@
 
+### NOTE: We will soon move Modulr.css 2.0 ( pure css ) framework to <a class="link" href="https://github.com/ModulrCSS" target="_blank">Modulr.css Organisation</a> The framework is broken into seperate modules, that way you can bower install 'modulr-modulename' without using the whole framework. Framework will include a special compiler which will compile the css into a seperate file using only classes. That way you'll be able to use most of the fw in your html files without ever writing a line of css code. The idea is to create the most advnaced/fastest framework to create amazing html/modbile layouts. Also comming; support for most of the major js frameworks out of the box such as react, angular, vue and polymer.
+
+
 ### Modulr.css : A fast and modular approach to building powerful web and mobile interfaces.
 V1 Docs: [Modulr.css](https://decorator.io/modulr/) 
 ---
@@ -21,14 +24,3 @@ Few examples included to get you started. Click on thumbnails to view live demo.
 | <a class="link" href="http://codepen.io/decorator/full/PNRaJL" target="_blank"><img src="https://decorator.io/modulr/webroot/media/feed-example.jpg" width="180"></a>    | Responsive Social News Feed  |<a class="grid-title" href="http://codepen.io/decorator/full/PNRaJL" target="_blank">View Example</a></p> |
 | <a class="link" href="http://codepen.io/decorator/full/qZJKyB/" target="_blank"><img src="https://decorator.io/modulr/webroot/media/comments.png" width="180"></a>    | Responsive Threaded/Nested - Tree Comments   |<a class="grid-title" href="http://codepen.io/decorator/full/qZJKyB/" target="_blank">View Example</a></p> |
 
-
-
-Work in progress v2:
----
-1. NODE.JS CLI
- * module (package) manager
- * layout/element/template generator
- * html/css precompiler
-2. Modules Listing Website Section
-3. Angular.js Support
-4. Web And App Examples  
