@@ -3,7 +3,7 @@
 
 
 ### Modulr.css : A fast and modular approach to building powerful web and mobile interfaces.
-V1 Docs: [Modulr.css](https://decorator.io/modulr/) 
+V1 Docs: [Modulr.css](https://github.com/uloga/modulr.css/tree/master/docs) 
 ---
 Only 17k in size.
 ---
